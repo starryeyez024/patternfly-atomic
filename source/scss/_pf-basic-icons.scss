@@ -112,6 +112,7 @@
   content: $pficon-var-import;
 }
 .#{$pf-icon-prefix}-info:before {
+  color: $color-pf-black-700;
   content: $pficon-var-info;
 }
 .#{$pf-icon-prefix}-memory:before {
