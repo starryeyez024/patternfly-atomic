@@ -9,7 +9,7 @@ Uses Bootstrap .btn and .btn-link classes to style buttons contained in the View
 
 ## Accessibility
 
-Write accessibility, aria tags, tab index and other notes to make this component accessible.
+Aria tags: The container is marked as role="group" aria-label="View selector". For each button, aria-label is used to name the view that will be selected by the button.
 
 ## Usage
 
