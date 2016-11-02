@@ -1,0 +1,40 @@
+
+<div class="card {{#if textcenter}}text-xs-center{{/if}} {{#if multiselect}}card-pf-view-multi-select{{/if}}">
+{{#if cardHeader}}
+  <div class="card-header">
+    {{#if cardKebab}}
+      {{> basics-dropdown isKebab=true pullright=true }}
+    {{/if}}
+    <{{cardTitleSize}} class="card-title">{{cardTitle}}</{{cardTitleSize}}>
+  </div>
+  <div class="card-block">
+{{else}}
+  <div class="card-block">
+    {{#if multiselect}}
+      <div class="card-pf-view-checkbox">
+        <input type="checkbox">
+      </div>
+    {{/if}}
+    {{#if cardTitleIconLarge}}
+      <div class="pf-card__top-element">
+        {{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--lg" }}
+      </div>
+    {{/if}}
+    {{#if cardTitleIconMedium}}
+      <div class="pf-card__top-element">
+        {{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--md" }}
+      </div>
+    {{/if}}
+    {{#if cardKebab}}
+      {{> basics-dropdown isKebab=true pullright=true }}
+    {{/if}}
+    <{{cardTitleSize}} class="card-title">{{cardTitle}}</{{cardTitleSize}}>
+{{/if}}
+    <p class="card-text">{{{cardContents}}}</p>
+  </div>
+{{#if cardFooter}}
+  <div class="card-footer text-muted">
+    {{cardFooterContents}}
+  </div>
+{{/if}}
+</div>

@@ -1,0 +1,14 @@
+{{#if isCardFooter}}
+{{else}}
+<div class="card ">
+  <div class="card-block">
+    <p class="card-text">Lorem ipsum dolor sit amet <a href> More Information</a>.</p>
+{{/if}}
+  </div>
+{{#if cardFooter}}
+  <div class="card-footer text-muted">
+    {{cardFooterContents}}
+  </div>
+{{/if}}
+
+</div>
