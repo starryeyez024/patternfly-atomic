@@ -1,11 +1,11 @@
-<div class="pf-view-selector"> <!-- toolbar-pf-view-selector -->
-  <button class="btn btn-link">
+<div class="pf-view-selector" role="group" aria-label="View selector">
+  <button class="btn btn-link pf-view-selector__btn-link" aria-label="Table view">
     {{> basics-icon iconFamily="fa" iconName="fa-th"}}
   </button>
-  <button class="btn btn-link btn-link--active active">
+  <button class="btn btn-link pf-view-selector__btn-link pf-view-selector__btn-link--active active" aria-label="Card view">
     {{> basics-icon iconFamily="fa" iconName="fa-th-large"}}
   </button>
-  <button class="btn btn-link">
+  <button class="btn btn-link pf-view-selector__btn-link" aria-label="List view">
     {{> basics-icon iconFamily="fa" iconName="fa-th-list"}}
   </button>
 </div>

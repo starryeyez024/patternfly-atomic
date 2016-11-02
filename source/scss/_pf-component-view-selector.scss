@@ -1,0 +1,24 @@
+//
+// View Selector component
+//
+
+.pf-view-selector {
+
+}
+
+//
+.pf-view-selector__btn-link {
+  color: $color-pf-black-900;
+  font-size: $font-size-relative-base;
+  //line-height: 1;
+  padding: $pf-spacer-xxxs 0;
+  &:active,
+  &:focus,
+  &:hover { color: $link-color; }
+}
+
+
+.pf-view-selector__btn-link--active {
+  color: $link-color;
+  cursor: default;
+}
