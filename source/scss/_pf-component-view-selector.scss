@@ -2,11 +2,6 @@
 // View Selector component
 //
 
-.pf-view-selector {
-
-}
-
-//
 .pf-view-selector__btn-link {
   color: $color-pf-black-900;
   font-size: $font-size-relative-base;
@@ -15,7 +10,6 @@
   &:focus,
   &:hover { color: $link-color; }
 }
-
 
 .pf-view-selector__btn-link--active {
   color: $link-color;
