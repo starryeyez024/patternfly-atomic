@@ -5,7 +5,7 @@ title: View Control
 
 This is a piece of the [toolbar pattern](http://www.patternfly.org/pattern-library/forms-and-controls/toolbar/#_design).
 
-Uses Bootstrap .btn and .btn-link classes to style buttons contained in the View Selector.
+Uses Bootstrap `.btn` and `.btn-link` classes to style buttons contained in the View Selector.
 
 ## Accessibility
 
