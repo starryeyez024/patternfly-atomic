@@ -11,6 +11,9 @@
   "tagClass" : "tag-default",
   "dropdownText" : "Dropdown",
   "dropdownAriaLabelledby": "Dropdown",
+  "cardTitleSize": "h4",
+  "cardTitle": "Title",
+  "cardContents": "Lorem ipsum dolor sit amet <a href> More Information</a>.",
   "dropdownList": ["Action", "Another action", "Something else here"],
   "breadcrumbList": ["Back to Top Level", "Second Level", "Third Level"],
   "img": {
