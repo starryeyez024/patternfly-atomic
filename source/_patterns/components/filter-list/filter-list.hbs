@@ -1,10 +1,7 @@
-<!-- Can't get an element from listitems to come in as a parameter to another element (basics-tag here) -->
-<!-- right now, basics-tag has been changed to try and use the listitems data instead of its paramaeter -->
-<ul>
-  {{# listitems.five }}
-    <li> this is a word: {{ word }}</li> <!-- this works to get the data -->
+<ul class="pf-filter-list list-inline">
+  {{# listitems.three }}
     <li class="list-inline-item">
-      {{> basics-filter tagText="word" tagClass="tag-info" tagDismissable="true" }} <!-- this doesn't work to get the data -->
+      {{> basics-tag tagText=word tagClass="tag-info" tagDismissable="true" }}
     </li>
-  {{/ listitems.five }}
+  {{/ listitems.three }}
 </ul>
