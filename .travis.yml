@@ -3,10 +3,10 @@ node_js:
   - '4'
 
 env:
-  - CXX=g++-4.8
   global:
-  - ENCRYPTION_LABEL: "02f48b5e2393"
-  - COMMIT_AUTHOR_EMAIL: "patternfly-build@redhat.com"
+    - CXX=g++-4.8
+    - ENCRYPTION_LABEL: "02f48b5e2393"
+    - COMMIT_AUTHOR_EMAIL: "patternfly-build@redhat.com"
 
 addons:
   apt:
