@@ -2,7 +2,7 @@
 // Base styles
 //
 
-.card {
+.pf-card {
   @include box-shadow($pf-box-shadow);
 }
 
@@ -11,7 +11,7 @@
 // bootstrap defaults.
 //
 
-.card{
+.pf-card {
   border: none;
 
   .card-header{
@@ -26,27 +26,4 @@
 }
 .pf-card--accented {
   border-top: 2px solid $color-pf-blue-300;
-}
-.pf-card--multiselect__block,
-.pf-card--multiselect__header {
-  padding-left: $pf-spacer-xxl;
-  padding-right: $pf-spacer-xxl;
-}
-.pf-card__checkbox {
-  position: absolute;
-  top: $pf-spacer-xxxs;
-  left: $pf-spacer-xxs;
-  input[type=checkbox] {
-    //visibility: hidden; is not keyboard accessible and should be replaced with something that keeps the checkbox "visible" in the dom but not rendered on the screen
-    // using z-index to push the checkbox behind the card until it has keyboard focus, or the user hovers over the card
-    z-index:-1;
-    position: relative;
-    width: $pf-spacer-xxxl;
-    height: $pf-spacer-xxxl;
-    .pf-card--multiselect:hover &,
-    &:focus,
-    &:checked {
-      z-index:auto;
-    }
-  }
 }

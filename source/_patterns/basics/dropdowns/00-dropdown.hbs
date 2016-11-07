@@ -1,10 +1,6 @@
-<div class="dropdown {{ dropdownState }} {{#if isKebab}}pf-dropdown__kebab{{/if}} {{#if pullright}}pull-right{{/if}}" aria-labelledby="{{ dropdownAriaLabelledby }}">
-  <button type="button" class="btn {{#if isKebab}}btn-link{{else}}{{ btnClass }}{{/if}}  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    {{#if isKebab}}
-      <span class="fa fa-ellipsis-v"></span>
-    {{else}}
-      {{ dropdownText }}
-    {{/if}}
+<div class="dropdown {{ dropdownState }} {{#if pullright}}pull-right{{/if}}" aria-labelledby="{{ dropdownAriaLabelledby }}">
+  <button type="button" class="btn {{ btnClass }} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ dropdownText }}
   </button>
   <div class="dropdown-menu {{#if pullright}}dropdown-menu-right{{/if}}">
     {{#each dropdownList}}
