@@ -1,0 +1,42 @@
+//
+// Component Masthead
+//
+
+.pf-masthead {
+  background: $color-pf-black-1000;
+  border-top: 4px solid $color-pf-blue-300;
+  display: flex;
+  justify-content: space-between;
+  padding-right: ($grid-gutter-width-base / 2);
+  padding-left: ($grid-gutter-width-base / 2);
+}
+
+.pf-masthead__brand{
+//  background: yellow;
+}
+
+.pf-utilities {
+  display: flex;
+//  align-items: center;
+}
+
+
+.pf-utilities__link{
+  color: $color-pf-black-300;
+  border-left: 1px solid $color-pf-black-700;
+//  margin: 0;
+  padding-left: $pf-spacer-xxs;
+  padding-right: $pf-spacer-xxs;
+}
+
+.pf-masthead__navicon{
+
+}
+
+
+.pf-utilities {
+  .nav-item + .nav-item,
+  .nav-link + .nav-link {
+    margin-left: 0;
+  }
+}

@@ -1,23 +1,37 @@
 <!-- navbar-fixed-top -->
 <header class="pf-masthead">
-  <a href="pf-brand">BRAND</a>
-  <ul class="nav navbar-nav navbar-utility">
-    <li>
-      <a href="#">Status</a>
-    </li>
-    <li class="dropdown">
-      <a href="#">
-        <span class="pficon pficon-user"></span>
-        Brian Johnson <b class="caret"></b>
-      </a>
-    </li>
-  </ul>
+
+  <div class="pf-masthead__brand">
+    <button class="hidden-sm-up">
+      {{> basics-icon iconFamily="fa" iconName="fa-bars" }}
+    </button>
+    <a href="#">
+      <img src="../../../images/brand.svg" alt="PatternFly Enterprise Application">
+    </a>
+  </div><!-- /pf-masthead__brand -->
+
+  <div class="pf-masthead__utilities">
+    <!-- use nav component -->
+    <ul class="nav nav-inline">
+      <li class="nav-item pf-utilities__item">
+        <a class="nav-link pf-utilities__link" href="#">Status</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pf-utilities__link" href="#">
+          {{> basics-icon iconFamily="fa" iconName="pficon-user" }}
+          Brian Johnson
+        </a>
+      </li>
+    </ul>
+  </div><!-- /pf-masthead__utilities -->
+
 </header>
 
+
+<!--
 <nav class="navbar navbar-full navbar-dark bg-inverse navbar-pf" role="navigation">
 
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-
+  <a class="navbar-brand" href="#">Navbar</a>
   <ul class="nav navbar-nav">
     <li class="nav-item active">
       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -134,3 +148,4 @@
 
         </div>
       </nav>
+-->
