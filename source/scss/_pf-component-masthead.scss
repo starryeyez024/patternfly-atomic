@@ -11,10 +11,15 @@
   padding-left: ($grid-gutter-width-base / 2);
 }
 
+// This div goes to the left
 .pf-masthead__brand{
-//  background: yellow;
 }
 
+// This div goes to the right
+.pf-masthead__utilities{
+}
+
+// this is the list itself:
 .pf-utilities {
   display: flex;
 //  align-items: center;
