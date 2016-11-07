@@ -237,15 +237,3 @@
   border: 2px solid $color-pf-blue-300;
   border-radius: 50%;
 }
-// Kebab dropdown
-.pf-dropdown__kebab {
-  .dropdown-toggle::after {
-    display: none;
-  }
-  .btn-link {
-    color: $color-pf-black-900;
-    font-size: $font-size-relative-lg;
-    line-height: 1;
-    padding: 0 0 $pf-spacer-xxxs;
-  }
-}
