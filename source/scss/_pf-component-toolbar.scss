@@ -8,7 +8,17 @@
 
 // This is a grouping of items in a toolbar
 .pf-toolbar__group {
+  align-items: baseline;
   border: 1px solid blue;
   padding: .25em;
-  display:inline-block;
+  display:inline-flex;
+}
+
+.pf-toolbar__group__item {
+  display: inline-block;
+  border-right: 1px solid green;
+  margin-right: $pf-spacer-xxs;
+  &:last-child {
+    border-right: none;
+  }
 }
