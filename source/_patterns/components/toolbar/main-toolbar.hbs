@@ -1,9 +1,19 @@
 <div class="row pf-toolbar">
-    <ul class="list-inline pf-toolbar__group">
-      <div class="pf-toolbar__group__item"><!-- this dropdown needs to be inline -->{{> basics-dropdown dropdownText= "Name" btnClass="btn-secondary" }}{{> basics-input}}</div>
-      <div class="pf-toolbar__group__item">{{> basics-dropdown dropdownText= "Name" btnClass="btn-secondary" }}</div>
-      <div class="pf-toolbar__group__item">buttons</div>
-    </ul>
+    <div class="pf-toolbar__group form-inline">
+      <div class="pf-toolbar__group__item form-group">
+        {{> basics-dropdown dropdownText= "Name" btnClass="btn-secondary" }}
+        {{> basics-input}}
+      </div>
+      <div class="pf-toolbar__group__item form-group">
+        {{> basics-dropdown dropdownText= "Name" btnClass="btn-secondary" }}
+        {{> basics-icon-button btnText="" btnClass="btn-link" iconFamily="fa" iconName="fa-sort-alpha-asc" iconModifier="" ariaLabeledBy="Ascending Alphabetical Sort"}}
+      </div>
+      <div class="pf-toolbar__group__item form-group">
+        {{> basics-button btnText="Action" btnClass="btn-secondary" }}
+        {{> basics-button btnText="Action" btnClass="btn-secondary" }}
+        {{> basics-icon-button btnText="" btnClass="btn-link" iconFamily="fa" iconName="fa-ellipsis-v" iconModifier="" ariaLabeledBy="Kebab"}}
+      </div>
+    </div>
 
     <div class="pf-toolbar__group">
       <div class="pf-toolbar__group__item">

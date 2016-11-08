@@ -3,22 +3,24 @@
   justify-content: space-between;
   padding-right: ($grid-gutter-width-base / 2);
   padding-left: ($grid-gutter-width-base / 2);
-  border: 1px solid red;
 }
 
 // This is a grouping of items in a toolbar
 .pf-toolbar__group {
   align-items: baseline;
-  border: 1px solid blue;
-  padding: .25em;
   display:inline-flex;
 }
 
 .pf-toolbar__group__item {
   display: inline-block;
-  border-right: 1px solid green;
-  margin-right: $pf-spacer-xxs;
-  &:last-child {
-    border-right: none;
-  }
+  padding: 0 $pf-spacer-xs;
+}
+
+.pf-toolbar__subgroup__item {
+  display: inline-block;
+  padding: 0 $pf-spacer-xs;
+}
+
+.pf-toolbar__group__item + .pf-toolbar__group__item {
+  border-left: 1px solid $color-pf-black-900;
 }
