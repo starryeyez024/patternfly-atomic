@@ -2,15 +2,13 @@
 <header class="pf-masthead">
 
   <div class="pf-masthead__brand">
-    <button class="hidden-sm-up">
-      {{> basics-icon iconFamily="fa" iconName="fa-bars" }}
-    </button>
+      {{> basics-icon-button btnText="" btnClass="btn-link hidden-sm-up" iconFamily="fa" iconName="fa-bars" iconModifier="pf-icon--sm" ariaLabeledBy="NavIcon"}}
     <a href="#">
       <img src="../../../images/brand.svg" alt="PatternFly Enterprise Application">
     </a>
   </div><!-- /pf-masthead__brand -->
 
-  <div class="pf-masthead__utilities">
+  <div class="pf-masthead__utilities hidden-xs-down">
     <!-- use nav component -->
     <ul class="nav nav-inline">
       <li class="nav-item pf-utilities__item">
