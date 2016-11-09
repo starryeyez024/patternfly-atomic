@@ -1,0 +1,9 @@
+<div class="dropdown {{ dropdownState }} {{#if pullright}}pull-right{{/if}}" aria-labelledby="{{ dropdownAriaLabelledby }}">
+  <button type="button" class="btn {{ btnClass }} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ dropdownText }}
+  </button>
+  <div class="dropdown-menu {{#if pullright}}dropdown-menu-right{{/if}}">
+    {{#each dropdownList}}
+    <a class="dropdown-item" href="#">{{this}}</a> {{/each}}
+  </div>
+</div>

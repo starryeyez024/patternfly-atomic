@@ -1,0 +1,6 @@
+<button class="btn {{ btnClass }}" aria-labelledby="{{ btnAriaLabelledby }}">
+ {{#if @partial-block}}
+   {{> @partial-block }}
+ {{/if}}
+ {{ btnText }}
+</button>
