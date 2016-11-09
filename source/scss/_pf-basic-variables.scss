@@ -162,7 +162,7 @@ $enable-shadows:            true;
 // You can add more entries to the $spacers map, should you need more variation.
 
 $spacer:   1rem;
-$pf-spacer-xxxs:   ($spacer * .25);   // ~3px
+$pf-spacer-xxxs:   ($spacer * .35);   // ~3px
 $pf-spacer-xxs:    ($spacer * .5);    // 7px
 $pf-spacer-xs:     ($spacer * .75);   // ~10px
 $pf-spacer-sm:     $spacer;           // 14px
@@ -289,13 +289,17 @@ $table-bg-active:               $table-bg-hover;
 $table-border-color:            $color-pf-black-300;
 
 
+$input-padding-x:                $pf-spacer-xs;
+$input-padding-y:                $pf-spacer-xxxs;
+// $input-line-height:              1.25 !default;
+
 
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-// $btn-padding-x:                  .7rem !default;
-// $btn-padding-y:                  .3rem !default;
+ $btn-padding-x:                  $pf-spacer-xs;
+ $btn-padding-y:                  $pf-spacer-xxxs;
 // $btn-line-height:                1.25 !default;
 $btn-font-weight:                normal !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($color-pf-white, .15), $pf-box-shadow;

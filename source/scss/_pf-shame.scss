@@ -7,3 +7,31 @@
 .form-inline .form-group .dropdown {
   display: inline-block;
 }
+
+.pf-alt-background {
+  background: $color-pf-black-150;
+  width: 100%; // Why do we need this?! stupid patternlab
+  padding-top: ($grid-gutter-width-base / 2);
+  .pf-card {
+    margin-bottom: $pf-spacer-xl;
+  }
+}
+
+.pf-toolbar {
+  padding-top: $pf-spacer-xxs;
+  padding-bottom: $pf-spacer-xxs;
+  border-bottom: 1px solid $color-pf-black-300;
+}
+
+.pf-toolbar {
+  .pficon, .fa{
+  font-size: 1.3em;
+  color: $color-pf-black-900;
+  }
+  .tag{
+    .pficon, .fa{
+      font-size: 1em;
+      color: $color-pf-white;
+    }
+  }
+}

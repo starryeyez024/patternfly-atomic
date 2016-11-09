@@ -1,4 +1,5 @@
 ---
+el: .pf-view-selector
 title: View Control
 ---
 ## Overview
