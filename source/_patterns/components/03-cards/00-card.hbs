@@ -1,20 +1,36 @@
 
-<div class="card pf-card {{#if textCenter}}text-xs-center{{/if}} {{#if cardAccent}}pf-card--accented{{/if}}">
+<div class="card pf-card {{#if textCenter}}text-xs-center{{/if}} {{#if cardAccent}}pf-card--accented{{/if}} {{#if multiselect}}pf-card--multiselect pf-card--select{{/if}} {{#if singleselect}}pf-card--select{{/if}} {{#if selected}}pf-card--select--active{{/if}}">
 {{#if cardHeader}}
-  <div class="card-header">
-    {{#if cardHeaderDropdown}}
-      {{> basics-dropdown dropdownText="Dropdown" pullright=true }}
+  <div class="card-header pf-card__header {{#if multiselect}}pf-card--multiselect__header{{/if}}">
+    {{#if multiselect}}
+      <label class="pf-card__checkbox">
+        <input type="checkbox" {{#if selected}}checked{{/if}}>
+      </label>
     {{/if}}
-    <{{cardTitleSize}} class="card-title">{{{cardTitle}}}</{{cardTitleSize}}>
+    {{#if cardKebab}}
+      {{> basics-dropdown isKebab=true pullright=true }}
+    {{/if}}
+    {{#if cardHeaderDropdown}}
+      {{> basics-dropdown dropdownState="pf-card__header__dropdown" dropdownText="Dropdown" pullright=true }}
+    {{/if}}
+    <{{cardTitleSize}} class="card-title pf-card__header__title">{{{cardTitle}}}</{{cardTitleSize}}>
   </div>
   <div class="card-block">
 {{else}}
-  <div class="card-block">
+  <div class="card-block {{#if multiselect}}pf-card--multiselect__block{{/if}}">
+    {{#if multiselect}}
+      <label class="pf-card__checkbox">
+        <input type="checkbox" {{#if selected}}checked{{/if}}>
+      </label>
+    {{/if}}
     {{#if cardTitleIconLarge}}
-        {{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--lg mb-pf-lg" }}
+        {{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--lg mb-pf-md" }}
     {{/if}}
     {{#if cardTitleIconMedium}}
         {{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--md mb-pf-md" }}
+    {{/if}}
+    {{#if cardKebab}}
+      {{> basics-dropdown isKebab=true pullright=true }}
     {{/if}}
     <{{cardTitleSize}} class="card-title">{{{cardTitle}}}</{{cardTitleSize}}>
 {{/if}}
@@ -25,7 +41,7 @@
 {{/if}}
   </div>
 {{#if cardFooter}}
-  <div class="card-footer text-muted">
+  <div class="card-footer pf-card__footer text-muted">
     {{#if cardFooterDropdown}}
       {{> basics-dropdown dropdownText="Dropdown" pullright=true }}
     {{/if}}

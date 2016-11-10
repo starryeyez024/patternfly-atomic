@@ -2,7 +2,7 @@
 // Base styles
 //
 
-.card {
+.pf-card {
   @include box-shadow($pf-box-shadow);
 }
 
@@ -15,15 +15,81 @@
   border: none;
 
   .card-header{
-    background: $pf-card-cap-bg;
+    background: $pf-card-cap-bg; // -?- should I change the variable value or specify a different variable here if the background should be white?
     border-bottom-color: $pf-card-border-color;
   }
 
   .card-footer{
     background: $pf-card-footer-bg;
-    border-top-color: $pf-card-border-color
+    border-top-color: $pf-card-border-color;
   }
+}
+
+.pf-card__header {
+  padding: $pf-spacer-lg;
+}
+.pf-card__header__title {
+  margin: 0;
+}
+.pf-card__header__dropdown {
+  margin: -$pf-spacer-xxs 0;
+}
+.pf-card__block {
+  padding: $pf-spacer-lg;
+}
+.pf-card__footer p {
+  margin: $pf-spacer-xxxs 0;
 }
 .pf-card--accented {
   border-top: 2px solid $color-pf-blue-300;
 }
+.pf-card--select {
+  border: 2px solid transparent;
+  background-clip: content-box;
+  // .pf-card__header {
+  //   margin: 0 -1px ;
+  //   border-left: 1px solid transparent;
+  //   border-right: 1px solid transparent;
+  //   background-clip: padding-box;
+  // }
+}
+.pf-card--select--active {
+  border-color: $pf-card-border-color-active;
+}
+.pf-card--multiselect__block,
+.pf-card--multiselect__header {
+  padding-left: $pf-spacer-xxl;
+  padding-right: $pf-spacer-xxl;
+}
+.pf-card__checkbox {
+  width: $pf-spacer-xxl;
+  height: $pf-spacer-xxxxl;
+  text-align: center;
+  .pf-card--multiselect__block & {
+    padding-top:$pf-spacer-sm;
+  }
+  .pf-card--multiselect__header & {
+    padding-top:$pf-spacer-md;
+  }
+}
+.pf-card__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  input[type=checkbox] {
+    //visibility: hidden; is not keyboard accessible and should be replaced with something that keeps the checkbox "visible" in the dom but not rendered on the screen
+    // using z-index to push the checkbox behind the card until it has keyboard focus, or the user hovers over the card
+    z-index:-1;
+    position: relative;
+    .pf-card--select:hover &,
+    &:focus,
+    &:checked {
+      z-index: auto;
+    }
+  }
+}
+
+// delete me
+// .pf-alt-background {
+//   background: $color-pf-black-300;
+// }

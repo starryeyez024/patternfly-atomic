@@ -404,13 +404,14 @@ $breadcrumb-divider:            "»";
 // Cards
 // $card-spacer-x:            1.25rem !default;
 // $card-spacer-y:            .75rem !default;
-$card-border-width:        1px;
-$card-border-color:        $color-pf-black-300;
-$card-cap-bg:              $color-pf-black-150;
+$card-border-width:           1px;
+$card-border-color:           $color-pf-black-300;
+$card-cap-bg:                 $color-pf-black-150;
 
-$pf-card-border-color:     $color-pf-black-300;
-$pf-card-cap-bg:           $color-pf-white;
-$pf-card-footer-bg:        $color-pf-black-100;
+$pf-card-border-color:        $color-pf-black-300;
+$pf-card-cap-bg:              $color-pf-white;
+$pf-card-footer-bg:           $color-pf-black-100;
+$pf-card-border-color-active: $color-pf-blue-300;
 
 
 //$card-bg:                  $color-pf-white;
