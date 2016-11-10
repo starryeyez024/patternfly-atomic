@@ -6126,7 +6126,7 @@ tbody.collapse.in {
       display: inline-block;
       width: 100%; } }
 
-.card {
+.pf-card {
   box-shadow: 0 0.1em 0.2em rgba(3, 3, 3, 0.1); }
 
 .pf-card {
@@ -6138,8 +6138,54 @@ tbody.collapse.in {
     background: #fafafa;
     border-top-color: #d1d1d1; }
 
+.pf-card__header {
+  padding: 1.5rem; }
+
+.pf-card__header__title {
+  margin: 0; }
+
+.pf-card__header__dropdown {
+  margin: -0.5rem 0; }
+
+.pf-card__block {
+  padding: 1.5rem; }
+
+.pf-card__footer p {
+  margin: 0.25rem 0; }
+
 .pf-card--accented {
   border-top: 2px solid #39a5dc; }
+
+.pf-card--select {
+  border: 2px solid transparent;
+  background-clip: content-box; }
+
+.pf-card--select--active {
+  border-color: #39a5dc; }
+
+.pf-card--multiselect__block,
+.pf-card--multiselect__header {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.pf-card__checkbox {
+  width: 2rem;
+  height: 3rem;
+  text-align: center; }
+  .pf-card--multiselect__block .pf-card__checkbox {
+    padding-top: 1rem; }
+  .pf-card--multiselect__header .pf-card__checkbox {
+    padding-top: 1.25rem; }
+
+.pf-card__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .pf-card__checkbox input[type=checkbox] {
+    z-index: -1;
+    position: relative; }
+    .pf-card--select:hover .pf-card__checkbox input[type=checkbox], .pf-card__checkbox input[type=checkbox]:focus, .pf-card__checkbox input[type=checkbox]:checked {
+      z-index: auto; }
 
 .breadcrumb {
   padding: 0.75rem 0rem;
