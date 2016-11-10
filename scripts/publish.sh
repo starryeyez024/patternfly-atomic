@@ -134,15 +134,11 @@ deploySite () {
 }
 
 manualDeploy () {
-  shift
-  echoHeader "Manual deploy of ${REPO_NAME}/${SOURCE_BRANCH}:${SITE_FOLDER} to gh-pages"
   checkSiteFolderExists
   deploySite
 }
 
 travisDeploy () {
-  shift
-  echo "Travis deploy"
   checkSiteFolderExists
   checkRepoSlug "patternfly/patternfly-atomic" "master"
   setUserInfo
@@ -177,14 +173,14 @@ EEOOFF
 }
 
 SCRIPT=`basename $0`
-ACTION="manual"
+ACTION="Manual"
 REPO_NAME="origin"
 SOURCE_BRANCH=`git rev-parse --abbrev-ref HEAD`
 
 while getopts htr:b: OPT "$@"; do
   case $OPT in
     h) usage; exit 0;;
-    t) ACTION="travis";;
+    t) ACTION="Travis";;
     r) REPO_NAME=$OPTARG;;
     b) SOURCE_BRANCH=$OPTARG;;
   esac
@@ -200,10 +196,12 @@ if [ -z $SITE_FOLDER ]; then
   exit -1
 fi
 
+echoHeader "${ACTION} deploy of ${REPO_NAME}/${SOURCE_BRANCH}:${SITE_FOLDER} to gh-pages"
+
 case $ACTION in
-  manual)
+  Manual)
     manualDeploy "$@"
   ;;
-  travis)
+  Travis)
     travisDeploy
 esac
