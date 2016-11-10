@@ -6284,9 +6284,6 @@ h5 .tag,
 h6 .tag {
   font-size: 0.75em; }
 
-.tag__a {
-  color: #fff; }
-
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -6741,27 +6738,6 @@ button.close {
   border: 0;
   -webkit-appearance: none; }
 
-.pf-toolbar {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 15px;
-  padding-left: 15px; }
-
-.pf-toolbar__group {
-  align-items: baseline;
-  display: inline-flex; }
-
-.pf-toolbar__group__item {
-  display: inline-block;
-  padding: 0 0.75rem; }
-
-.pf-toolbar__subgroup__item {
-  display: inline-block;
-  padding: 0 0.75rem; }
-
-.pf-toolbar__group__item + .pf-toolbar__group__item {
-  border-left: 1px solid #292e34; }
-
 .pf-view-selector__btn-link {
   color: #292e34;
   font-size: 1em;
@@ -6775,11 +6751,8 @@ button.close {
 
 /*!
  * Patternfly Shame
- * The nest for all our shameful code.
+ * The nest fot all our shamefull code.
  */
-.form-inline .form-group .dropdown {
-  display: inline-block; }
-
 .modal-open {
   overflow: hidden; }
 
