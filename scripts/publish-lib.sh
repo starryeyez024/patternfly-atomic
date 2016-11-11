@@ -135,7 +135,7 @@ splitSite () {
 }
 
 deploySite () {
-  if [ "$SOURCE_BRANCH" = "gh-pages" || "$SOURCE_BRANCH" = "gh-pages-deploy"]; then
+  if [ "$SOURCE_BRANCH" = "gh-pages" -o "$SOURCE_BRANCH" = "gh-pages-deploy" ]; then
     echo -e "${RED}Error: cannot deploy from the gh-pages branch.  Please checkout a different branch."
   fi
 
@@ -158,12 +158,10 @@ deploySite () {
 }
 
 manualDeploy () {
-  checkSiteFolderExists
   deploySite
 }
 
 travisDeploy () {
-  checkSiteFolderExists
   checkRepoSlug "patternfly/patternfly-atomic" "master"
   setUserInfo
   getDeployKey
@@ -171,8 +169,47 @@ travisDeploy () {
 }
 
 checkSiteFolderExists () {
-  if [ ! -d ${SITE_FOLDER} ]; then
-    echo -e "${RED}The '${SITE_FOLDER}' folder does not exsit.  Run the build script to generate it.${NC}"
+  if [ -z $SITE_FOLDER ]; then
+    echo -e "${RED}Error: Please specify a folder to publish.${NC}"
+    usage
     exit -1
   fi
+
+  if [ ! -d ${SITE_FOLDER} ]; then
+    echo -e "${RED}Error: The '${SITE_FOLDER}' folder does not exsit.  Run the build script to generate it.${NC}"
+    exit -1
+  fi
+}
+
+parseOpts() {
+  while getopts htr:b: OPT "$@"; do
+    case $OPT in
+      h) usage; exit 0;;
+      t) ACTION="Travis";;
+      r) REPO_NAME=$OPTARG;;
+      b) SOURCE_BRANCH=$OPTARG;;
+    esac
+  done
+
+  shift $((OPTIND-1))
+  SITE_FOLDER="${1:- }"
+}
+
+usage()
+{
+cat <<- EEOOFF
+
+    This script will publish files to the gh-pages branch of your repo.
+
+    $SCRIPT [option] folder
+
+    Example: $SCRIPT
+
+    OPTIONS:
+    h       Display this message
+    t       Perform a deploy from travis, using a travis encrypted key
+    r       Repository name to publish to (deafult: origin)
+    b       Source branch to publish from (default: master)
+
+EEOOFF
 }
