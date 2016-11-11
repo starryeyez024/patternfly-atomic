@@ -14,6 +14,21 @@ echoHeader () {
   echo -e "${YELLOW}################################################################################${NC}"
 }
 
+confirm () {
+    # call with a prompt string or use a default
+    QUESTION="${1:-Are you sure? [y/N]} "
+    echo -e -n $QUESTION
+    read -r RESPONSE
+    case $RESPONSE in
+      [yY][eE][sS]|[yY])
+        true
+        ;;
+      *)
+        false
+        ;;
+    esac
+}
+
 setUserInfo () {
   git config --global user.name "patternfly-build"
   git config --global user.email "patternfly-build@redhat.com"
@@ -52,6 +67,11 @@ inferRepo () {
   REPO=`git config remote.${REPO_NAME}.url`
   SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
   echo "Inferred REPO ${SSH_REPO}"
+}
+
+confirmRepo () {
+  confirm "${YELLOW}Push ${SITE_FOLDER} to repo ${SSH_REPO}/gh-pages? [y/N] ${NC}"
+  return $?
 }
 
 checkRemoteBranchExists () {
@@ -95,8 +115,11 @@ pushSite () {
   else
     echo -e "${YELLOW}Changes in site directory, committing changes.${NC}"
     git -C github.io commit -q -a -m "Added files from commit #${SHA} "
-    echo -e "${GREEN}Pushing commit ${SHA} to repo ${SSH_REPO}.${NC}"
-    git -C github.io push $SSH_REPO gh-pages:gh-pages
+    echo -e "Pushing commit ${SHA} to repo ${SSH_REPO}."
+    confirmRepo && rc=$? || rc=$?
+    if [ "$rc" = 0 ]; then
+      git -C github.io push $SSH_REPO gh-pages:gh-pages
+    fi
   fi
 }
 
@@ -106,8 +129,11 @@ splitSite () {
   git commit -q -m "Added ${SITE_FOLDER} folder"
 
   SHA=`git subtree split --prefix ${SITE_FOLDER} ${SOURCE_BRANCH}`
-  echo -e "${GREEN}Pushing commit ${SHA} to repo ${SSH_REPO}.${NC}"
-  git push ${SSH_REPO} ${SHA}:refs/heads/gh-pages --force
+  echo -e "Pushing commit ${SHA} to repo ${SSH_REPO}."
+  confirmRepo && rc=$? || rc=$?
+  if [ "$rc" = 0 ]; then
+   git push ${SSH_REPO} ${SHA}:refs/heads/gh-pages --force
+  fi
 }
 
 deploySite () {
