@@ -2,15 +2,6 @@
 // Base styles
 //
 
-// .pf-card {
-//   @include box-shadow($pf-box-shadow);
-// }
-
-// Although .pf-card is a modifier of bootstrap .card, I am treating it as a
-// block element. The nesting classes are to keep the code DRY and overwrite
-// bootstrap defaults.
-//
-
 .pf-card::after {
   @include box-shadow($pf-box-shadow);
   position: absolute;
@@ -19,7 +10,13 @@
   right: 0;
   left: 0;
   content: "";
+  pointer-events: none;
 }
+
+// Although .pf-card is a modifier of bootstrap .card, I am treating it as a
+// block element. The nesting classes are to keep the code DRY and overwrite
+// bootstrap defaults.
+//
 
 .pf-card {
   border: none;

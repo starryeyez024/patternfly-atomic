@@ -32,7 +32,10 @@
     {{#if cardKebab}}
       {{> basics-dropdown isKebab=true dropdownState="pf-card__kebab" pullright=true }}
     {{/if}}
-    <{{cardTitleSize}} class="card-title">{{{cardTitle}}}</{{cardTitleSize}}>
+    {{#if noTitle}}
+    {{else}}
+      <{{cardTitleSize}} class="card-title">{{{cardTitle}}}</{{cardTitleSize}}>
+    {{/if}}  
 {{/if}}
 {{#if @partial-block}}
   {{> @partial-block}}
