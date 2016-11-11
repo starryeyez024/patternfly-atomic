@@ -139,7 +139,7 @@ splitSite () {
   git add -f ${SITE_FOLDER}
   git commit -q -m "Added ${SITE_FOLDER} folder"
 
-  SHA=`git subtree split --prefix ${SITE_FOLDER} ${SOURCE_BRANCH}`
+  SHA=`git subtree split --prefix ${SITE_FOLDER} gh-pages-deploy`
   echo -e "Pushing commit ${SHA} to repo ${SSH_REPO}."
   confirmRepo && rc=$? || rc=$?
   if [ "$rc" = 0 ]; then
