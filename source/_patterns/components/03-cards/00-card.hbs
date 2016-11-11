@@ -8,29 +8,29 @@
       </label>
     {{/if}}
     {{#if cardKebab}}
-      {{> basics-dropdown isKebab=true pullright=true }}
+      {{> basics-dropdown isKebab=true dropdownState="pf-card__kebab" pullright=true }}
     {{/if}}
     {{#if cardHeaderDropdown}}
       {{> basics-dropdown dropdownState="pf-card__header__dropdown" dropdownText="Dropdown" pullright=true }}
     {{/if}}
     <{{cardTitleSize}} class="card-title pf-card__header__title">{{{cardTitle}}}</{{cardTitleSize}}>
   </div>
-  <div class="card-block">
+  <div class="card-block pf-card__block">
 {{else}}
-  <div class="card-block {{#if multiselect}}pf-card--multiselect__block{{/if}}">
+  <div class="card-block pf-card__block {{#if multiselect}}pf-card--multiselect__block{{/if}}">
     {{#if multiselect}}
       <label class="pf-card__checkbox">
         <input type="checkbox" {{#if selected}}checked{{/if}}>
       </label>
     {{/if}}
     {{#if cardTitleIconLarge}}
-        {{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--lg mb-pf-md" }}
+        <div class="pf-card__top-element">{{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--lg" }}</div>
     {{/if}}
     {{#if cardTitleIconMedium}}
-        {{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--md mb-pf-md" }}
+        <div class="pf-card__top-element">{{> basics-icon iconFamily="pficon" iconName="pficon-middleware" iconModifier="pf-icon--circle pf-icon--md" }}</div>
     {{/if}}
     {{#if cardKebab}}
-      {{> basics-dropdown isKebab=true pullright=true }}
+      {{> basics-dropdown isKebab=true dropdownState="pf-card__kebab" pullright=true }}
     {{/if}}
     <{{cardTitleSize}} class="card-title">{{{cardTitle}}}</{{cardTitleSize}}>
 {{/if}}

@@ -2,20 +2,30 @@
 // Base styles
 //
 
-.pf-card {
-  @include box-shadow($pf-box-shadow);
-}
+// .pf-card {
+//   @include box-shadow($pf-box-shadow);
+// }
 
 // Although .pf-card is a modifier of bootstrap .card, I am treating it as a
 // block element. The nesting classes are to keep the code DRY and overwrite
 // bootstrap defaults.
 //
 
+.pf-card::after {
+  @include box-shadow($pf-box-shadow);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+}
+
 .pf-card {
   border: none;
 
   .card-header{
-    background: $pf-card-cap-bg; // -?- should I change the variable value or specify a different variable here if the background should be white?
+    background: $pf-card-cap-bg;
     border-bottom-color: $pf-card-border-color;
   }
 
@@ -24,9 +34,19 @@
     border-top-color: $pf-card-border-color;
   }
 }
-
-.pf-card__header {
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pf-card__block,
+.pf-card__header  {
   padding: $pf-spacer-lg;
+}
+.pf-card__footer  {
+  padding: $pf-spacer-sm $pf-spacer-lg;
+}
+.pf-card__footer p {
+  margin: $pf-spacer-xxxs 0;
 }
 .pf-card__header__title {
   margin: 0;
@@ -34,11 +54,11 @@
 .pf-card__header__dropdown {
   margin: -$pf-spacer-xxs 0;
 }
-.pf-card__block {
-  padding: $pf-spacer-lg;
+.pf-card__kebab {
+  margin: -$pf-spacer-xxs;
 }
-.pf-card__footer p {
-  margin: $pf-spacer-xxxs 0;
+.pf-card__top-element {
+  margin-bottom: $pf-spacer-md;
 }
 .pf-card--accented {
   border-top: 2px solid $color-pf-blue-300;
@@ -46,12 +66,9 @@
 .pf-card--select {
   border: 2px solid transparent;
   background-clip: content-box;
-  // .pf-card__header {
-  //   margin: 0 -1px ;
-  //   border-left: 1px solid transparent;
-  //   border-right: 1px solid transparent;
-  //   background-clip: padding-box;
-  // }
+  &:hover::after {
+    @include box-shadow($pf-box-shadow-md);
+  }
 }
 .pf-card--select--active {
   border-color: $pf-card-border-color-active;
@@ -65,20 +82,14 @@
   width: $pf-spacer-xxl;
   height: $pf-spacer-xxxxl;
   text-align: center;
-  .pf-card--multiselect__block & {
-    padding-top:$pf-spacer-sm;
-  }
-  .pf-card--multiselect__header & {
-    padding-top:$pf-spacer-md;
-  }
-}
-.pf-card__checkbox {
+  padding-top:$pf-spacer-md;
   position: absolute;
   top: 0;
   left: 0;
   input[type=checkbox] {
     //visibility: hidden; is not keyboard accessible and should be replaced with something that keeps the checkbox "visible" in the dom but not rendered on the screen
     // using z-index to push the checkbox behind the card until it has keyboard focus, or the user hovers over the card
+    // -!!!- still need to include css that always renders the checkbox for small screens (i.e. mobile devices)
     z-index:-1;
     position: relative;
     .pf-card--select:hover &,
@@ -89,7 +100,7 @@
   }
 }
 
-// delete me
-// .pf-alt-background {
-//   background: $color-pf-black-300;
-// }
+// DELETE ME - included for testing cards on background color
+.pf-alt-background {
+  background-color: #f5f5f5;
+}

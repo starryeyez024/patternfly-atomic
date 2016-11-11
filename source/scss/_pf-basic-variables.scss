@@ -25,7 +25,9 @@
 // PatternFly box shadows
 // TODO: See what kind of shadows we need and define standards
 $pf-box-shadow: 0 .1em .2em rgba($color-pf-black-1000, 0.1);
-
+$pf-box-shadow-md: 0 .1em .3em rgba($color-pf-black-1000, 0.3);
+// 0 1px 1px rgba(3,3,3,.175);
+// (0 1px 6px fade(@color-pf-black, 35%)
 $pf-box-shadow-inset-sm: inset 0 .3em .3em rgba($color-pf-black-1000, 0.2);
 $pf-box-shadow-inset-md: inset 0 .3em .6em rgba($color-pf-black-1000, 0.2);
 $pf-box-shadow-inset-lg: inset 0 .3em .9em rgba($color-pf-black-1000, 0.2);
