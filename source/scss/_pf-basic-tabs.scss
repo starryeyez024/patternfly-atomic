@@ -1,0 +1,53 @@
+//
+// Tabs
+//
+
+.nav-link {
+    color: $pf-tabs-color;
+}
+
+.nav-tabs .nav-link {
+  padding: $pf-spacer-xxxs $pf-spacer-sm; // override bootstrap's spacing
+}
+
+// override bootstrap to make the tabs butt next to each other
+.nav-tabs .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+// this adjusts the top of the dropdown to visually connect with the tab
+.nav-tabs .dropdown-menu {
+  margin-top: 0;
+  border-top: 0;
+}
+
+/////
+// $nav-tabs-active-link-hover-border-color
+// $nav-tabs-active-link-hover-bg
+// $nav-tabs-active-link-hover-color
+// $nav-tabs-border-width
+
+// Secondary tabs
+ .pf-nav-tabs .nav-link {
+   border-width: 0 0 $nav-tabs-border-width*2 0;
+   border-color: transparent;
+   font-size: $font-size-relative-sm;
+   margin: $pf-spacer-xs $pf-spacer-sm 0; // remove padding and add margin so that the underline is only beneath the text
+   padding: 0;
+
+   @include hover-focus-active {
+     border-color: $nav-tabs-active-link-hover-border-color;
+   }
+
+   &.active {
+     border-color: $nav-tabs-active-link-hover-color;
+    @include hover-focus-active {
+      border-color: $nav-tabs-active-link-hover-color;
+    }
+
+   }
+ }
+ .pf-nav-tabs .dropdown-menu {
+   margin-left: $pf-spacer-sm;
+   margin-top: -$nav-tabs-border-width;
+ }
