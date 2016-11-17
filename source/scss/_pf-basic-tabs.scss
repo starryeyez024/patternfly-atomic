@@ -10,7 +10,6 @@
 }
 
 .nav-tabs {
-
   // overrides bootstrap's spacing
   .nav-link {
     padding: $pf-spacer-xxxs $pf-spacer-sm;
@@ -26,13 +25,8 @@
   }
 }
 
-// Secondary tabs
+// Patternfly-style tabs
 .pf-nav-tabs {
-  .nav-tabs + & {
-    .nav-link {
-      font-size: $font-size-relative-sm;
-    }
-  }
   .nav-link {
     border-width: 0 0 $nav-tabs-border-width*2 0;
     border-color: transparent;
@@ -50,9 +44,18 @@
       }
     }
   }
-
   .dropdown-menu {
-    margin-left: $pf-spacer-sm;
     margin-top: -$nav-tabs-border-width;
   }
+
+// if Patternfly-style tabs are used as a secondary menu to another .nav-tabs
+  .nav-tabs + & {
+    .nav-link {
+      font-size: $font-size-relative-sm;
+    }
+    .dropdown-menu {
+      margin-left: $pf-spacer-sm;
+    }
+  }
+
 }
