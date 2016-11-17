@@ -65,9 +65,9 @@
   &:hover::after {
     @include box-shadow($pf-box-shadow-md);
   }
-}
-.pf-card--select--active {
-  border-color: $pf-card-border-color-active;
+  .active {
+    border-color: $pf-card-border-color-active;
+  }
 }
 .pf-card--multiselect {
   .card-block,

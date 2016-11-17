@@ -6170,9 +6170,8 @@ tbody.collapse.in {
   background-clip: content-box; }
   .pf-card--select:hover::after {
     box-shadow: 0 0.1em 0.3em rgba(3, 3, 3, 0.3); }
-
-.pf-card--select--active {
-  border-color: #39a5dc; }
+  .pf-card--select .active {
+    border-color: #39a5dc; }
 
 .pf-card--multiselect .card-block,
 .pf-card--multiselect .card-header {
