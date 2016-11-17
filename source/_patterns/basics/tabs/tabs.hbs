@@ -4,9 +4,9 @@ dropdownActive - shows the dropdown tab menu open if true
 secondaryLevel - adds a secondary level menu
 secondaryDropdown - adds a dropdown tab to the secondary menu
 secondaryDropdownActive - shows the dropdown open if true
- --}}
+--}}
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs {{#if pfTabsAsPrimary }}pf-nav-tabs{{/if }}">
   <li role="presentation" class="nav-item"><a href="#" class="nav-link {{#unless dropdownActive }}active{{/unless }}">Tab One</a></li>
   <li role="presentation" class="nav-item"><a href="#" class="nav-link">Tab Two</a></li>
   <li role="presentation" class="nav-item"><a href="#" class="nav-link">Tab Three</a></li>
@@ -14,24 +14,24 @@ secondaryDropdownActive - shows the dropdown open if true
   <li role="presentation" class="nav-item"><a href="#" class="nav-link">Tab Five</a></li>
 
   {{#if dropdown }}
-    <li role="presentation" class="nav-item dropdown {{#if dropdownActive }}open{{/if }}">
-      <a class="nav-link dropdown-toggle active"
-        role="button"
-        aria-haspopup="true"
-        aria-expanded="true"
-        data-toggle="dropdown"
-        href="#">
-        Dropdown
-      </a>
-      <div class="dropdown-menu" role="menu">
-        <a class="dropdown-item">Action</a></a>
-        <a class="dropdown-item">Another action</a></a>
-        <a class="dropdown-item">Something else here</a></a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item">Separated link</a></a>
-      </div>
-    </li>
-  {{/if }}
+  <li role="presentation" class="nav-item dropdown {{#if dropdownActive }}open{{/if }}">
+    <a class="nav-link dropdown-toggle active"
+    role="button"
+    aria-haspopup="true"
+    aria-expanded="true"
+    data-toggle="dropdown"
+    href="#">
+    Dropdown
+  </a>
+  <div class="dropdown-menu" role="menu">
+    <a class="dropdown-item">Action</a></a>
+    <a class="dropdown-item">Another action</a></a>
+    <a class="dropdown-item">Something else here</a></a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a></a>
+  </div>
+</li>
+{{/if }}
 
 </ul>
 {{#if secondaryLevel }}
@@ -42,24 +42,24 @@ secondaryDropdownActive - shows the dropdown open if true
   <li role="presentation" class="nav-item"><a href="#" class="nav-link disabled">Secondary Disabled</a></li>
   <li role="presentation" class="nav-item"><a href="#" class="nav-link">Secondary Tab Five</a></li>
   {{#if secondaryDropdown }}
-    <li role="presentation" class="nav-item dropdown {{#if secondaryDropdownActive }}open{{/if }}">
-      <a class="nav-link dropdown-toggle {{#if secondaryDropdownActive}} active {{/if }}"
-        role="button"
-        aria-haspopup="true"
-        aria-expanded="true"
-        data-toggle="dropdown"
-        href="#">
-        Secondary Menu Dropdown
-      </a>
-      <div class="dropdown-menu" role="menu">
-        <a class="dropdown-item">Action</a></a>
-        <a class="dropdown-item">Another action</a></a>
-        <a class="dropdown-item">Something else here</a></a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item">Separated link</a></a>
-      </div>
-    </li>
-  {{/if }}
+  <li role="presentation" class="nav-item dropdown {{#if secondaryDropdownActive }}open{{/if }}">
+    <a class="nav-link dropdown-toggle {{#if secondaryDropdownActive}} active {{/if }}"
+    role="button"
+    aria-haspopup="true"
+    aria-expanded="true"
+    data-toggle="dropdown"
+    href="#">
+    Secondary Menu Dropdown
+  </a>
+  <div class="dropdown-menu" role="menu">
+    <a class="dropdown-item">Action</a></a>
+    <a class="dropdown-item">Another action</a></a>
+    <a class="dropdown-item">Something else here</a></a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a></a>
+  </div>
+</li>
+{{/if }}
 
 </ul>
 {{/if }}
