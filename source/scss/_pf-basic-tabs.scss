@@ -15,8 +15,10 @@
     padding: $pf-spacer-xxxs $pf-spacer-sm;
   }
   // overrides bootstrap to make the tabs butt next to each other
-  .nav-item + .nav-item {
-    margin-left: 0;
+  .nav-item {
+    + .nav-item {
+      margin-left: 0;
+    }
   }
   // adjusts the top of the dropdown to visually connect with the tab
   .dropdown-menu {
@@ -57,5 +59,4 @@
       margin-left: $pf-spacer-sm;
     }
   }
-
 }
