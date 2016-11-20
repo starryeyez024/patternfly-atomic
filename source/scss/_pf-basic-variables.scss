@@ -134,6 +134,17 @@ $brand-danger:              $color-pf-red-100;
 $pf-bg-hover-color: $color-pf-blue-50;
 $pf-border-hover-color: $color-pf-blue-200;
 
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $brand-primary;
+// $link-decoration:       none !default;
+// $link-hover-color:      darken($link-color, 15%) !default;
+// $link-hover-decoration: underline !default;
+
+
 // Font weight
 //
 
@@ -491,3 +502,19 @@ $state-danger-border:            $brand-danger;
 $alert-padding-x:             $spacer;
 $alert-link-font-weight:      normal;
 $pf-alert-icon-font-size:     $icon-size-sm;
+
+
+// Tabs
+//
+// Define tab colors, etc.
+
+$nav-tabs-border-color:                       $color-pf-black-200;
+// $nav-tabs-border-width:                       $border-width !default;
+// $nav-tabs-border-radius:                      $border-radius !default;
+$nav-tabs-link-hover-border-color:            $color-pf-black-200;
+$nav-tabs-active-link-hover-color:            $link-color;
+// $nav-tabs-active-link-hover-bg:               $body-bg !default;
+// $nav-tabs-active-link-hover-border-color:     #ddd !default;
+// $nav-tabs-justified-link-border-color:        $nav-tabs-border-color;
+// $nav-tabs-justified-active-link-border-color: $body-bg !default;
+$pf-tabs-color:                               $color-pf-black-700;
