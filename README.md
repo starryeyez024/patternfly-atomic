@@ -1,15 +1,69 @@
-# Pattern Lab Node - Gulp Edition
+# PatternFly 4 CSS
 
+**PatternFly 4** is the best open source modular design system you'll ever use to build enterprise web applications.
+
+Think of PatternFly as a "skinned" version of [Bootstrap v4](http://v4-alpha.getbootstrap.com/) with additional components and customizations.
+
+This repository is javascript agnostic, you'll find only find CSS here.
+
+## Table of contents
+
+* Quick start
+* Bugs and feature requests
+* Documentation
+* Contributing
+* Community
+* Versioning
+* Creators
+* Copyright and license
+
+<!-- If you wish to contribute to PatternFly, please follow the instructions under "Contributing to PatternFly". -->
+
+## Quick start
+
+How to use patternfly with code snippet, with a codepen link
+
+## Motivation
+
+A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+
+* Does this project solve my problem?
+* If so, how?
+
+## Documentation
+
+PatternFly CSS docs uses Pattern Lab.
+
+## Installation
+
+Add this section when we have a /dist
+
+## API doc
+
+How does our API works with link to docs
+
+## Test
+
+How to run a test
+
+## Licensing and Contributors
+
+How to contribute, how to build a dev envioremnt and what should you know about modularity.
+
+## Pattern Lab
+
+PatternFly follows a modified version of [atomic design]. We brake down our UI elements into **basics** and **components**:
+
+  * **Basics** are UI elements that can't be broken down.
+  * **Components** are UI simple or complex UI elements built with basics or other components.
+
+With those components we form **templates**.
+
+To achieve this implementation PatternFly uses Pattern Lab
+
+
+## Pattern Lab Node - Gulp Edition
 The Gulp wrapper around [Pattern Lab Node Core](https://github.com/pattern-lab/patternlab-node) providing tasks to interact with the core library and move supporting frontend assets.
-
-## Packaged Components
-
-The Gulp Edition comes with the following components:
-
-* `patternlab-node`: [GitHub](https://github.com/pattern-lab/patternlab-node), [npm](https://www.npmjs.com/package/patternlab-node)
-* `patternengine-node-mustache`: [GitHub](https://github.com/pattern-lab/patternengine-node-mustache), [npm](https://www.npmjs.com/package/patternengine-node-mustache)
-* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default)
-* `pattern-lab/styleguidekit-mustache-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-mustache-default)
 
 ## Prerequisites
 
@@ -17,48 +71,49 @@ The Pattern Lab Node - Gulp Edition uses [Node](https://nodejs.org) for core pro
 
 ## Installing
 
-`npm` is a dependency management and package system which can pull in all of the Gulp Edition's dependencies for you. To accomplish this:
+`npm` is a dependency management and package system which can pull in all of the Gulp Edition's dependencies for you. To accomplish this run the following:
 
-* run the following
-
-    ```
-    npm install
-    ```
+```
+npm install
+```
 
 Running `npm install` from a directory containing a `package.json` file will download all dependencies defined within.
 
 ## Getting Started
 
-The Pattern Lab Node - Gulp Edition ships with a [base experience](https://github.com/pattern-lab/starterkit-mustache-base) which serves as clean place to start from scratch with Pattern Lab. But if you want to get rolling with a starterkit of your own, or use the [demo starterkit](https://github.com/pattern-lab/starterkit-mustache-demo) like the one on [demo.patternlab.io](http://demo.patternlab.io), you can do so automatically at time of `npm install` by adding your starterkit to the `package.json` file.
 
-You can also [work with starterkits using the command line](https://github.com/pattern-lab/patternlab-node/wiki/Importing-Starterkits).
+## Updating?
 
-## Updating Pattern Lab
-
-To update Pattern Lab please refer to each component's GitHub repository, and the [master instructions for core](https://github.com/pattern-lab/patternlab-node/wiki/Upgrading). The components are listed at the top of the README.
+upgrade notes
 
 ## Helpful Commands
 
 These are some helpful commands you can use on the command line for working with Pattern Lab.
 
-> Reminder: These commands assume a global installation of gulp 4.X, instead of a local installation. Depending on your preference, you may need to [upgrade your global version of gulp](https://github.com/pattern-lab/edition-node-gulp/wiki/Updating-to-Gulp-4) or [run with local gulp](https://github.com/pattern-lab/patternlab-node/wiki/Running-with-Local-Gulp-Instead-of-Global-Gulp).
-
 ### List all of the available commands
 
 To list all available commands type:
 
-    npm run gulp patternlab:help
+```
+npm run gulp patternlab:help
+```
 
 ### Generate Pattern Lab
 
 To generate the front-end for Pattern Lab type:
 
-    npm run gulp patternlab:build
+```
+npm run gulp patternlab:build
+```
 
 ### Watch for changes and re-generate Pattern Lab
 
 To watch for changes, re-generate the front-end, and server it via a BrowserSync server,  type:
 
-    npm run gulp patternlab:serve
+```
+npm run gulp patternlab:serve
+```
 
 BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
+
+Supported by the Red Hat UXD Team :heart:
