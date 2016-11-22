@@ -3,9 +3,6 @@
  * Patternfly
 */
 /*!
- * Patternfly Core
- */
-/*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
@@ -5633,9 +5630,6 @@ tbody.collapse.in {
   margin-top: 0;
   border-top: 0; }
 
-.nav-tabs + .pf-nav-tabs .nav-link {
-  font-size: 0.875em; }
-
 .pf-nav-tabs .nav-link {
   border-width: 0 0 2px 0;
   border-color: transparent;
@@ -5649,8 +5643,13 @@ tbody.collapse.in {
       border-color: #0088ce; }
 
 .pf-nav-tabs .dropdown-menu {
-  margin-left: 1rem;
   margin-top: -1px; }
+
+.nav-tabs + .pf-nav-tabs .nav-link {
+  font-size: 0.875em; }
+
+.nav-tabs + .pf-nav-tabs .dropdown-menu {
+  margin-left: 1rem; }
 
 .navbar {
   position: relative;
