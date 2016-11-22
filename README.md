@@ -4,9 +4,81 @@
 
 Think of PatternFly as a "skinned" version of [Bootstrap v4](http://v4-alpha.getbootstrap.com/) with additional components and customizations.
 
-This repository is javascript agnostic, you'll find only find CSS here.
+This repository is javascript free, you'll find only find CSS here.
 
-## Table of contents
+# Are we there yet?
+
+No, we are not there yet. PatternFly4 it's in its very early stages. It's not ready to consume but we would love to have passionate CSS contributors helping write amazing CSS.
+
+## Communication channels
+
+If you want to contact the patternFly community you can write to the [patternfly mailing list](ML) or chat with us on the [patternfly slack channel](slack).
+
+
+# Contributing to PatternFly 4
+
+PatternFly modular design system is implemented using [Pattern Lab Node - Gulp Edition](https://github.com/pattern-lab/patternlab-node).
+
+## Code guidelines
+
+Please read the coding guidelines for PatternFly 4.
+
+The guidelines are a work in progress and a live document, if you have any suggestion please [contact the PatternFly community](#communition-channels) or send a PR.
+
+
+## Prerequisites
+
+The Pattern Lab Node - Gulp Edition uses [Node](https://nodejs.org) for core processing, [npm](https://www.npmjs.com/) to manage project dependencies, and [gulp.js](http://gulpjs.com/) to run tasks and interface with the core library. Node version 4 or higher suffices.
+
+You can follow the directions for [installing Node](https://nodejs.org/en/download/) on the Node website if you haven't done so already.
+Installation of Node will include npm.
+
+## Installing
+
+`npm` is a dependency management and package system which can pull in all of the Gulp Edition's dependencies for you. To accomplish this run the following:
+
+```
+npm install
+```
+
+Running `npm install` from a directory containing a `package.json` file will download all dependencies defined within.
+
+## Helpful Commands
+
+These are some helpful commands you can use on the command line for working with Pattern Lab.
+
+### List all of the available commands
+
+To list all available commands type:
+
+```
+npm run gulp patternlab:help
+```
+
+### Generate Pattern Lab
+
+To generate the front-end for Pattern Lab type:
+
+```
+npm run gulp patternlab:build
+```
+
+### Watch for changes and re-generate Pattern Lab
+
+To watch for changes, re-generate the front-end, and server it via a BrowserSync server,  type:
+
+```
+npm run gulp patternlab:serve
+```
+
+BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
+
+___
+
+Built with :heart: by the [PattrnFly Community](community page) and supported by the [Red Hat UXD Team](site).
+
+
+<!-- ## Table of contents
 
 * Quick start
 * Bugs and feature requests
@@ -17,7 +89,6 @@ This repository is javascript agnostic, you'll find only find CSS here.
 * Creators
 * Copyright and license
 
-<!-- If you wish to contribute to PatternFly, please follow the instructions under "Contributing to PatternFly". -->
 
 ## Quick start
 
@@ -116,4 +187,4 @@ npm run gulp patternlab:serve
 
 BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Supported by the Red Hat UXD Team :heart:
+ -->
