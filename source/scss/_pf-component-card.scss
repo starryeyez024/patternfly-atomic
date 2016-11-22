@@ -51,7 +51,7 @@
   border: 2px solid transparent;
   background-clip: content-box;
   &:hover::after { @include box-shadow($pf-box-shadow-md); }
-  .active { border-color: $pf-card-border-color-active; }
+  &.active { border-color: $pf-card-border-color-active; }
 }
 .pf-card--multiselect {
   .card-block,
