@@ -1,7 +1,9 @@
 //
 // Base styles
 //
-
+.card {
+  @include box-shadow($pf-box-shadow);
+}
 // Although .pf-card is a modifier of bootstrap .card, I am treating it as a
 // block element. The nesting classes are to keep the code DRY and overwrite
 // bootstrap defaults.
@@ -9,29 +11,21 @@
 
 .pf-card {
   border: none;
-
+  box-shadow: none;
   .card-header{
     background: $pf-card-cap-bg;
     border-bottom-color: $pf-card-border-color;
     padding: $pf-spacer-lg;
-    .card-title {
-      margin: 0;
-    }
-    .dropdown {
-      margin: -$pf-spacer-xxs 0;
-    }
+    .card-title { margin: 0; }
+    .dropdown { margin: -$pf-spacer-xxs 0; }
   }
   .card-footer{
     background: $pf-card-footer-bg;
     border-top-color: $pf-card-border-color;
     padding: $pf-spacer-sm $pf-spacer-lg;
-    p {
-      margin: $pf-spacer-xxxs 0;
-    }
+    p { margin: $pf-spacer-xxxs 0; }
   }
-  .card-block {
-    padding: $pf-spacer-lg;
-  }
+  .card-block { padding: $pf-spacer-lg; }
   .card-title {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -39,9 +33,7 @@
   // .dropdown {
   //   margin: -$pf-spacer-xxs 0;
   // }
-  .dropdown.pf-dropdown__kebab {
-    margin: -$pf-spacer-xxs;
-  }
+  .dropdown.pf-dropdown--kebab { margin: -$pf-spacer-xxs; }
   &::after {
     @include box-shadow($pf-box-shadow);
     position: absolute;
@@ -53,21 +45,13 @@
     pointer-events: none; // needed to avoid interfering with clicking on contents in the card.
   }
 }
-.pf-card__top-element {
-  margin-bottom: $pf-spacer-md;
-}
-.pf-card--accented {
-  border-top: 2px solid $color-pf-blue-300;
-}
+.pf-card__top-element { margin-bottom: $pf-spacer-md; }
+.pf-card--accented { border-top: 2px solid $color-pf-blue-300; }
 .pf-card--select {
   border: 2px solid transparent;
   background-clip: content-box;
-  &:hover::after {
-    @include box-shadow($pf-box-shadow-md);
-  }
-  .active {
-    border-color: $pf-card-border-color-active;
-  }
+  &:hover::after { @include box-shadow($pf-box-shadow-md); }
+  .active { border-color: $pf-card-border-color-active; }
 }
 .pf-card--multiselect {
   .card-block,
@@ -91,16 +75,14 @@
       // visibility: hidden; is not keyboard accessible therefore it's being
       // replaced with z-index which keeps the checkbox "visible" in the dom
       // z-index: -1 results in the checkbox being pushed behind the card and
-      // therefore not visible on the screen
+      // therefore not visible on the screen;
       // then on hover over the card, or focus or selection in the checkbox,
       // z-index: auto displays the checkbox on top of the card
       z-index:-1;
       position: relative;
       .pf-card--select:hover &,
       &:focus,
-      &:checked {
-        z-index: auto;
-      }
+      &:checked { z-index: auto; }
     }
   }
 }

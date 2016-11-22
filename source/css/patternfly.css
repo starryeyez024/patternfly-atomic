@@ -5633,9 +5633,6 @@ tbody.collapse.in {
   margin-top: 0;
   border-top: 0; }
 
-.nav-tabs + .pf-nav-tabs .nav-link {
-  font-size: 0.875em; }
-
 .pf-nav-tabs .nav-link {
   border-width: 0 0 2px 0;
   border-color: transparent;
@@ -5649,8 +5646,13 @@ tbody.collapse.in {
       border-color: #0088ce; }
 
 .pf-nav-tabs .dropdown-menu {
-  margin-left: 1rem;
   margin-top: -1px; }
+
+.nav-tabs + .pf-nav-tabs .nav-link {
+  font-size: 0.875em; }
+
+.nav-tabs + .pf-nav-tabs .dropdown-menu {
+  margin-left: 1rem; }
 
 .navbar {
   position: relative;
@@ -6126,8 +6128,12 @@ tbody.collapse.in {
       display: inline-block;
       width: 100%; } }
 
+.card {
+  box-shadow: 0 0.1em 0.2em rgba(3, 3, 3, 0.1); }
+
 .pf-card {
-  border: none; }
+  border: none;
+  box-shadow: none; }
   .pf-card .card-header {
     background: #fff;
     border-bottom-color: #d1d1d1;
@@ -6147,7 +6153,7 @@ tbody.collapse.in {
   .pf-card .card-title {
     overflow: hidden;
     text-overflow: ellipsis; }
-  .pf-card .dropdown.pf-dropdown__kebab {
+  .pf-card .dropdown.pf-dropdown--kebab {
     margin: -0.5rem; }
   .pf-card::after {
     box-shadow: 0 0.1em 0.2em rgba(3, 3, 3, 0.1);

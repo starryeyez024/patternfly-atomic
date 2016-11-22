@@ -11,5 +11,4 @@ Patternfly design specs are at [http://www.patternfly.org/pattern-library/widget
 
 | Class | Usage |
 | -- | -- |
-| `.dropdown-toggle` **Applied to:** `.btn` |  **Outcome:** Displays the down arrow  **Required:** Yes  |
-| `.pull-right` **Applied to:** `.dropdown` |  **Outcome:** Floats the dropdown to the right of the siblings that follow it.  **Required:** No  |
+| `.dropdown-toggle` **Applied to:** `.btn` |  **Outcome:** Displays the down arrow  **Required:** If dropdown is rendered as a button with text (e.g. it is not a kebab).  |
