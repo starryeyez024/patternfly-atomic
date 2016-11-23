@@ -13,6 +13,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+//
+// PatternFly Buttons
+// --------------------------------------------------
+
 .btn-primary {
   @include pf-button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-start-bg, $btn-primary-end-bg, $btn-primary-border);
 }

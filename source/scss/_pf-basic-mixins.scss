@@ -13,8 +13,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// PatternFly Button variants
 //
+// PatternFly Mixins
+// --------------------------------------------------
+
+// PatternFly Button variants
 // PatternFly btn adds variables for gradients.
 
 @mixin pf-button-variant($color, $background, $background-start, $background-end, $border) {
