@@ -1,4 +1,4 @@
-# PatternFly Code Guidelines
+# PatternFly 4 HTML/CSS Code Guidelines
 
 Please enforce these guidelines at all times. Small or large, call out what's incorrect.
 
