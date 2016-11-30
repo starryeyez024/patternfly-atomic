@@ -145,7 +145,7 @@ For example:
 
 
 ```sass
-// Bad 
+// Bad
 .selector, .selector-secondary, .selector[type=text] {
   padding:15px;
   margin:0px 0px 15px;
@@ -303,10 +303,10 @@ Be sure to write in complete sentences for larger comments and succinct phrases 
 
 Follow this comment structure:
 
-1- License header
-1- DocBlock
-1- Sections
-1- Line
+1. License header
+1. DocBlock
+1. Sections
+1. Line
 
 
 ```sass
@@ -495,28 +495,11 @@ Avoid Sass nesting, but if you must do it follow the [inception rule](http://the
 
 Limit nesting to the following use cases:
 
-1. Modifiers of a style block
 1. Media queries
 1. Parent selectors
 1. States, pseudo-classes and pseudo-elements
 1. Overwrite Bootstrap
 
-#### 1. Style block modifiers
-
-If the rule is only a few lines long, the modifier can be nested inside the parent like so:
-
-```sass
-.pf-alert {
-    border: 1px solid gray;
-    color: gray;
-
-    // Error Alert
-    &--error {
-        border-color: red;
-        color: red;
-    }
-}
-```
 
 For longer style blocks don't nest the modifier code as it reduced the legibility of the code.
 
@@ -530,7 +513,7 @@ Component-specific media queries should be nested inside the component block. Us
 ```sass
 .pf-nav {
   ...
-  
+
   // Styles for small view ports and up
   @include media-breakpoint-up(sm) { ... }
 }
@@ -543,7 +526,7 @@ Make use of [Sass’s parent selector](https://css-tricks.com/the-sass-ampersand
 ```sass
 .pf-primary-nav {
   ...
-  
+
   // Nav appearing in header: Right-align navigation when it appears in the header
   .pf-header & {
     margin-left: auto;
@@ -573,10 +556,10 @@ Keep PatterFly code DRY. Reuse as much as you can from Bootstrap.
 
 **To overwrite Bootstrap:**
 
+- Create a new `pf-` block element to live beside the Bootstrap block instead of a modifier.
 - Be precise and accurate, introduce as little modifications as possible to achieve the design.
 - Base your styles on the original bootstrap scss file.
-- Bootstrap uses a modified version of BEM: `{{block}}-{{element}}-{{modifier}}`. 
-- Create a new `pf-` block element to live beside the Bootstrap block instead of a modifier.
+- Bootstrap uses a modified version of BEM: `{{block}}-{{element}}-{{modifier}}`.
 
 ```sass
 // PatterFly card block
