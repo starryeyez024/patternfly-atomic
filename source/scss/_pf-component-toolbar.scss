@@ -9,14 +9,24 @@
 
 .pf-toolbar__group {
   display: flex;
-  background-color: lightBlue;
+  background-color: red;
 }
 
+
 .pf-toolbar__group-item {
+  display: flex;
   padding-right: $pf-spacer-xs;
   padding-left: $pf-spacer-xs;
   background-color: lightGreen;
+  // > * {
+  //   margin-left: $pf-spacer-xs;
+  //   margin-right: $pf-spacer-xs;
+  // }
+  // .btn-link {
+  //   margin: 0;
+  // }
 }
+
 
 .pf-toolbar__group-item--delimited {
   border-left: 1px solid $color-pf-red-500;
