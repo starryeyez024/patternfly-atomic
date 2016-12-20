@@ -148,10 +148,10 @@ $link-color:            $brand-primary;
 
 // Font weight
 //
-
-$pf-font-weight-bold:   600;
-$pf-font-weight-normal: 400;
-$pf-font-weight-light:  200;
+$pf-font-weight-light:      400;
+$pf-font-weight-regular:    500;
+$pf-font-weight-semi-bold:  600;
+$pf-font-weight-bold:       700;
 
 // Options
 //
@@ -261,11 +261,15 @@ $font-family-sans-serif: “Overpass”, Overpass, “Open Sans”, Helvetica, s
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 14px;
 
-$font-size-h1: 2rem; // ~24px
-$font-size-h2: 1.8333rem; // ~22px
-$font-size-h3: 1.3333rem; // ~16px
-$font-size-h4: 1.2rem;
-$font-size-h5: 1.0833rem; // ~13px
+$font-size-h1: 2rem !default; // 28px
+$font-size-h2: 1.714285rem !default; // ~24px
+$font-size-h3: 9.428571rem !default; // ~20px
+$font-size-h4: 1.142857rem !default; // ~16px
+$font-size-h5: 1rem !default; // ~14px
+$font-size-h6: $small-font-size !default; // ~12px
+
+// small font size
+$small-font-size: 0.857142rem; // ~12px;
 
 // Use relative font sizes when font size should vary with the parent
 $font-size-relative-base: 1em !default;
@@ -280,13 +284,6 @@ $headings-font-weight: $pf-font-weight-bold;
 $icon-size-lg: 3.3rem;
 $icon-size-md: 1.75rem;
 $icon-size-sm: 1.5rem;
-
-
-// Overwrites default border radius
-//
-// $border-radius: 1px;
-// $border-radius-lg: $border-radius;
-// $border-radius-sm: $border-radius;
 
 // Tables
 //
