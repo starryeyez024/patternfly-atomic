@@ -41,6 +41,7 @@ limitations under the License.
 // PatternFly box shadows
 // TODO: See what kind of shadows we need and define standards
 $pf-box-shadow: 0 .1em .2em rgba($color-pf-black-1000, 0.1);
+$pf-box-shadow-md: 0 .1em .3em rgba($color-pf-black-1000, 0.3);
 
 $pf-box-shadow-inset-sm: inset 0 .3em .3em rgba($color-pf-black-1000, 0.2);
 $pf-box-shadow-inset-md: inset 0 .3em .6em rgba($color-pf-black-1000, 0.2);
@@ -420,13 +421,14 @@ $breadcrumb-divider:            "»";
 // Cards
 // $card-spacer-x:            1.25rem !default;
 // $card-spacer-y:            .75rem !default;
-$card-border-width:        1px;
-$card-border-color:        $color-pf-black-300;
-$card-cap-bg:              $color-pf-black-150;
+$card-border-width:           1px;
+$card-border-color:           $color-pf-black-300;
+$card-cap-bg:                 $color-pf-black-150;
 
-$pf-card-border-color:     $color-pf-black-300;
-$pf-card-cap-bg:           $color-pf-white;
-$pf-card-footer-bg:        $color-pf-black-100;
+$pf-card-border-color:        $color-pf-black-300;
+$pf-card-cap-bg:              $color-pf-white;
+$pf-card-footer-bg:           $color-pf-black-100;
+$pf-card-border-color-active: $color-pf-blue-300;
 
 
 //$card-bg:                  $color-pf-white;
