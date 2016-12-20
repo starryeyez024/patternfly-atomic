@@ -4,7 +4,7 @@ Please enforce these guidelines at all times. Small or large, call out what's in
 
 > Every line of code should appear to be written by a single person, no matter the number of contributors.
 
-This set of rules generate some constraints and conventions. If you ran into instances where a convention isn’t obvious or a solution could be handled in a few different ways, contact the PatterFly community and have a conversation about how to handle it and update this guidelines when needed.
+This set of rules generate some constraints and conventions. If you ran into instances where a convention isn’t obvious or a solution could be handled in a few different ways, contact the PatternFly community and have a conversation about how to handle it and update this guidelines when needed.
 
 
 ## Table of content (WIP)
@@ -26,13 +26,13 @@ This set of rules generate some constraints and conventions. If you ran into ins
   - [Sass](#sass)
   - [Credits and references](#credits-and-references)
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 # HTML
 
 **Practicality over purity**. Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Syntax
 
@@ -45,7 +45,6 @@ This set of rules generate some constraints and conventions. If you ran into ins
 - Lowercase tag name.
 - Lowercase attribute name.
 - Use HTML5 elements where appropriate, e.g., `article`, `aside`, `figure`, `figcaption`, `header`, `footer`, `main`, `nav`, `section`.
-- Avoid HTML comments.
 
 ```html
 <!DOCTYPE html>
@@ -61,7 +60,7 @@ This set of rules generate some constraints and conventions. If you ran into ins
 </html>
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Attribute order
 
@@ -85,7 +84,7 @@ HTML attributes should come in this particular order for easier reading of code.
 <img src="..." alt="...">
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Reducing markup
 
@@ -101,7 +100,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Take the
 <img class="avatar" src="...">
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 # CSS
 
@@ -123,7 +122,7 @@ For example:
 }
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Syntax
 
@@ -164,7 +163,7 @@ For example:
 }
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Declaration order
 
@@ -213,7 +212,7 @@ For a complete list of properties and their order, please see [Field CSS Manuals
 }
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Prefixed properties
 
@@ -234,7 +233,7 @@ PatternFly uses [Autoprefixer](https://github.com/postcss/autoprefixer) to deal 
 }
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Single declarations
 
@@ -259,7 +258,7 @@ To improve error detection in instances where a rule set includes only one decla
 .icon--account   { background-position: 0 -40px; }
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Shorthand notation
 
@@ -293,7 +292,7 @@ Strive to limit use of shorthand declarations to instances where you must explic
 
 The Mozilla Developer Network has a great article on [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) for those unfamiliar with notation and behaviour.
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Comment and Organization
 
@@ -363,7 +362,7 @@ The Section comment is a section divider or describes a block of code.
 Describes a specific line of code.
 
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Naming Selectors
 
@@ -391,7 +390,7 @@ Create names with useful or specific meaning via a mechanism that will not inhib
 
 ### Namespace
 
-To avoid conflicts PatterFly prefixes all classes with “pf-”. This also helps differentiates PatternFly and Bootstrap class names.
+To avoid conflicts PatternFly prefixes all classes with “pf-”. This also helps differentiates PatternFly and Bootstrap class names.
 
 ```sass
 // Bad
@@ -470,7 +469,7 @@ Example:
 
 
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 ## Specificity
 
@@ -552,7 +551,7 @@ States of a component should be included as a nested element. This includes hove
 
 #### 5. Overwrite Bootstrap
 
-Keep PatterFly code DRY. Reuse as much as you can from Bootstrap.
+Keep PatternFly code DRY. Reuse as much as you can from Bootstrap.
 
 **To overwrite Bootstrap:**
 
@@ -562,7 +561,7 @@ Keep PatterFly code DRY. Reuse as much as you can from Bootstrap.
 - Bootstrap uses a modified version of BEM: `{{block}}-{{element}}-{{modifier}}`.
 
 ```sass
-// PatterFly card block
+// PatternFly card block
 .pf-card {
   border: none;
 
@@ -579,7 +578,7 @@ Keep PatterFly code DRY. Reuse as much as you can from Bootstrap.
   }
 }
 
-// PatterFly card modifier
+// PatternFly card modifier
 .pf-card--accented {
   border-top: 2px solid $color-pf-blue-300;
 }    
@@ -596,7 +595,7 @@ Never use `!important` to raise the specificity of a rule. In well architected C
 }
 ```
 
-<!-- ============================================================================================== -->
+<!-- ============================================================ -->
 
 
 ## Sass
