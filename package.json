@@ -28,6 +28,7 @@
   "scripts": {
     "postinstall": "node scripts/postinstall.js",
     "gulp": "gulp -- ",
+    "publish": "publish-ghpages.sh",
     "publish-travis": "publish-ghpages.sh -t public"
   },
   "license": "MIT",
