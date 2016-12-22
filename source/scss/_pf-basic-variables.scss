@@ -271,8 +271,8 @@ $border-width: 1px;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: “Overpass”, Overpass, “Open Sans”, Helvetica, sans-serif;
-$font-family-monospace:  “Overpass Mono”, Overpass Mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif: “overpass”, Overpass, “Open Sans”, Helvetica, sans-serif;
+$font-family-monospace:  “overpass-mono”, Overpass-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
@@ -285,6 +285,14 @@ $font-size-h4: 1.142857rem !default; // ~16px
 $font-size-h5: 1rem !default; // ~14px
 $font-size-h6: 0.857142rem !default; // ~12px
 
+$line-height-base: 1.66666667 !default;
+
+// Removes spaces from headers. Use utility classes when necessary.
+// $headings-margin-bottom: 0 !default;
+// $headings-line-height:   1 !default;
+$headings-font-weight: $pf-font-weight-light !default;
+
+
 // small font size
 // $small-font-size: 0.857142rem; // ~12px;
 
@@ -294,9 +302,6 @@ $font-size-relative-lg:   1.25em !default;
 $font-size-relative-sm:   .875em !default;
 $font-size-relative-xs:   .75em !default;
 
-$line-height-base: 1.66666667;
-
-$headings-font-weight: $pf-font-weight-light;
 
 $icon-size-lg: 3.3rem;
 $icon-size-md: 1.75rem;
@@ -325,10 +330,10 @@ $table-border-color:            $color-pf-black-300;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-// $btn-padding-x:                  .7rem !default;
-// $btn-padding-y:                  .3rem !default;
-// $btn-line-height:                1.25 !default;
-$btn-font-weight:                normal !default;
+$btn-padding-x:                  $pf-spacer-md !default;
+$btn-padding-y:                  $pf-spacer-xs !default;
+$btn-line-height:                1 !default;
+$btn-font-weight:                $pf-font-weight-regular !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($color-pf-white, .15), $pf-box-shadow;
 $btn-active-box-shadow:          $pf-box-shadow-inset-lg;
 
@@ -359,19 +364,16 @@ $btn-danger-border:              $color-pf-red-300;
 
 $btn-link-disabled-color:        $gray-light !default;
 
-// $btn-padding-x-sm:               .5rem !default;
-// $btn-padding-y-sm:               .25rem !default;
+$btn-padding-x-sm:               $btn-padding-x !default;
+$btn-padding-y-sm:               $btn-padding-y !default;
 
-// $btn-padding-x-lg:               1.5rem !default;
-// $btn-padding-y-lg:               .75rem !default;
+$btn-padding-x-lg:               $btn-padding-x !default;
+$btn-padding-y-lg:               $btn-padding-y !default;
 
-// $btn-block-spacing-y:            .5rem !default;
-// $btn-toolbar-margin:             .5rem !default;
+$btn-block-spacing-y:            .5rem !default;
+$btn-toolbar-margin:             .5rem !default;
 
-// Allows for customizing button radius independently from global border radius
-// $btn-border-radius:              $border-radius;
-// $btn-border-radius-lg:           $border-radius-lg;
-// $btn-border-radius-sm:           $border-radius-sm;
+
 
 // Dropdowns
 //
@@ -434,9 +436,7 @@ $pf-card-border-color-active: $color-pf-blue-300;
 //$card-link-hover-color:    #fff !default;
 
 $card-img-overlay-padding: 1.25rem !default;
-
 $card-deck-margin:         .625rem !default;
-
 $card-columns-sm-up-column-gap: 1.25rem !default;
 
 
