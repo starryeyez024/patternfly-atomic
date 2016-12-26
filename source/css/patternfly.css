@@ -4329,12 +4329,12 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-size: 1.25rem; }
+  font-size: 1.14286rem; }
 
 .col-form-label-sm {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: 0.875rem; }
+  font-size: 0.85rem; }
 
 .col-form-legend {
   padding-top: 0.5rem;
@@ -4360,23 +4360,23 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem; }
+  font-size: 0.85rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: 1.8125rem; }
+  height: 1.775rem; }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem; }
+  font-size: 1.14286rem; }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: 3.16667rem; }
+  height: 3.02381rem; }
 
 .form-group {
   margin-bottom: 1rem; }
@@ -4532,7 +4532,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.75rem 1.25rem;
+  padding: 0.7rem 1.25rem;
   font-size: 1rem; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -4958,12 +4958,12 @@ fieldset[disabled] a.btn {
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.75rem 1.25rem;
-  font-size: 1.25rem; }
+  padding: 0.7rem 1.25rem;
+  font-size: 1.14286rem; }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem; }
+  padding: 0.7rem 1.25rem;
+  font-size: 0.85rem; }
 
 .btn-block {
   display: block;
@@ -5356,7 +5356,7 @@ tbody.collapse.in {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   color: #8b8d8f;
   white-space: nowrap; }
 
@@ -5532,12 +5532,12 @@ tbody.collapse.in {
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem; }
+    font-size: 0.85rem; }
   .input-group-addon.form-control-lg,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
     padding: 0.75rem 1.5rem;
-    font-size: 1.25rem; }
+    font-size: 1.14286rem; }
   .input-group-addon input[type="radio"],
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
@@ -5837,7 +5837,7 @@ limitations under the License.
 .pf-nav-tabs .nav-link {
   border-width: 0 0 2px 0;
   border-color: transparent;
-  margin: 0.75rem 1rem 0;
+  margin: 0.7rem 1rem 0;
   padding: 0; }
   .pf-nav-tabs .nav-link:focus, .pf-nav-tabs .nav-link:active, .pf-nav-tabs .nav-link:hover {
     border-color: #ddd; }
@@ -5890,7 +5890,7 @@ limitations under the License.
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.14286rem;
   line-height: inherit; }
   .navbar-brand:focus, .navbar-brand:hover {
     text-decoration: none; }
@@ -5915,7 +5915,7 @@ limitations under the License.
   width: 2.5em;
   height: 2em;
   padding: 0.5rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1.14286rem;
   line-height: 1;
   background: transparent no-repeat center center;
   background-size: 24px 24px;
@@ -6465,7 +6465,7 @@ limitations under the License.
 .page-link {
   position: relative;
   float: left;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.7rem;
   margin-left: -1px;
   color: #4d5258;
   text-decoration: none;
@@ -6477,12 +6477,12 @@ limitations under the License.
     border-color: #bbb; }
 
 .pagination-lg .page-link {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem; }
+  padding: 0.7rem 1.5rem;
+  font-size: 1.14286rem; }
 
 .pagination-sm .page-link {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.875rem; }
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem; }
 
 /*
 Copyright 2016 Red Hat, Inc
@@ -6534,12 +6534,12 @@ limitations under the License.
     border-color: #bbb; }
 
 .pagination-lg .page-link {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem; }
+  padding: 0.7rem 1.5rem;
+  font-size: 1.14286rem; }
 
 .pagination-sm .page-link {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.875rem; }
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem; }
 
 .tag {
   display: inline-block;
@@ -7241,7 +7241,7 @@ limitations under the License.
   white-space: normal;
   word-break: normal;
   word-spacing: normal;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   word-wrap: break-word;
   opacity: 0; }
   .tooltip.in {
@@ -7322,7 +7322,7 @@ limitations under the License.
   white-space: normal;
   word-break: normal;
   word-spacing: normal;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -8044,27 +8044,27 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   margin-bottom: 0.5rem !important; }
 
 .m-pf-xs {
-  margin: 0.75rem 0.75rem !important; }
+  margin: 0.7rem 0.7rem !important; }
 
 .mt-pf-xs {
-  margin-top: 0.75rem !important; }
+  margin-top: 0.7rem !important; }
 
 .mr-pf-xs {
-  margin-right: 0.75rem !important; }
+  margin-right: 0.7rem !important; }
 
 .mb-pf-xs {
-  margin-bottom: 0.75rem !important; }
+  margin-bottom: 0.7rem !important; }
 
 .ml-pf-xs {
-  margin-left: 0.75rem !important; }
+  margin-left: 0.7rem !important; }
 
 .mx-pf-xs {
-  margin-right: 0.75rem !important;
-  margin-left: 0.75rem !important; }
+  margin-right: 0.7rem !important;
+  margin-left: 0.7rem !important; }
 
 .my-pf-xs {
-  margin-top: 0.75rem !important;
-  margin-bottom: 0.75rem !important; }
+  margin-top: 0.7rem !important;
+  margin-bottom: 0.7rem !important; }
 
 .m-pf-sm {
   margin: 1rem 1rem !important; }
@@ -8366,27 +8366,27 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   padding-bottom: 0.5rem !important; }
 
 .p-pf-xs {
-  padding: 0.75rem 0.75rem !important; }
+  padding: 0.7rem 0.7rem !important; }
 
 .pt-pf-xs {
-  padding-top: 0.75rem !important; }
+  padding-top: 0.7rem !important; }
 
 .pr-pf-xs {
-  padding-right: 0.75rem !important; }
+  padding-right: 0.7rem !important; }
 
 .pb-pf-xs {
-  padding-bottom: 0.75rem !important; }
+  padding-bottom: 0.7rem !important; }
 
 .pl-pf-xs {
-  padding-left: 0.75rem !important; }
+  padding-left: 0.7rem !important; }
 
 .px-pf-xs {
-  padding-right: 0.75rem !important;
-  padding-left: 0.75rem !important; }
+  padding-right: 0.7rem !important;
+  padding-left: 0.7rem !important; }
 
 .py-pf-xs {
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important; }
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important; }
 
 .p-pf-sm {
   padding: 1rem 1rem !important; }
