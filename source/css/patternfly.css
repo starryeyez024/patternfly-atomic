@@ -4532,7 +4532,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.7rem 1.25rem;
+  padding: 0.7rem 1.21rem;
   font-size: 1rem; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -4958,11 +4958,11 @@ fieldset[disabled] a.btn {
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.7rem 1.25rem;
+  padding: 0.7rem 1.21rem;
   font-size: 1.14286rem; }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.7rem 1.25rem;
+  padding: 0.7rem 1.21rem;
   font-size: 0.85rem; }
 
 .btn-block {
@@ -5436,18 +5436,18 @@ tbody.collapse.in {
   outline: 0; }
 
 .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 0.9075rem;
+  padding-left: 0.9075rem; }
   .btn + .dropdown-toggle-split::after {
     margin-left: 0; }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 0.9075rem;
+  padding-left: 0.9075rem; }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 0.9075rem;
+  padding-left: 0.9075rem; }
 
 .btn-group.open .dropdown-toggle {
   box-shadow: inset 0 0.3em 0.9em rgba(3, 3, 3, 0.2); }
@@ -5820,12 +5820,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 .nav-link {
+  font-size: 1.14286rem;
   color: #4d5258; }
   .nav-link:focus, .nav-link:active, .nav-link:hover {
     color: #4d5258; }
 
 .nav-tabs .nav-link {
-  padding: 0.25rem 1rem; }
+  padding: 1.21rem 1.5rem;
+  line-height: 1; }
 
 .nav-tabs .nav-item + .nav-item {
   margin-left: 0; }
@@ -5850,7 +5852,8 @@ limitations under the License.
   margin-top: -1px; }
 
 .nav-tabs + .pf-nav-tabs .nav-link {
-  font-size: 0.875em; }
+  font-size: 1rem;
+  padding-bottom: 0.25rem; }
 
 .nav-tabs + .pf-nav-tabs .dropdown-menu {
   margin-left: 1rem; }
@@ -6381,7 +6384,7 @@ limitations under the License.
     pointer-events: none; }
 
 .pf-card__top-element {
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.21rem; }
 
 .pf-card--accented {
   border-top: 2px solid #39a5dc; }
@@ -6403,7 +6406,7 @@ limitations under the License.
   width: 2rem;
   height: 3rem;
   text-align: center;
-  padding-top: 1.25rem;
+  padding-top: 1.21rem;
   position: absolute;
   top: 0;
   left: 0; }
@@ -8090,27 +8093,27 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   margin-bottom: 1rem !important; }
 
 .m-pf-md {
-  margin: 1.25rem 1.25rem !important; }
+  margin: 1.21rem 1.21rem !important; }
 
 .mt-pf-md {
-  margin-top: 1.25rem !important; }
+  margin-top: 1.21rem !important; }
 
 .mr-pf-md {
-  margin-right: 1.25rem !important; }
+  margin-right: 1.21rem !important; }
 
 .mb-pf-md {
-  margin-bottom: 1.25rem !important; }
+  margin-bottom: 1.21rem !important; }
 
 .ml-pf-md {
-  margin-left: 1.25rem !important; }
+  margin-left: 1.21rem !important; }
 
 .mx-pf-md {
-  margin-right: 1.25rem !important;
-  margin-left: 1.25rem !important; }
+  margin-right: 1.21rem !important;
+  margin-left: 1.21rem !important; }
 
 .my-pf-md {
-  margin-top: 1.25rem !important;
-  margin-bottom: 1.25rem !important; }
+  margin-top: 1.21rem !important;
+  margin-bottom: 1.21rem !important; }
 
 .m-pf-lg {
   margin: 1.5rem 1.5rem !important; }
@@ -8412,27 +8415,27 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   padding-bottom: 1rem !important; }
 
 .p-pf-md {
-  padding: 1.25rem 1.25rem !important; }
+  padding: 1.21rem 1.21rem !important; }
 
 .pt-pf-md {
-  padding-top: 1.25rem !important; }
+  padding-top: 1.21rem !important; }
 
 .pr-pf-md {
-  padding-right: 1.25rem !important; }
+  padding-right: 1.21rem !important; }
 
 .pb-pf-md {
-  padding-bottom: 1.25rem !important; }
+  padding-bottom: 1.21rem !important; }
 
 .pl-pf-md {
-  padding-left: 1.25rem !important; }
+  padding-left: 1.21rem !important; }
 
 .px-pf-md {
-  padding-right: 1.25rem !important;
-  padding-left: 1.25rem !important; }
+  padding-right: 1.21rem !important;
+  padding-left: 1.21rem !important; }
 
 .py-pf-md {
-  padding-top: 1.25rem !important;
-  padding-bottom: 1.25rem !important; }
+  padding-top: 1.21rem !important;
+  padding-bottom: 1.21rem !important; }
 
 .p-pf-lg {
   padding: 1.5rem 1.5rem !important; }

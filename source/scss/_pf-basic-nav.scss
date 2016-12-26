@@ -18,6 +18,7 @@ limitations under the License.
 // --------------------------------------------------
 
 .nav-link {
+  font-size: $font-size-lg;
   color: $pf-tabs-color;
   @include hover-focus-active {
     color: $pf-tabs-color;
@@ -27,7 +28,8 @@ limitations under the License.
 .nav-tabs {
   // overrides bootstrap's spacing
   .nav-link {
-    padding: $pf-spacer-xxxs $pf-spacer-sm;
+    padding: $pf-spacer-md $pf-spacer-lg;
+    line-height: 1;
   }
   // overrides bootstrap to make the tabs butt next to each other
   .nav-item {
@@ -68,7 +70,8 @@ limitations under the License.
 // if Patternfly-style tabs are used as a secondary menu to another .nav-tabs
   .nav-tabs + & {
     .nav-link {
-      font-size: $font-size-relative-sm;
+      font-size: $font-size-base;
+      padding-bottom: $pf-spacer-xxxs;
     }
     .dropdown-menu {
       margin-left: $pf-spacer-sm;
