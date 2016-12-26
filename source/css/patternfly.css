@@ -2405,8 +2405,8 @@ limitations under the License.
   font-weight: normal;
   font-style: normal; }
 
-[class^="pficon-"],
-[class*=" pficon-"] {
+[class^="pf-icon-"],
+[class*=" pf-icon-"] {
   display: inline-block;
   font-family: "PatternFlyIcons-webfont";
   font-style: normal;
@@ -2419,196 +2419,196 @@ limitations under the License.
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
-.pficon-middleware:before {
+.pf-icon-middleware:before {
   content: ""; }
 
-.pficon-add-circle-o:before {
+.pf-icon-add-circle-o:before {
   content: ""; }
 
-.pficon-build:before {
+.pf-icon-build:before {
   content: ""; }
 
-.pficon-builder-image:before {
+.pf-icon-builder-image:before {
   content: ""; }
 
-.pficon-bundle:before {
+.pf-icon-bundle:before {
   content: ""; }
 
-.pficon-blueprint:before {
+.pf-icon-blueprint:before {
   content: ""; }
 
-.pficon-close:before {
+.pf-icon-close:before {
   content: ""; }
 
-.pficon-cloud-security:before {
+.pf-icon-cloud-security:before {
   content: ""; }
 
-.pficon-cloud-tenant:before {
+.pf-icon-cloud-tenant:before {
   content: ""; }
 
-.pficon-cluster:before {
+.pf-icon-cluster:before {
   content: ""; }
 
-.pficon-container-node:before {
+.pf-icon-container-node:before {
   content: ""; }
 
-.pficon-cpu:before {
+.pf-icon-cpu:before {
   content: ""; }
 
-.pficon-delete:before {
+.pf-icon-delete:before {
   content: ""; }
 
-.pficon-domain:before {
+.pf-icon-domain:before {
   content: ""; }
 
-.pficon-edit:before {
+.pf-icon-edit:before {
   content: ""; }
 
-.pficon-enterprise:before {
+.pf-icon-enterprise:before {
   content: ""; }
 
-.pficon-error-circle-o:before {
+.pf-icon-error-circle-o:before {
   color: #cc0000;
   content: ""; }
 
-.pficon-export:before {
+.pf-icon-export:before {
   content: ""; }
 
-.pficon-flag:before,
-.pficon-messages:before {
+.pf-icon-flag:before,
+.pf-icon-messages:before {
   content: ""; }
 
-.pficon-flavor:before {
+.pf-icon-flavor:before {
   content: ""; }
 
-.pficon-folder-close:before {
+.pf-icon-folder-close:before {
   content: ""; }
 
-.pficon-folder-open:before {
+.pf-icon-folder-open:before {
   content: ""; }
 
-.pficon-help:before {
+.pf-icon-help:before {
   content: ""; }
 
-.pficon-history:before {
+.pf-icon-history:before {
   content: ""; }
 
-.pficon-home:before {
+.pf-icon-home:before {
   content: ""; }
 
-.pficon-image:before {
+.pf-icon-image:before {
   content: ""; }
 
-.pficon-import:before {
+.pf-icon-import:before {
   content: ""; }
 
-.pficon-info:before {
+.pf-icon-info:before {
   color: #4d5258;
   content: ""; }
 
-.pficon-memory:before {
+.pf-icon-memory:before {
   content: ""; }
 
-.pficon-network:before {
+.pf-icon-network:before {
   content: ""; }
 
-.pficon-ok:before {
+.pf-icon-ok:before {
   color: #3f9c35;
   content: ""; }
 
-.pficon-print:before {
+.pf-icon-print:before {
   content: ""; }
 
-.pficon-private:before {
+.pf-icon-private:before {
   content: ""; }
 
-.pficon-project:before {
+.pf-icon-project:before {
   content: ""; }
 
-.pficon-refresh:before,
-.pficon-restart:before {
+.pf-icon-refresh:before,
+.pf-icon-restart:before {
   content: ""; }
 
-.pficon-regions:before {
+.pf-icon-regions:before {
   content: ""; }
 
-.pficon-registry:before {
+.pf-icon-registry:before {
   content: ""; }
 
-.pficon-replicator:before {
+.pf-icon-replicator:before {
   content: ""; }
 
-.pficon-repository:before {
+.pf-icon-repository:before {
   content: ""; }
 
-.pficon-resource-pool:before {
+.pf-icon-resource-pool:before {
   content: ""; }
 
-.pficon-resources-almost-full:before {
+.pf-icon-resources-almost-full:before {
   content: ""; }
 
-.pficon-resources-full:before {
+.pf-icon-resources-full:before {
   content: ""; }
 
-.pficon-route:before {
+.pf-icon-route:before {
   content: ""; }
 
-.pficon-running:before {
+.pf-icon-running:before {
   content: ""; }
 
-.pficon-save:before {
+.pf-icon-save:before {
   content: ""; }
 
-.pficon-screen:before {
+.pf-icon-screen:before {
   content: ""; }
 
-.pficon-server:before {
+.pf-icon-server:before {
   content: ""; }
 
-.pficon-server-group:before {
+.pf-icon-server-group:before {
   content: ""; }
 
-.pficon-service:before {
+.pf-icon-service:before {
   content: ""; }
 
-.pficon-settings:before {
+.pf-icon-settings:before {
   content: ""; }
 
-.pficon-storage-domain:before {
+.pf-icon-storage-domain:before {
   content: ""; }
 
-.pficon-tenant:before {
+.pf-icon-tenant:before {
   content: ""; }
 
-.pficon-thumb-tack-o:before {
+.pf-icon-thumb-tack-o:before {
   content: ""; }
 
-.pficon-topology:before {
+.pf-icon-topology:before {
   content: ""; }
 
-.pficon-trend-down:before {
+.pf-icon-trend-down:before {
   content: ""; }
 
-.pficon-trend-up:before {
+.pf-icon-trend-up:before {
   content: ""; }
 
-.pficon-user:before {
+.pf-icon-user:before {
   content: ""; }
 
-.pficon-users:before {
+.pf-icon-users:before {
   content: ""; }
 
-.pficon-virtual-machine:before {
+.pf-icon-virtual-machine:before {
   content: ""; }
 
-.pficon-volume:before {
+.pf-icon-volume:before {
   content: ""; }
 
-.pficon-warning-triangle-o:before {
+.pf-icon-warning-triangle-o:before {
   color: #ec7a08;
   content: ""; }
 
-.pficon-zone:before {
+.pf-icon-zone:before {
   content: ""; }
 
 .pf-icon--lg {

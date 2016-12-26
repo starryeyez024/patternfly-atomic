@@ -16,5 +16,5 @@ FontAwesome has excellent [accessibility notes](http://fontawesome.io/accessibil
 
 | Class | Usage |
 | -- | -- |
-| `.pficon` **Applied to:** `<span>` |  **Outcome:** Initiates a FontAwesome icon **Required:** Yes **Remarks:** Always use it with an icon name class. |
-| `.pficon-{icon-name}` **Applied to:** `.pficon` | **Outcome:** Selects the icon **Required:** Yes |
+| `.pf-icon` **Applied to:** `<span>` |  **Outcome:** Initiates a FontAwesome icon **Required:** Yes **Remarks:** Always use it with an icon name class. |
+| `.pf-icon-{icon-name}` **Applied to:** `.pf-icon` | **Outcome:** Selects the icon **Required:** Yes |

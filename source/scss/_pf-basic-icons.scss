@@ -44,197 +44,198 @@ limitations under the License.
   -webkit-font-smoothing: antialiased;
 }
 .#{$pf-icon-prefix}-middleware:before {
-  content: $pficon-var-middleware;
+  content: $pf-icon-var-middleware;
 }
 .#{$pf-icon-prefix}-add-circle-o:before {
-  content: $pficon-var-add-circle-o;
+  content: $pf-icon-var-add-circle-o;
 }
 .#{$pf-icon-prefix}-build:before {
-  content: $pficon-var-build;
+  content: $pf-icon-var-build;
 }
 .#{$pf-icon-prefix}-builder-image:before {
-  content: $pficon-var-builder-image;
+  content: $pf-icon-var-builder-image;
 }
 .#{$pf-icon-prefix}-bundle:before {
-  content: $pficon-var-bundle;
+  content: $pf-icon-var-bundle;
 }
 .#{$pf-icon-prefix}-blueprint:before {
-  content: $pficon-var-blueprint;
+  content: $pf-icon-var-blueprint;
 }
 .#{$pf-icon-prefix}-close:before {
-  content: $pficon-var-close;
+  content: $pf-icon-var-close;
 }
 .#{$pf-icon-prefix}-cloud-security:before {
-  content: $pficon-var-cloud-security;
+  content: $pf-icon-var-cloud-security;
 }
 .#{$pf-icon-prefix}-cloud-tenant:before {
-  content: $pficon-var-cloud-tenant;
+  content: $pf-icon-var-cloud-tenant;
 }
 .#{$pf-icon-prefix}-cluster:before {
-  content: $pficon-var-cluster;
+  content: $pf-icon-var-cluster;
 }
 .#{$pf-icon-prefix}-container-node:before {
-  content: $pficon-var-container-node;
+  content: $pf-icon-var-container-node;
 }
 .#{$pf-icon-prefix}-cpu:before {
-  content: $pficon-var-cpu;
+  content: $pf-icon-var-cpu;
 }
 .#{$pf-icon-prefix}-delete:before {
-  content: $pficon-var-delete;
+  content: $pf-icon-var-delete;
 }
 .#{$pf-icon-prefix}-domain:before {
-  content: $pficon-var-domain;
+  content: $pf-icon-var-domain;
 }
 .#{$pf-icon-prefix}-edit:before {
-  content: $pficon-var-edit;
+  content: $pf-icon-var-edit;
 }
 .#{$pf-icon-prefix}-enterprise:before {
-  content: $pficon-var-enterprise;
+  content: $pf-icon-var-enterprise;
 }
 .#{$pf-icon-prefix}-error-circle-o:before {
   color: $brand-danger;
-  content: $pficon-var-error-circle-o;
+  content: $pf-icon-var-error-circle-o;
 }
 .#{$pf-icon-prefix}-export:before {
-  content: $pficon-var-export;
+  content: $pf-icon-var-export;
 }
 .#{$pf-icon-prefix}-flag:before,
 .#{$pf-icon-prefix}-messages:before { // class name deprecated
-  content: $pficon-var-flag;
+  content: $pf-icon-var-flag;
 }
 .#{$pf-icon-prefix}-flavor:before {
-  content: $pficon-var-flavor;
+  content: $pf-icon-var-flavor;
 }
 .#{$pf-icon-prefix}-folder-close:before {
-  content: $pficon-var-folder-close;
+  content: $pf-icon-var-folder-close;
 }
 .#{$pf-icon-prefix}-folder-open:before {
-  content: $pficon-var-folder-open;
+  content: $pf-icon-var-folder-open;
 }
 .#{$pf-icon-prefix}-help:before {
-  content: $pficon-var-help;
+  content: $pf-icon-var-help;
 }
 .#{$pf-icon-prefix}-history:before {
-  content: $pficon-var-history;
+  content: $pf-icon-var-history;
 }
 .#{$pf-icon-prefix}-home:before {
-  content: $pficon-var-home;
+  content: $pf-icon-var-home;
 }
 .#{$pf-icon-prefix}-image:before {
-  content: $pficon-var-image;
+  content: $pf-icon-var-image;
 }
 .#{$pf-icon-prefix}-import:before {
-  content: $pficon-var-import;
+  content: $pf-icon-var-import;
 }
 .#{$pf-icon-prefix}-info:before {
   color: $color-pf-black-700;
-  content: $pficon-var-info;
+  content: $pf-icon-var-info;
 }
 .#{$pf-icon-prefix}-memory:before {
-  content: $pficon-var-memory;
+  content: $pf-icon-var-memory;
 }
 .#{$pf-icon-prefix}-network:before {
-  content: $pficon-var-network;
+  content: $pf-icon-var-network;
 }
 .#{$pf-icon-prefix}-ok:before {
   color: $brand-success;
-  content: $pficon-var-ok;
+  content: $pf-icon-var-ok;
 }
 .#{$pf-icon-prefix}-print:before {
-  content: $pficon-var-print;
+  content: $pf-icon-var-print;
 }
 .#{$pf-icon-prefix}-private:before {
-  content: $pficon-var-private;
+  content: $pf-icon-var-private;
 }
 .#{$pf-icon-prefix}-project:before {
-  content: $pficon-var-project;
+  content: $pf-icon-var-project;
 }
 .#{$pf-icon-prefix}-refresh:before, // class name deprecated
 .#{$pf-icon-prefix}-restart:before {
-  content: $pficon-var-restart;
+  content: $pf-icon-var-restart;
 }
 .#{$pf-icon-prefix}-regions:before {
-  content: $pficon-var-regions;
+  content: $pf-icon-var-regions;
 }
 .#{$pf-icon-prefix}-registry:before {
-  content: $pficon-var-registry;
+  content: $pf-icon-var-registry;
 }
 .#{$pf-icon-prefix}-replicator:before {
-  content: $pficon-var-replicator;
+  content: $pf-icon-var-replicator;
 }
 .#{$pf-icon-prefix}-repository:before {
-  content: $pficon-var-repository;
+  content: $pf-icon-var-repository;
 }
 .#{$pf-icon-prefix}-resource-pool:before {
-  content: $pficon-var-resource-pool;
+  content: $pf-icon-var-resource-pool;
 }
 .#{$pf-icon-prefix}-resources-almost-full:before {
-  content: $pficon-var-resources-almost-full;
+  content: $pf-icon-var-resources-almost-full;
 }
 .#{$pf-icon-prefix}-resources-full:before {
-  content: $pficon-var-resources-full;
+  content: $pf-icon-var-resources-full;
 }
 .#{$pf-icon-prefix}-route:before {
-  content: $pficon-var-route;
+  content: $pf-icon-var-route;
 }
 .#{$pf-icon-prefix}-running:before {
-  content: $pficon-var-running;
+  content: $pf-icon-var-running;
 }
 .#{$pf-icon-prefix}-save:before {
-  content: $pficon-var-save;
+  content: $pf-icon-var-save;
 }
 .#{$pf-icon-prefix}-screen:before {
-  content: $pficon-var-screen;
+  content: $pf-icon-var-screen;
 }
 .#{$pf-icon-prefix}-server:before {
-  content: $pficon-var-server;
+  content: $pf-icon-var-server;
 }
 .#{$pf-icon-prefix}-server-group:before {
-  content: $pficon-var-server-group;
+  content: $pf-icon-var-server-group;
 }
 .#{$pf-icon-prefix}-service:before {
-  content: $pficon-var-service;
+  content: $pf-icon-var-service;
 }
 .#{$pf-icon-prefix}-settings:before {
-  content: $pficon-var-settings;
+  content: $pf-icon-var-settings;
 }
 .#{$pf-icon-prefix}-storage-domain:before {
-  content: $pficon-var-storage-domain;
+  content: $pf-icon-var-storage-domain;
 }
 .#{$pf-icon-prefix}-tenant:before {
-  content: $pficon-var-tenant;
+  content: $pf-icon-var-tenant;
 }
 .#{$pf-icon-prefix}-thumb-tack-o:before {
-  content: $pficon-var-thumb-tack-o;
+  content: $pf-icon-var-thumb-tack-o;
 }
 .#{$pf-icon-prefix}-topology:before {
-  content: $pficon-var-topology;
+  content: $pf-icon-var-topology;
 }
 .#{$pf-icon-prefix}-trend-down:before {
-  content: $pficon-var-trend-down;
+  content: $pf-icon-var-trend-down;
 }
 .#{$pf-icon-prefix}-trend-up:before {
-  content: $pficon-var-trend-up;
+  content: $pf-icon-var-trend-up;
 }
 .#{$pf-icon-prefix}-user:before {
-  content: $pficon-var-user;
+  content: $pf-icon-var-user;
 }
 .#{$pf-icon-prefix}-users:before {
-  content: $pficon-var-users;
+  content: $pf-icon-var-users;
 }
 .#{$pf-icon-prefix}-virtual-machine:before {
-  content: $pficon-var-virtual-machine;
+  content: $pf-icon-var-virtual-machine;
 }
 .#{$pf-icon-prefix}-volume:before {
-  content: $pficon-var-volume;
+  content: $pf-icon-var-volume;
 }
 .#{$pf-icon-prefix}-warning-triangle-o:before {
   color: $brand-warning;
-  content: $pficon-var-warning-triangle-o;
+  content: $pf-icon-var-warning-triangle-o;
 }
 .#{$pf-icon-prefix}-zone:before {
-  content: $pficon-var-zone;
+  content: $pf-icon-var-zone;
 }
+
 // Display icon at large or medium size
 .pf-icon--lg {
   font-size: $icon-size-lg;
@@ -242,6 +243,7 @@ limitations under the License.
 .pf-icon--md {
   font-size: $icon-size-md;
 }
+
 // Display circle around the icon
 // width/height value should be 4px (i.e. 2 x border-width) greater than
 // line-height value to accommodate 2px border on each side

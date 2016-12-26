@@ -11,5 +11,5 @@ PatternFly icons can display at larger sizes as shown in the [Aggregate Status C
 
 | Class | Usage |
 | -- | -- |
-| `.pf-icon--md` **Applied to:** `.pficon` or `.fa` |  **Outcome:** Displays a medium icon  **Required:** Yes **Remarks:** Always use it with an icon family and icon name class. |
-| `.pf-icon--lg` **Applied to:** `.pficon` or `.fa` |  **Outcome:** Displays a large icon  **Required:** Yes **Remarks:** Always use it with an icon family and icon name class. |
+| `.pf-icon--md` **Applied to:** `.pf-icon` or `.fa` |  **Outcome:** Displays a medium icon  **Required:** Yes **Remarks:** Always use it with an icon family and icon name class. |
+| `.pf-icon--lg` **Applied to:** `.pf-icon` or `.fa` |  **Outcome:** Displays a large icon  **Required:** Yes **Remarks:** Always use it with an icon family and icon name class. |
