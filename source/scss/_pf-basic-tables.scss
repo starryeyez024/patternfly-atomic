@@ -29,8 +29,8 @@ limitations under the License.
   thead th {
     border-bottom-width: $table-border-width;
     @include gradient-y(
-      $start-color: $color-pf-black-100,
-      $end-color: $color-pf-black-200,
+      $start-color: $pf-color-black-100,
+      $end-color: $pf-color-black-200,
       $start-percent: 0%,
       $end-percent: 100%);
   }

@@ -40,18 +40,18 @@ limitations under the License.
 
 // PatternFly box shadows
 // TODO: See what kind of shadows we need and define standards
-$pf-box-shadow: 0 .1em .2em rgba($color-pf-black-1000, 0.1);
-$pf-box-shadow-md: 0 .1em .3em rgba($color-pf-black-1000, 0.3);
+$pf-box-shadow: 0 .1em .2em rgba($pf-color-black-1000, 0.1);
+$pf-box-shadow-md: 0 .1em .3em rgba($pf-color-black-1000, 0.3);
 
-$pf-box-shadow-inset-sm: inset 0 .3em .3em rgba($color-pf-black-1000, 0.2);
-$pf-box-shadow-inset-md: inset 0 .3em .6em rgba($color-pf-black-1000, 0.2);
-$pf-box-shadow-inset-lg: inset 0 .3em .9em rgba($color-pf-black-1000, 0.2);
+$pf-box-shadow-inset-sm: inset 0 .3em .3em rgba($pf-color-black-1000, 0.2);
+$pf-box-shadow-inset-md: inset 0 .3em .6em rgba($pf-color-black-1000, 0.2);
+$pf-box-shadow-inset-lg: inset 0 .3em .9em rgba($pf-color-black-1000, 0.2);
 
 
 // Patternfly Gradient
 // TODO: Define standard gradient for patternfly
-$pf-gradient-color-start: $color-pf-black-100;
-$pf-gradient-color-end: $color-pf-black-200;
+$pf-gradient-color-start: $pf-color-black-100;
+$pf-gradient-color-end: $pf-color-black-200;
 $pf-gradient-percent-start: 0%;
 $pf-gradient-percent-end: 100%;
 
@@ -140,23 +140,23 @@ $pf-icon-var-zone:                                                   "\e911";
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 $color-pf-black-1000;
-$gray:                      $color-pf-black-700;
-$gray-light:                $color-pf-black-500;
-$gray-lighter:              $color-pf-black-300;
-$gray-lightest:             $color-pf-black-100;
+$gray-dark:                 $pf-color-black-1000;
+$gray:                      $pf-color-black-700;
+$gray-light:                $pf-color-black-500;
+$gray-lighter:              $pf-color-black-300;
+$gray-lightest:             $pf-color-black-100;
 
-$brand-primary:             $color-pf-blue-400;
-$brand-success:             $color-pf-green-400;
-$brand-info:                $color-pf-blue-500;
-$brand-warning:             $color-pf-orange-400;
-$brand-danger:              $color-pf-red-100;
+$brand-primary:             $pf-color-blue-400;
+$brand-success:             $pf-color-green-400;
+$brand-info:                $pf-color-blue-500;
+$brand-warning:             $pf-color-orange-400;
+$brand-danger:              $pf-color-red-100;
 // $brand-inverse:             $gray-dark;
 
 // Hover colors
 // Colors for hovered elements
-$pf-bg-hover-color: $color-pf-blue-50;
-$pf-border-hover-color: $color-pf-blue-200;
+$pf-bg-hover-color: $pf-color-blue-50;
+$pf-border-hover-color: $pf-color-blue-200;
 
 
 // Links
@@ -310,7 +310,7 @@ $headings-font-weight: $pf-font-weight-light !default;
 // Use relative font sizes when font size should vary with the parent
 $font-size-relative-base: 1em !default;
 $font-size-relative-lg:   1.25em !default;
-$font-size-relative-sm:   .875em !default;
+$font-size-relative-sm:   .85em !default;
 $font-size-relative-xs:   .75em !default;
 
 // Tables
@@ -322,13 +322,13 @@ $font-size-relative-xs:   .75em !default;
 
 
 // $table-bg:                      transparent !default;
-$table-bg-accent:               $color-pf-black-150;
+$table-bg-accent:               $pf-color-black-150;
 $table-bg-hover:                $pf-bg-hover-color;
 $pf-table-border-hover:         $pf-border-hover-color;
 $table-bg-active:               $table-bg-hover;
 
 // $table-border-width:            $border-width !default;
-$table-border-color:            $color-pf-black-300;
+$table-border-color:            $pf-color-black-300;
 
 
 
@@ -340,33 +340,33 @@ $btn-padding-x:                  $pf-spacer-md !default;
 $btn-padding-y:                  $pf-spacer-xs !default;
 $btn-line-height:                1 !default;
 $btn-font-weight:                $pf-font-weight-regular !default;
-$btn-box-shadow:                 inset 0 1px 0 rgba($color-pf-white, .15), $pf-box-shadow;
+$btn-box-shadow:                 inset 0 1px 0 rgba($pf-color-white, .15), $pf-box-shadow;
 $btn-active-box-shadow:          $pf-box-shadow-inset-lg;
 
 
-$btn-primary-start-bg:           $color-pf-blue-300;
+$btn-primary-start-bg:           $pf-color-blue-300;
 $btn-primary-end-bg:             $brand-primary;
-$btn-primary-border:             $color-pf-blue-500;
+$btn-primary-border:             $pf-color-blue-500;
 
 $btn-secondary-start-bg:         $pf-gradient-color-start;
 $btn-secondary-end-bg:           $pf-gradient-color-end;
-$btn-secondary-border:           $color-pf-black-400;
+$btn-secondary-border:           $pf-color-black-400;
 
-$btn-info-start-bg:              $color-pf-blue-400;
+$btn-info-start-bg:              $pf-color-blue-400;
 $btn-info-end-bg:                $brand-info;
-$btn-info-border:                $color-pf-blue-600;
+$btn-info-border:                $pf-color-blue-600;
 
-$btn-success-start-bg:           $color-pf-green-300;
+$btn-success-start-bg:           $pf-color-green-300;
 $btn-success-end-bg:             $brand-success;
-$btn-success-border:             $color-pf-green-500;
+$btn-success-border:             $pf-color-green-500;
 
-$btn-warning-start-bg:           $color-pf-orange-300;
+$btn-warning-start-bg:           $pf-color-orange-300;
 $btn-warning-end-bg:             $brand-warning;
-$btn-warning-border:             $color-pf-orange-500;
+$btn-warning-border:             $pf-color-orange-500;
 
-$btn-danger-start-bg:            $color-pf-red-100;
-$btn-danger-end-bg:              $color-pf-red-200;
-$btn-danger-border:              $color-pf-red-300;
+$btn-danger-start-bg:            $pf-color-red-100;
+$btn-danger-end-bg:              $pf-color-red-200;
+$btn-danger-border:              $pf-color-red-300;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -388,17 +388,17 @@ $btn-toolbar-margin:             .5rem !default;
 $dropdown-min-width:             $pf-spacer-xxxxl;
 $dropdown-padding-y:             $pf-spacer-xxs;
 $dropdown-margin-top:            0rem;
-$dropdown-bg:                    $color-pf-white;
-$dropdown-border-color:          $color-pf-black-300;
+$dropdown-bg:                    $pf-color-white;
+$dropdown-border-color:          $pf-color-black-300;
 $dropdown-border-width:          $border-width;
-$dropdown-divider-bg:            $color-pf-black-200;
+$dropdown-divider-bg:            $pf-color-black-200;
 $dropdown-box-shadow:            $pf-box-shadow;
 
 $dropdown-link-color:            $gray-dark;
 $dropdown-link-hover-color:      $gray-dark;
 $dropdown-link-hover-bg:         $pf-bg-hover-color;
 
-$dropdown-link-active-color:     $color-pf-white;
+$dropdown-link-active-color:     $pf-color-white;
 $dropdown-link-active-bg:        $brand-primary;
 
 $dropdown-link-disabled-color:   $gray-light;
@@ -418,9 +418,9 @@ $dropdown-header-color:          $gray-light;
 $breadcrumb-padding-x:          0rem;
 // $breadcrumb-item-padding:       .5rem;
 
-$breadcrumb-bg:                 $color-pf-white;
-$breadcrumb-divider-color:      $color-pf-black-500;
-$breadcrumb-active-color:       $color-pf-black-700;
+$breadcrumb-bg:                 $pf-color-white;
+$breadcrumb-divider-color:      $pf-color-black-500;
+$breadcrumb-active-color:       $pf-color-black-700;
 $breadcrumb-divider:            "»";
 
 
@@ -428,16 +428,16 @@ $breadcrumb-divider:            "»";
 // $card-spacer-x:            1.25rem !default;
 // $card-spacer-y:            .75rem !default;
 $card-border-width:           1px;
-$card-border-color:           $color-pf-black-300;
-$card-cap-bg:                 $color-pf-black-150;
+$card-border-color:           $pf-color-black-300;
+$card-cap-bg:                 $pf-color-black-150;
 
-$pf-card-border-color:        $color-pf-black-300;
-$pf-card-cap-bg:              $color-pf-white;
-$pf-card-footer-bg:           $color-pf-black-100;
-$pf-card-border-color-active: $color-pf-blue-300;
+$pf-card-border-color:        $pf-color-black-300;
+$pf-card-cap-bg:              $pf-color-white;
+$pf-card-footer-bg:           $pf-color-black-100;
+$pf-card-border-color-active: $pf-color-blue-300;
 
 
-//$card-bg:                  $color-pf-white;
+//$card-bg:                  $pf-color-white;
 
 //$card-link-hover-color:    #fff !default;
 
@@ -457,7 +457,7 @@ $pagination-padding-x-lg:             $pf-spacer-lg;
 $pagination-padding-y-lg:             $pf-spacer-xs;
 
 
-$pagination-color:                     $color-pf-black-700;
+$pagination-color:                     $pf-color-black-700;
 // $pagination-bg:                        #fff !default;
 // $pagination-border-width:              $border-width !default;
 $pagination-border-color:              $btn-secondary-border;
@@ -472,48 +472,36 @@ $pagination-active-border:             $btn-secondary-border !default;
 
 // $pagination-disabled-color:            $gray-light !default;
 // $pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           $color-pf-black-300;
+$pagination-disabled-border:           $pf-color-black-300;
 
 // Tags
 
-// $tag-default-bg:            $gray-light !default;
-// $tag-primary-bg:            $brand-primary !default;
-// $tag-success-bg:            $brand-success !default;
-// $tag-info-bg:               $brand-info !default;
-// $tag-warning-bg:            $brand-warning !default;
-// $tag-danger-bg:             $brand-danger !default;
+$tag-font-size:             $font-size-sm !default;
+$tag-font-weight:           $pf-font-weight-regular !default;
+$tag-padding-x:             $pf-spacer-xxs !default;
+$tag-padding-y:             $pf-spacer-xxxs !default;
+$tag-pill-padding-x:        $pf-spacer-xxxs !default;
 
-// $tag-color:                 #fff !default;
-// $tag-link-hover-color:      #fff !default;
-$tag-font-size:             $font-size-relative-base;
-$tag-font-weight:           $pf-font-weight-bold;
-// $tag-padding-x:             .4em !default;
-// $tag-padding-y:             .25em !default;
-
-// $tag-pill-padding-x:        .6em !default;
-// Use a higher than normal value to ensure completely rounded edges when
-// customizing padding or font-size on labels.
-// $tag-pill-border-radius:    10rem !default;
 
 
 // Form states and alerts
 //
 // Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             $color-pf-black-800;
-$state-success-bg:               lighten($color-pf-green-100, 8%);
+$state-success-text:             $pf-color-black-800;
+$state-success-bg:               lighten($pf-color-green-100, 8%);
 $state-success-border:           $brand-success;
 
-$state-info-text:                $color-pf-black-800;
-$state-info-bg:                  $color-pf-black-150;
-$state-info-border:              $color-pf-black-500;
+$state-info-text:                $pf-color-black-800;
+$state-info-bg:                  $pf-color-black-150;
+$state-info-border:              $pf-color-black-500;
 
-$state-warning-text:             $color-pf-black-800;
-$state-warning-bg:               lighten($color-pf-orange-100, 8%);
+$state-warning-text:             $pf-color-black-800;
+$state-warning-bg:               lighten($pf-color-orange-100, 8%);
 $state-warning-border:           $brand-warning;
 
-$state-danger-text:              $color-pf-black-800;
-$state-danger-bg:                lighten($color-pf-red-100, 55%);
+$state-danger-text:              $pf-color-black-800;
+$state-danger-bg:                lighten($pf-color-red-100, 55%);
 $state-danger-border:            $brand-danger;
 
 
@@ -530,13 +518,13 @@ $pf-alert-icon-font-size:     $pf-icon-size-sm;
 //
 // Define tab colors, etc.
 
-$nav-tabs-border-color:                       $color-pf-black-200;
+$nav-tabs-border-color:                       $pf-color-black-200;
 // $nav-tabs-border-width:                       $border-width !default;
 // $nav-tabs-border-radius:                      $border-radius !default;
-$nav-tabs-link-hover-border-color:            $color-pf-black-200;
+$nav-tabs-link-hover-border-color:            $pf-color-black-200;
 $nav-tabs-active-link-hover-color:            $link-color;
 // $nav-tabs-active-link-hover-bg:               $body-bg !default;
 // $nav-tabs-active-link-hover-border-color:     #ddd !default;
 // $nav-tabs-justified-link-border-color:        $nav-tabs-border-color;
 // $nav-tabs-justified-active-link-border-color: $body-bg !default;
-$pf-tabs-color:                               $color-pf-black-700;
+$pf-tabs-color:                               $pf-color-black-700;

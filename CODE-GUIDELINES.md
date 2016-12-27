@@ -580,7 +580,7 @@ Keep PatternFly code DRY. Reuse as much as you can from Bootstrap.
 
 // PatternFly card modifier
 .pf-card--accented {
-  border-top: 2px solid $color-pf-blue-300;
+  border-top: 2px solid $pf-color-blue-300;
 }    
 ```
 

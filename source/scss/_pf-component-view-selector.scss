@@ -18,7 +18,7 @@ limitations under the License.
 // --------------------------------------------------
 
 .pf-view-selector__btn-link {
-  color: $color-pf-black-900;
+  color: $pf-color-black-900;
   font-size: $font-size-relative-base;
   padding: 0;
   @include hover-focus-active { color: $link-color; }

@@ -5840,7 +5840,7 @@ limitations under the License.
   border-width: 0 0 2px 0;
   border-color: transparent;
   margin: 0.7rem 1rem 0;
-  padding: 0; }
+  padding: 0 0 0.25rem 0; }
   .pf-nav-tabs .nav-link:focus, .pf-nav-tabs .nav-link:active, .pf-nav-tabs .nav-link:hover {
     border-color: #ddd; }
   .pf-nav-tabs .nav-link.active {
@@ -6546,9 +6546,9 @@ limitations under the License.
 
 .tag {
   display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 1em;
-  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -6567,8 +6567,8 @@ a.tag:focus, a.tag:hover {
   cursor: pointer; }
 
 .tag-pill {
-  padding-right: 0.6em;
-  padding-left: 0.6em; }
+  padding-right: 0.25rem;
+  padding-left: 0.25rem; }
 
 .tag-default {
   background-color: #8b8d8f; }
@@ -6621,6 +6621,10 @@ h4 .tag,
 h5 .tag,
 h6 .tag {
   font-size: 0.75em; }
+
+.tag a {
+  color: #fff;
+  margin-left: 0.25rem; }
 
 .jumbotron {
   padding: 2rem 1rem;

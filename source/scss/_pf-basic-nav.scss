@@ -50,7 +50,7 @@ limitations under the License.
     border-width: 0 0 $nav-tabs-border-width*2 0;
     border-color: transparent;
     margin: $pf-spacer-xs $pf-spacer-sm 0; // remove padding and add margin so that the underline is only beneath the text
-    padding: 0;
+    padding: 0 0 $pf-spacer-xxxs 0;
 
     @include hover-focus-active {
       border-color: $nav-tabs-active-link-hover-border-color;

@@ -127,7 +127,7 @@ limitations under the License.
   content: $pf-icon-var-import;
 }
 .#{$pf-icon-prefix}-info:before {
-  color: $color-pf-black-700;
+  color: $pf-color-black-700;
   content: $pf-icon-var-info;
 }
 .#{$pf-icon-prefix}-memory:before {
@@ -252,6 +252,6 @@ limitations under the License.
   height: calc(2em + 4px);
   line-height: 2em;
   text-align: center;
-  border: 2px solid $color-pf-blue-300;
+  border: 2px solid $pf-color-blue-300;
   border-radius: 50%;
 }

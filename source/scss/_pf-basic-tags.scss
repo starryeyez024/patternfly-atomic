@@ -24,6 +24,13 @@ limitations under the License.
   h4 &,
   h5 &,
   h6 & {
+    // Size of the tag is relative to the font size of the title
     font-size: $font-size-relative-xs;
+  }
+
+  // This anchor targets the close icon in dismissable tags
+  a{
+    color: $pf-color-white;
+    margin-left: $pf-spacer-xxxs;
   }
 }
