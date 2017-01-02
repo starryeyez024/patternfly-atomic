@@ -3045,7 +3045,7 @@ html {
 body {
   font-family: “overpass”, Overpass, “Open Sans”, Helvetica, sans-serif;
   font-size: 1rem;
-  line-height: 1.66667;
+  line-height: 1.5;
   color: #030303;
   background-color: #fff; }
 
@@ -4311,7 +4311,7 @@ limitations under the License.
     cursor: not-allowed; }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.66667rem - 2px); }
+  height: calc(2.5rem - 2px); }
 
 select.form-control:focus::-ms-value {
   color: #4d5258;
@@ -4428,8 +4428,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .form-control-danger {
   padding-right: 2.25rem;
   background-repeat: no-repeat;
-  background-position: center right 0.66667rem;
-  background-size: 1.33333rem 1.33333rem; }
+  background-position: center right 0.625rem;
+  background-size: 1.25rem 1.25rem; }
 
 .has-success .form-control-feedback,
 .has-success .form-control-label,
@@ -5638,7 +5638,7 @@ tbody.collapse.in {
 .custom-select {
   display: inline-block;
   max-width: 100%;
-  height: calc(2.66667rem - 2px);
+  height: calc(2.5rem - 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   padding-right: 0.75rem \9;
   color: #4d5258;
@@ -6468,7 +6468,7 @@ limitations under the License.
 .page-link {
   position: relative;
   float: left;
-  padding: 0.5rem 0.7rem;
+  padding: 0.25rem 0.7rem;
   margin-left: -1px;
   color: #4d5258;
   text-decoration: none;
@@ -7195,7 +7195,7 @@ limitations under the License.
 
 .modal-title {
   margin: 0;
-  line-height: 1.66667; }
+  line-height: 1.5; }
 
 .modal-body {
   position: relative;
@@ -7239,7 +7239,7 @@ limitations under the License.
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.66667;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -7320,7 +7320,7 @@ limitations under the License.
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.66667;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;

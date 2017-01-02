@@ -297,7 +297,7 @@ $font-size-h4: 1.142857rem !default; // ~16px
 $font-size-h5: 1rem !default; // ~14px
 $font-size-h6: 0.857142rem !default; // ~12px
 
-$line-height-base: 1.66666667 !default;
+// $line-height-base: 1.5 !default;
 
 // Removes spaces from headers. Use utility classes when necessary.
 // $headings-margin-bottom: 0 !default;
@@ -341,8 +341,8 @@ $btn-padding-y:                  $pf-spacer-xs !default;
 $btn-line-height:                1 !default;
 $btn-font-weight:                $pf-font-weight-regular !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($pf-color-white, .15), $pf-box-shadow;
-$btn-active-box-shadow:          $pf-box-shadow-inset-lg;
 
+$btn-active-box-shadow:          $pf-box-shadow-inset-lg;
 
 $btn-primary-start-bg:           $pf-color-blue-300;
 $btn-primary-end-bg:             $brand-primary;
@@ -376,8 +376,8 @@ $btn-padding-y-sm:               $btn-padding-y !default;
 $btn-padding-x-lg:               $btn-padding-x !default;
 $btn-padding-y-lg:               $btn-padding-y !default;
 
-$btn-block-spacing-y:            .5rem !default;
-$btn-toolbar-margin:             .5rem !default;
+$btn-block-spacing-y:            $pf-spacer-xxs !default;
+$btn-toolbar-margin:             $pf-spacer-xxs !default;
 
 
 
@@ -449,30 +449,30 @@ $card-columns-sm-up-column-gap: 1.25rem !default;
 // Pagination
 
 
-$pagination-padding-x:                $pf-spacer-xs;
-$pagination-padding-y:                $pf-spacer-xxs;
-$pagination-padding-x-sm:             $pf-spacer-xs;
-$pagination-padding-y-sm:             $pf-spacer-xxxs;
-$pagination-padding-x-lg:             $pf-spacer-lg;
-$pagination-padding-y-lg:             $pf-spacer-xs;
+$pagination-padding-x:                $pf-spacer-xs !default;
+$pagination-padding-y:                $pf-spacer-xxxs !default;
+$pagination-padding-x-sm:             $pf-spacer-xs !default;
+$pagination-padding-y-sm:             $pf-spacer-xxxs !default;
+$pagination-padding-x-lg:             $pf-spacer-lg !default;
+$pagination-padding-y-lg:             $pf-spacer-xs !default;
 
 
-$pagination-color:                     $pf-color-black-700;
+$pagination-color:                     $pf-color-black-700 !default;
 // $pagination-bg:                        #fff !default;
 // $pagination-border-width:              $border-width !default;
-$pagination-border-color:              $btn-secondary-border;
+$pagination-border-color:              $btn-secondary-border !default;
 
-$pagination-hover-color:               $pagination-color;
-$pagination-hover-bg:                  $pf-gradient-color-end;
-$pagination-hover-border:              $pagination-border-color;
+$pagination-hover-color:               $pagination-color !default;
+$pagination-hover-bg:                  $pf-gradient-color-end !default;
+$pagination-hover-border:              $pagination-border-color !default;
 
-$pagination-active-color:              $pagination-color;
-$pagination-active-bg:                 $pagination-hover-bg;
+$pagination-active-color:              $pagination-color !default;
+$pagination-active-bg:                 $pagination-hover-bg !default;
 $pagination-active-border:             $btn-secondary-border !default;
 
 // $pagination-disabled-color:            $gray-light !default;
 // $pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           $pf-color-black-300;
+$pagination-disabled-border:           $pf-color-black-300 !default;
 
 // Tags
 

@@ -1,6 +1,6 @@
 {
   "alertClass": "alert-success",
-  "alertIcon": "pficon-ok",
+  "alertIcon": "pf-icon-ok",
   "alertBoldText": "Great Job!",
   "alertText": "This is really working out",
   "alertLinkText": "great for us",
