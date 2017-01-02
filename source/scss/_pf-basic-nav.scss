@@ -48,10 +48,11 @@ limitations under the License.
 // Patternfly-style tabs
 .pf-nav-tabs {
   .nav-link {
-    border-width: 0 0 $nav-tabs-border-width*2 0;
+    border-width: 0 0 ($nav-tabs-border-width * 2) 0;
     border-color: transparent;
     margin: $pf-spacer-xs $pf-spacer-sm 0; // remove padding and add margin so that the underline is only beneath the text
     padding: 0 0 $pf-spacer-xxxs 0;
+    font-size: $font-size-base;
 
     @include hover-focus-active {
       border-color: $nav-tabs-active-link-hover-border-color;
@@ -71,7 +72,6 @@ limitations under the License.
 // if Patternfly-style tabs are used as a secondary menu to another .nav-tabs
   .nav-tabs + & {
     .nav-link {
-      font-size: $font-size-base;
       padding-bottom: $pf-spacer-xxxs;
     }
     .dropdown-menu {
