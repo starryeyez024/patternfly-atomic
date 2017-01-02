@@ -14,8 +14,11 @@ limitations under the License.
 */
 
 //
+// Cards
+// --------------------------------------------------
+
+
 // Base styles
-//
 .card {
   @include box-shadow($pf-box-shadow);
 }

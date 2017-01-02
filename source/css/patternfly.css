@@ -2639,11 +2639,6 @@ limitations under the License.
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-/*
- * Fonts
- *
- * PatternFly uses Overpass and Overpass mono http://overpassfont.org/
- */
 @font-face {
   font-family: 'overpass';
   src: url("../fonts/overpass-thin.eot");

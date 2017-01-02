@@ -326,11 +326,11 @@ Follow this comment structure:
 
 
 
-/*
- * Component heading
- *
- * Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
- */
+//
+// Component heading
+// --------------------------------------------------
+//  Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
+
 
 // Section level Comment
 .selector {
