@@ -5232,6 +5232,11 @@ limitations under the License.
       border-color: #8b0000;
       background-image: none; }
 
+.btn-link .fa, .btn-link .pf-icon {
+  color: #292e34; }
+  .btn-link .fa:focus, .btn-link .fa:active, .btn-link .fa:hover, .btn-link .pf-icon:focus, .btn-link .pf-icon:active, .btn-link .pf-icon:hover {
+    color: #0088ce; }
+
 .fade {
   opacity: 0;
   transition: opacity .15s linear; }
