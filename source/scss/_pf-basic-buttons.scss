@@ -38,8 +38,8 @@ limitations under the License.
   @include pf-button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-start-bg, $btn-danger-end-bg,  $btn-danger-border);
 }
 
-.btn-link{
-  & .fa, & .pf-icon{
+.btn-link {
+  .fa, .pf-icon {
     color: $pf-color-black-900;
     @include hover-focus-active { color: $link-color; }
   }

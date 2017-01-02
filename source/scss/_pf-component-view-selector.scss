@@ -19,13 +19,13 @@ limitations under the License.
 
 
 .pf-view-selector__btn-link {
-  color: $pf-color-black-900;
-  font-size: $font-size-relative-base;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
   @include hover-focus-active { color: $link-color; }
-}
-
-.pf-view-selector__btn-link.active {
-  color: $link-color;
-  cursor: default;
+  &.active {
+    .fa, .pf-icon {
+      color: $link-color;
+      cursor: default;
+    }
+  }
 }
