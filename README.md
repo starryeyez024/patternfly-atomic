@@ -90,4 +90,4 @@ Follow this steps to publish your results to [GitHub pages](https://pages.github
 
 ___
 
-Built with :heart: by the [PattrenFly Community](https://www.patternfly.org/community/) and supported by the Red Hat UXD Team.
+Built with :heart: by the [PatternFly Community](https://www.patternfly.org/community/) and supported by the Red Hat UXD Team.
