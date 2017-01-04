@@ -85,10 +85,20 @@ limitations under the License.
 }
 
 // Patternfly gradient
-@mixin pf-gradient {
+@mixin pf-gradient() {
   @include gradient-y(
-    $start-color: $pf-color-black-100,
-    $end-color: $pf-color-black-200,
-    $start-percent: 0%,
-    $end-percent: 100%);
+    $start-color: $pf-gradient-color-start,
+    $end-color: $pf-gradient-color-end,
+    $start-percent: $pf-gradient-percent-start,
+    $end-percent: $pf-gradient-percent-end);
+}
+
+
+// Box shadow mixin
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+  @if $inset {
+    box-shadow:inset $top $left $blur $size $color;
+  } @else {
+    box-shadow: $top $left $blur $size $color;
+  }
 }

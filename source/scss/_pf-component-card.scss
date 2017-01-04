@@ -45,8 +45,7 @@ limitations under the License.
   }
   .card-block { padding: $pf-spacer-lg; }
   .card-title {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include text-truncate;
   }
   // .dropdown {
   //   margin: -$pf-spacer-xxs 0;
