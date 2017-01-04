@@ -83,3 +83,12 @@ limitations under the License.
     }
   }
 }
+
+// Patternfly gradient
+@mixin pf-gradient {
+  @include gradient-y(
+    $start-color: $pf-color-black-100,
+    $end-color: $pf-color-black-200,
+    $start-percent: 0%,
+    $end-percent: 100%);
+}

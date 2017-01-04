@@ -30,10 +30,6 @@ limitations under the License.
   thead th {
     //removes doble border on table header
     border-bottom-width: $table-border-width;
-    @include gradient-y(
-      $start-color: $pf-color-black-100,
-      $end-color: $pf-color-black-200,
-      $start-percent: 0%,
-      $end-percent: 100%);
+    @include pf-gradient;
   }
 }
