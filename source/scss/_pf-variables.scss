@@ -1,0 +1,530 @@
+/*
+Copyright 2016 Red Hat, Inc
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+//
+// PatternFly Variables
+// --------------------------------------------------
+// Copy settings from this file into the provided `_custom.scss` to override
+// the Bootstrap defaults without modifying key, versioned files.
+
+
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+// PatternFly box shadows
+// TODO: See what kind of shadows we need and define standards
+$pf-box-shadow: 0 .1em .2em rgba($pf-color-black-1000, 0.1);
+$pf-box-shadow-md: 0 .1em .3em rgba($pf-color-black-1000, 0.3);
+
+$pf-box-shadow-inset-sm: inset 0 .3em .3em rgba($pf-color-black-1000, 0.2);
+$pf-box-shadow-inset-md: inset 0 .3em .6em rgba($pf-color-black-1000, 0.2);
+$pf-box-shadow-inset-lg: inset 0 .3em .9em rgba($pf-color-black-1000, 0.2);
+
+
+// Patternfly Gradient
+// TODO: Define standard gradient for patternfly
+$pf-gradient-color-start: $pf-color-black-100;
+$pf-gradient-color-end: $pf-color-black-200;
+$pf-gradient-percent-start: 0%;
+$pf-gradient-percent-end: 100%;
+
+
+// Patternfly font path
+// Defines path to /font foldeer
+$fa-font-path: "../fonts";
+$pf-font-path: "../fonts";
+// $pf-icon-font-name-fa:  "FontAwesome" !default;
+$pf-icon-font-name:  "PatternFlyIcons-webfont";
+$pf-icon-prefix:  pf-icon;
+
+
+// Patternfly Icons
+
+$pf-icon-size-lg: 3.3rem;
+$pf-icon-size-md: 1.75rem;
+$pf-icon-size-sm: 1.5rem;
+
+$pf-icon-var-add-circle-o:               "\e61b";
+$pf-icon-var-middleware:                 "\e917";
+$pf-icon-var-blueprint:                  "\e915";
+$pf-icon-var-build:                      "\e902";
+$pf-icon-var-builder-image:              "\e800";
+$pf-icon-var-bundle:                     "\e918";
+$pf-icon-var-close:                      "\e60b";
+$pf-icon-var-cloud-security:             "\e903";
+$pf-icon-var-cloud-tenant:               "\e904";
+$pf-icon-var-cluster:                    "\e620";
+$pf-icon-var-container-node:             "\e621";
+$pf-icon-var-cpu:                        "\e905";
+$pf-icon-var-delete:                     "\e611";
+$pf-icon-var-domain:                     "\e919";
+$pf-icon-var-edit:                       "\e60a";
+$pf-icon-var-enterprise:                 "\e906";
+$pf-icon-var-error-circle-o:             "\e61d";
+$pf-icon-var-export:                     "\e616";
+$pf-icon-var-flag:                       "\e603";
+$pf-icon-var-flavor:                     "\e907";
+$pf-icon-var-folder-close:               "\e607";
+$pf-icon-var-folder-open:                "\e606";
+$pf-icon-var-help:                       "\e605";
+$pf-icon-var-history:                    "\e617";
+$pf-icon-var-home:                       "\e618";
+$pf-icon-var-image:                      "\e61f";
+$pf-icon-var-import:                     "\e615";
+$pf-icon-var-info:                       "\e604";
+$pf-icon-var-kubernetes:                 "\e627";
+$pf-icon-var-memory:                     "\e908";
+$pf-icon-var-network:                    "\e909";
+$pf-icon-var-ok:                         "\e602";
+$pf-icon-var-openshift:                  "\e626";
+$pf-icon-var-private:                    "\e914";
+$pf-icon-var-print:                      "\e612";
+$pf-icon-var-project:                    "\e622";
+$pf-icon-var-regions:                    "\e90a";
+$pf-icon-var-registry:                   "\e623";
+$pf-icon-var-replicator:                 "\e624";
+$pf-icon-var-repository:                 "\e90b";
+$pf-icon-var-resource-pool:              "\e90c";
+$pf-icon-var-resources-almost-full:      "\e912";
+$pf-icon-var-resources-full:             "\e913";
+$pf-icon-var-restart:                    "\e613";
+$pf-icon-var-route:                      "\e625";
+$pf-icon-var-running:                    "\e614";
+$pf-icon-var-save:                       "\e601";
+$pf-icon-var-screen:                     "\e600";
+$pf-icon-var-server:                     "\e90d";
+$pf-icon-var-server-group:               "\e91a";
+$pf-icon-var-service:                    "\e61e";
+$pf-icon-var-settings:                   "\e610";
+$pf-icon-var-storage-domain:             "\e90e";
+$pf-icon-var-tenant:                     "\e916";
+$pf-icon-var-thumb-tack-o:               "\e609";
+$pf-icon-var-topology:                   "\e608";
+$pf-icon-var-trend-down:                 "\e900";
+$pf-icon-var-trend-up:                   "\e901";
+$pf-icon-var-user:                       "\e60e";
+$pf-icon-var-users:                      "\e60f";
+$pf-icon-var-virtual-machine:            "\e90f";
+$pf-icon-var-volume:                     "\e910";
+$pf-icon-var-warning-triangle-o:         "\e61c";
+$pf-icon-var-zone:                       "\e911";
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:                 $pf-color-black-1000;
+$gray:                      $pf-color-black-700;
+$gray-light:                $pf-color-black-500;
+$gray-lighter:              $pf-color-black-300;
+$gray-lightest:             $pf-color-black-100;
+
+$brand-primary:             $pf-color-blue-400;
+$brand-success:             $pf-color-green-400;
+$brand-info:                $pf-color-blue-500;
+$brand-warning:             $pf-color-orange-400;
+$brand-danger:              $pf-color-red-100;
+// $brand-inverse:             $gray-dark;
+
+// Hover colors
+// Colors for hovered elements
+$pf-bg-hover-color: $pf-color-blue-50;
+$pf-border-hover-color: $pf-color-blue-200;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $brand-primary;
+// $link-decoration:       none !default;
+// $link-hover-color:      darken($link-color, 15%) !default;
+// $link-hover-decoration: underline !default;
+
+
+// Font weight
+//
+$pf-font-weight-light:      400;
+$pf-font-weight-regular:    500;
+$pf-font-weight-semi-bold:  600;
+$pf-font-weight-bold:       700;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-flex:               true;
+$enable-rounded:            false;
+$enable-shadows:            true;
+// $enable-gradients:          true;
+// $enable-transitions:        false !default;
+// ? $enable-hover-media-query:  false !default;
+// ? $enable-grid-classes:       true !default;
+// $enable-print-styles:       true !default;
+
+// Opacity
+//
+
+$pf-opacity-dark:   0.85;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer:   1rem;
+$pf-spacer-xxxs:   ($spacer * .25);   // ~3px
+$pf-spacer-xxs:    ($spacer * .5);    // 7px
+$pf-spacer-xs:     ($spacer * .7);    // ~10px
+$pf-spacer-sm:     $spacer;           // 14px
+$pf-spacer-md:     ($spacer * 1.21);  // ~17px
+$pf-spacer-lg:     ($spacer * 1.5);   // 21px
+$pf-spacer-xl:     ($spacer * 1.75);  // ~24px
+$pf-spacer-xxl:    ($spacer * 2);     // 28 px
+$pf-spacer-xxxl:   ($spacer * 2.5);   // 35 px
+$pf-spacer-xxxxl:  ($spacer * 3);     // 42 px
+
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  2: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  ),
+  pf-xxxs: (
+    x: $pf-spacer-xxxs,
+    y: $pf-spacer-xxxs
+  ),
+  pf-xxs: (
+    x: $pf-spacer-xxs,
+    y: $pf-spacer-xxs
+  ),
+  pf-xs: (
+    x: $pf-spacer-xs,
+    y: $pf-spacer-xs
+  ),
+  pf-sm: (
+    x: $pf-spacer-sm,
+    y: $pf-spacer-sm
+  ),
+  pf-md: (
+    x: $pf-spacer-md,
+    y: $pf-spacer-md
+  ),
+  pf-lg: (
+    x: $pf-spacer-lg,
+    y: $pf-spacer-lg
+  ),
+  pf-xl: (
+    x: $pf-spacer-xl,
+    y: $pf-spacer-xl
+  ),
+  pf-xxl: (
+    x: $pf-spacer-xxl,
+    y: $pf-spacer-xxl
+  ),
+  pf-xxxl: (
+    x: $pf-spacer-xxxl,
+    y: $pf-spacer-xxxl
+  ),
+  pf-xxxxl: (
+    x: $pf-spacer-xxxxl,
+    y: $pf-spacer-xxxxl
+  )
+);
+$border-width: 1px;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: “overpass”, Overpass, “Open Sans”, Helvetica, sans-serif;
+$font-family-monospace:  “overpass-mono”, Overpass-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root: 14px !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg:   1.142857rem !default; // ~16px
+$font-size-sm:   .85rem !default; // ~12px
+$font-size-xs:   .75rem !default;
+
+$font-size-h1: 2rem !default; // 28px
+$font-size-h2: 1.714285rem !default; // ~24px
+$font-size-h3: 1.428571rem !default; // ~20px
+$font-size-h4: 1.142857rem !default; // ~16px
+$font-size-h5: 1rem !default; // ~14px
+$font-size-h6: 0.857142rem !default; // ~12px
+
+// $line-height-base: 1.5 !default;
+
+// Removes spaces from headers. Use utility classes when necessary.
+// $headings-margin-bottom: 0 !default;
+// $headings-line-height:   1 !default;
+$headings-font-weight: $pf-font-weight-light !default;
+
+// small font size
+// $small-font-size: 0.857142rem; // ~12px;
+
+// Use relative font sizes when font size should vary with the parent
+$font-size-relative-base: 1em !default;
+$font-size-relative-lg:   1.25em !default;
+$font-size-relative-sm:   .85em !default;
+$font-size-relative-xs:   .75em !default;
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:            $pf-spacer-xs !default;
+$table-sm-cell-padding:         $pf-spacer-xxxs !default;
+
+
+// $table-bg:                      transparent !default;
+$table-bg-accent:               $pf-color-black-150;
+$table-bg-hover:                $pf-bg-hover-color;
+$pf-table-border-hover:         $pf-border-hover-color;
+$table-bg-active:               $table-bg-hover;
+
+// $table-border-width:            $border-width !default;
+$table-border-color:            $pf-color-black-300;
+
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-padding-x:                  $pf-spacer-md !default;
+$btn-padding-y:                  $pf-spacer-xs !default;
+$btn-line-height:                1 !default;
+$btn-font-weight:                $pf-font-weight-regular !default;
+$btn-box-shadow:                 inset 0 1px 0 rgba($pf-color-white, .15), $pf-box-shadow;
+
+$btn-active-box-shadow:          $pf-box-shadow-inset-lg;
+
+$btn-primary-start-bg:           $pf-color-blue-300;
+$btn-primary-end-bg:             $brand-primary;
+$btn-primary-border:             $pf-color-blue-500;
+
+$btn-secondary-start-bg:         $pf-gradient-color-start;
+$btn-secondary-end-bg:           $pf-gradient-color-end;
+$btn-secondary-border:           $pf-color-black-400;
+
+$btn-info-start-bg:              $pf-color-blue-400;
+$btn-info-end-bg:                $brand-info;
+$btn-info-border:                $pf-color-blue-600;
+
+$btn-success-start-bg:           $pf-color-green-300;
+$btn-success-end-bg:             $brand-success;
+$btn-success-border:             $pf-color-green-500;
+
+$btn-warning-start-bg:           $pf-color-orange-300;
+$btn-warning-end-bg:             $brand-warning;
+$btn-warning-border:             $pf-color-orange-500;
+
+$btn-danger-start-bg:            $pf-color-red-100;
+$btn-danger-end-bg:              $pf-color-red-200;
+$btn-danger-border:              $pf-color-red-300;
+
+$btn-link-disabled-color:        $gray-light !default;
+
+$btn-padding-x-sm:               $btn-padding-x !default;
+$btn-padding-y-sm:               $btn-padding-y !default;
+
+$btn-padding-x-lg:               $btn-padding-x !default;
+$btn-padding-y-lg:               $btn-padding-y !default;
+
+$btn-block-spacing-y:            $pf-spacer-xxs !default;
+$btn-toolbar-margin:             $pf-spacer-xxs !default;
+
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width:             $pf-spacer-xxxxl;
+$dropdown-padding-y:             $pf-spacer-xxs;
+$dropdown-margin-top:            0rem;
+$dropdown-bg:                    $pf-color-white;
+$dropdown-border-color:          $pf-color-black-300;
+$dropdown-border-width:          $border-width;
+$dropdown-divider-bg:            $pf-color-black-200;
+$dropdown-box-shadow:            $pf-box-shadow;
+
+$dropdown-link-color:            $gray-dark;
+$dropdown-link-hover-color:      $gray-dark;
+$dropdown-link-hover-bg:         $pf-bg-hover-color;
+
+$dropdown-link-active-color:     $pf-color-white;
+$dropdown-link-active-bg:        $brand-primary;
+
+$dropdown-link-disabled-color:   $gray-light;
+
+$dropdown-item-padding-x:        $pf-spacer-lg;
+
+$dropdown-header-color:          $gray-light;
+
+
+// TODO: Check updates in alpha 5 when its avaliable, since the units
+// changed from px to rems
+
+
+// Breadcrumbs
+
+// $breadcrumb-padding-y:          .75rem !default;
+$breadcrumb-padding-x:          0rem;
+// $breadcrumb-item-padding:       .5rem;
+
+$breadcrumb-bg:                 $pf-color-white;
+$breadcrumb-divider-color:      $pf-color-black-500;
+$breadcrumb-active-color:       $pf-color-black-700;
+$breadcrumb-divider:            "»";
+
+
+// Cards
+// $card-spacer-x:            1.25rem !default;
+// $card-spacer-y:            .75rem !default;
+$card-border-width:           1px;
+$card-border-color:           $pf-color-black-300;
+$card-cap-bg:                 $pf-color-black-150;
+
+$pf-card-border-color:        $pf-color-black-300;
+$pf-card-cap-bg:              $pf-color-white;
+$pf-card-footer-bg:           $pf-color-black-100;
+$pf-card-border-color-active: $pf-color-blue-300;
+
+
+//$card-bg:                  $pf-color-white;
+
+//$card-link-hover-color:    #fff !default;
+
+$card-img-overlay-padding: 1.25rem !default;
+$card-deck-margin:         .625rem !default;
+$card-columns-sm-up-column-gap: 1.25rem !default;
+
+
+// Pagination
+
+
+$pagination-padding-x:                $pf-spacer-xs !default;
+$pagination-padding-y:                $pf-spacer-xxxs !default;
+$pagination-padding-x-sm:             $pf-spacer-xs !default;
+$pagination-padding-y-sm:             $pf-spacer-xxxs !default;
+$pagination-padding-x-lg:             $pf-spacer-lg !default;
+$pagination-padding-y-lg:             $pf-spacer-xs !default;
+
+
+$pagination-color:                     $pf-color-black-700 !default;
+// $pagination-bg:                        #fff !default;
+// $pagination-border-width:              $border-width !default;
+$pagination-border-color:              $btn-secondary-border !default;
+
+$pagination-hover-color:               $pagination-color !default;
+$pagination-hover-bg:                  $pf-gradient-color-end !default;
+$pagination-hover-border:              $pagination-border-color !default;
+
+$pagination-active-color:              $pagination-color !default;
+$pagination-active-bg:                 $pagination-hover-bg !default;
+$pagination-active-border:             $btn-secondary-border !default;
+
+// $pagination-disabled-color:            $gray-light !default;
+// $pagination-disabled-bg:               #fff !default;
+$pagination-disabled-border:           $pf-color-black-300 !default;
+
+// Tags
+
+$tag-font-size:             $font-size-sm !default;
+$tag-font-weight:           $pf-font-weight-regular !default;
+$tag-padding-x:             $pf-spacer-xxs !default;
+$tag-padding-y:             $pf-spacer-xxxs !default;
+$tag-pill-padding-x:        $pf-spacer-xxxs !default;
+
+
+
+// Form states and alerts
+//
+// Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             $pf-color-black-800;
+$state-success-bg:               lighten($pf-color-green-100, 8%);
+$state-success-border:           $brand-success;
+
+$state-info-text:                $pf-color-black-800;
+$state-info-bg:                  $pf-color-black-150;
+$state-info-border:              $pf-color-black-500;
+
+$state-warning-text:             $pf-color-black-800;
+$state-warning-bg:               lighten($pf-color-orange-100, 8%);
+$state-warning-border:           $brand-warning;
+
+$state-danger-text:              $pf-color-black-800;
+$state-danger-bg:                lighten($pf-color-red-100, 55%);
+$state-danger-border:            $brand-danger;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-x:             $spacer;
+$alert-link-font-weight:      normal;
+$pf-alert-icon-font-size:     $pf-icon-size-sm;
+
+
+// Tabs
+//
+// Define tab colors, etc.
+
+$nav-tabs-border-color:                       $pf-color-black-200;
+// $nav-tabs-border-width:                       $border-width !default;
+// $nav-tabs-border-radius:                      $border-radius !default;
+$nav-tabs-link-hover-border-color:            $pf-color-black-200;
+$nav-tabs-active-link-hover-color:            $link-color;
+// $nav-tabs-active-link-hover-bg:               $body-bg !default;
+// $nav-tabs-active-link-hover-border-color:     #ddd !default;
+// $nav-tabs-justified-link-border-color:        $nav-tabs-border-color;
+// $nav-tabs-justified-active-link-border-color: $body-bg !default;
+$pf-tabs-color:                               $pf-color-black-700;

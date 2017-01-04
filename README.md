@@ -73,7 +73,7 @@ To watch for changes, re-generate the front-end, and serve it via a BrowserSync 
 npm run gulp patternlab:serve
 ```
 
-BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
+BrowserSync should open [http://localhost:8082](http://localhost:8082) in your browser.
 
 
 
@@ -81,16 +81,13 @@ BrowserSync should open [http://localhost:3000](http://localhost:3000) in your b
 
 Follow this steps to publish your results to [GitHub pages](https://pages.github.com/):
 
-
 1. Pull master
 1. Rebase your branch against master
 1. Checkout that branch
 1. Run the build
-1. Publish the script to github-pages in your repo with the command: `./scripts/publish.sh -r <reponame> public` where `<reponame>` is the local name of your repo (eg. bleathem, origin, etc.)
+1. Publish the script to github-pages in your repo with the command: `npm run publish -- -r <reponame> public` where `<reponame>` is the local name of your repo (eg. bleathem, origin, etc.)
 1. The url is included on the Settings page of your repo under GitHub Pages.
 
 ___
 
-Built with :heart: by the [PattrenFly Community](https://www.patternfly.org/community/) and supported by the Red Hat UXD Team.
-
-
+Built with :heart: by the [PatternFly Community](https://www.patternfly.org/community/) and supported by the Red Hat UXD Team.

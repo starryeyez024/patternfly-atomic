@@ -17,14 +17,15 @@ limitations under the License.
 // PatterFly View Selector
 // --------------------------------------------------
 
-.pf-view-selector__btn-link {
-  color: $color-pf-black-900;
-  font-size: $font-size-relative-base;
-  padding: 0;
-  @include hover-focus-active { color: $link-color; }
-}
 
-.pf-view-selector__btn-link.active {
-  color: $link-color;
-  cursor: default;
+.pf-view-selector__btn-link {
+  padding-left: 0;
+  padding-right: 0;
+  @include hover-focus-active { color: $link-color; }
+  &.active {
+    .fa, .pf-icon {
+      color: $link-color;
+      cursor: default;
+    }
+  }
 }

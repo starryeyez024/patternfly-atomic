@@ -14,8 +14,11 @@ limitations under the License.
 */
 
 //
+// Cards
+// --------------------------------------------------
+
+
 // Base styles
-//
 .card {
   @include box-shadow($pf-box-shadow);
 }
@@ -42,8 +45,7 @@ limitations under the License.
   }
   .card-block { padding: $pf-spacer-lg; }
   .card-title {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include text-truncate;
   }
   // .dropdown {
   //   margin: -$pf-spacer-xxs 0;
@@ -61,7 +63,7 @@ limitations under the License.
   }
 }
 .pf-card__top-element { margin-bottom: $pf-spacer-md; }
-.pf-card--accented { border-top: 2px solid $color-pf-blue-300; }
+.pf-card--accented { border-top: 2px solid $pf-color-blue-300; }
 .pf-card--select {
   border: 2px solid transparent;
   background-clip: content-box;

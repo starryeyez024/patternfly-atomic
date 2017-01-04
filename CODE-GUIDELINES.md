@@ -326,11 +326,11 @@ Follow this comment structure:
 
 
 
-/*
- * Component heading
- *
- * Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
- */
+//
+// Component heading
+// --------------------------------------------------
+//  Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
+
 
 // Section level Comment
 .selector {
@@ -440,24 +440,24 @@ Example:
 
 ```html
 <div class="pf-panel pf-panel--collapsible">
-  <div class="pf-panel_title">
+  <div class="pf-panel__title">
     <h1>Heading</h1>
   </div>
 
-  <div class="pf-panel_content">
+  <div class="pf-panel__content">
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </div>
 ```
 
 ```sass
-.pf-panel {}                     // Block
-.pf-panel--collapsible {}        // Modifier of block
+.pf-panel {}                      // Block
+.pf-panel--collapsible {}         // Modifier of block
 
-.pf-panel_title {}               // Element
+.pf-panel__title {}               // Element
 
-.pf-panel_content {}             // Element
-.pf-panel_content--unpadded {}   // Modifier of element
+.pf-panel__content {}             // Element
+.pf-panel__content--unpadded {}   // Modifier of element
 ```
 
 **Why it’s better**
@@ -580,7 +580,7 @@ Keep PatternFly code DRY. Reuse as much as you can from Bootstrap.
 
 // PatternFly card modifier
 .pf-card--accented {
-  border-top: 2px solid $color-pf-blue-300;
+  border-top: 2px solid $pf-color-blue-300;
 }    
 ```
 
