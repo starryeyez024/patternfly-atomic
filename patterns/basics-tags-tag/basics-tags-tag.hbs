@@ -1,6 +1,8 @@
 <span class="tag {{ tagClass }}">
   {{ tagText }}
   {{#if tagDismissable }}
-    <a href="#"><span class="pficon pficon-close">X <!--TODO: use a close atom --></span></a>
-{{/if}}
+    <a href="#">
+      {{> basics-icon iconFamily="pf-icon" iconName="pf-icon-close" }}
+    </a>
+  {{/if}}
 </span>

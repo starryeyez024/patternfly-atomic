@@ -2405,8 +2405,8 @@ limitations under the License.
   font-weight: normal;
   font-style: normal; }
 
-[class^="pficon-"],
-[class*=" pficon-"] {
+[class^="pf-icon-"],
+[class*=" pf-icon-"] {
   display: inline-block;
   font-family: "PatternFlyIcons-webfont";
   font-style: normal;
@@ -2419,196 +2419,196 @@ limitations under the License.
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
-.pficon-middleware:before {
+.pf-icon-middleware:before {
   content: ""; }
 
-.pficon-add-circle-o:before {
+.pf-icon-add-circle-o:before {
   content: ""; }
 
-.pficon-build:before {
+.pf-icon-build:before {
   content: ""; }
 
-.pficon-builder-image:before {
+.pf-icon-builder-image:before {
   content: ""; }
 
-.pficon-bundle:before {
+.pf-icon-bundle:before {
   content: ""; }
 
-.pficon-blueprint:before {
+.pf-icon-blueprint:before {
   content: ""; }
 
-.pficon-close:before {
+.pf-icon-close:before {
   content: ""; }
 
-.pficon-cloud-security:before {
+.pf-icon-cloud-security:before {
   content: ""; }
 
-.pficon-cloud-tenant:before {
+.pf-icon-cloud-tenant:before {
   content: ""; }
 
-.pficon-cluster:before {
+.pf-icon-cluster:before {
   content: ""; }
 
-.pficon-container-node:before {
+.pf-icon-container-node:before {
   content: ""; }
 
-.pficon-cpu:before {
+.pf-icon-cpu:before {
   content: ""; }
 
-.pficon-delete:before {
+.pf-icon-delete:before {
   content: ""; }
 
-.pficon-domain:before {
+.pf-icon-domain:before {
   content: ""; }
 
-.pficon-edit:before {
+.pf-icon-edit:before {
   content: ""; }
 
-.pficon-enterprise:before {
+.pf-icon-enterprise:before {
   content: ""; }
 
-.pficon-error-circle-o:before {
+.pf-icon-error-circle-o:before {
   color: #cc0000;
   content: ""; }
 
-.pficon-export:before {
+.pf-icon-export:before {
   content: ""; }
 
-.pficon-flag:before,
-.pficon-messages:before {
+.pf-icon-flag:before,
+.pf-icon-messages:before {
   content: ""; }
 
-.pficon-flavor:before {
+.pf-icon-flavor:before {
   content: ""; }
 
-.pficon-folder-close:before {
+.pf-icon-folder-close:before {
   content: ""; }
 
-.pficon-folder-open:before {
+.pf-icon-folder-open:before {
   content: ""; }
 
-.pficon-help:before {
+.pf-icon-help:before {
   content: ""; }
 
-.pficon-history:before {
+.pf-icon-history:before {
   content: ""; }
 
-.pficon-home:before {
+.pf-icon-home:before {
   content: ""; }
 
-.pficon-image:before {
+.pf-icon-image:before {
   content: ""; }
 
-.pficon-import:before {
+.pf-icon-import:before {
   content: ""; }
 
-.pficon-info:before {
+.pf-icon-info:before {
   color: #4d5258;
   content: ""; }
 
-.pficon-memory:before {
+.pf-icon-memory:before {
   content: ""; }
 
-.pficon-network:before {
+.pf-icon-network:before {
   content: ""; }
 
-.pficon-ok:before {
+.pf-icon-ok:before {
   color: #3f9c35;
   content: ""; }
 
-.pficon-print:before {
+.pf-icon-print:before {
   content: ""; }
 
-.pficon-private:before {
+.pf-icon-private:before {
   content: ""; }
 
-.pficon-project:before {
+.pf-icon-project:before {
   content: ""; }
 
-.pficon-refresh:before,
-.pficon-restart:before {
+.pf-icon-refresh:before,
+.pf-icon-restart:before {
   content: ""; }
 
-.pficon-regions:before {
+.pf-icon-regions:before {
   content: ""; }
 
-.pficon-registry:before {
+.pf-icon-registry:before {
   content: ""; }
 
-.pficon-replicator:before {
+.pf-icon-replicator:before {
   content: ""; }
 
-.pficon-repository:before {
+.pf-icon-repository:before {
   content: ""; }
 
-.pficon-resource-pool:before {
+.pf-icon-resource-pool:before {
   content: ""; }
 
-.pficon-resources-almost-full:before {
+.pf-icon-resources-almost-full:before {
   content: ""; }
 
-.pficon-resources-full:before {
+.pf-icon-resources-full:before {
   content: ""; }
 
-.pficon-route:before {
+.pf-icon-route:before {
   content: ""; }
 
-.pficon-running:before {
+.pf-icon-running:before {
   content: ""; }
 
-.pficon-save:before {
+.pf-icon-save:before {
   content: ""; }
 
-.pficon-screen:before {
+.pf-icon-screen:before {
   content: ""; }
 
-.pficon-server:before {
+.pf-icon-server:before {
   content: ""; }
 
-.pficon-server-group:before {
+.pf-icon-server-group:before {
   content: ""; }
 
-.pficon-service:before {
+.pf-icon-service:before {
   content: ""; }
 
-.pficon-settings:before {
+.pf-icon-settings:before {
   content: ""; }
 
-.pficon-storage-domain:before {
+.pf-icon-storage-domain:before {
   content: ""; }
 
-.pficon-tenant:before {
+.pf-icon-tenant:before {
   content: ""; }
 
-.pficon-thumb-tack-o:before {
+.pf-icon-thumb-tack-o:before {
   content: ""; }
 
-.pficon-topology:before {
+.pf-icon-topology:before {
   content: ""; }
 
-.pficon-trend-down:before {
+.pf-icon-trend-down:before {
   content: ""; }
 
-.pficon-trend-up:before {
+.pf-icon-trend-up:before {
   content: ""; }
 
-.pficon-user:before {
+.pf-icon-user:before {
   content: ""; }
 
-.pficon-users:before {
+.pf-icon-users:before {
   content: ""; }
 
-.pficon-virtual-machine:before {
+.pf-icon-virtual-machine:before {
   content: ""; }
 
-.pficon-volume:before {
+.pf-icon-volume:before {
   content: ""; }
 
-.pficon-warning-triangle-o:before {
+.pf-icon-warning-triangle-o:before {
   color: #ec7a08;
   content: ""; }
 
-.pficon-zone:before {
+.pf-icon-zone:before {
   content: ""; }
 
 .pf-icon--lg {
@@ -2639,11 +2639,6 @@ limitations under the License.
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-/*
- * Fonts
- *
- * PatternFly uses Overpass and Overpass mono http://overpassfont.org/
- */
 @font-face {
   font-family: 'overpass';
   src: url("../fonts/overpass-thin.eot");
@@ -2697,8 +2692,8 @@ limitations under the License.
 
 @font-face {
   font-family: 'overpass';
-  src: url("../fonts/overpass-regular-italic.eot");
-  src: url("../fonts/overpass-regular-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-regular-italic.woff2") format("woff2"), url("../fonts/overpass-regular-italic.woff") format("woff"), url("../fonts/overpass-regular-italic.ttf") format("truetype");
+  src: url("../fonts/overpass-italic.eot");
+  src: url("../fonts/overpass-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-italic.woff2") format("woff2"), url("../fonts/overpass-italic.woff") format("woff"), url("../fonts/overpass-italic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic; }
 
@@ -3045,8 +3040,8 @@ html {
 body {
   font-family: “overpass”, Overpass, “Open Sans”, Helvetica, sans-serif;
   font-size: 1rem;
-  line-height: 1.66667;
-  color: #030303;
+  line-height: 1.6666;
+  color: #292e34;
   background-color: #fff; }
 
 [tabindex="-1"]:focus {
@@ -3141,8 +3136,8 @@ table {
   background-color: transparent; }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   color: #8b8d8f;
   text-align: left;
   caption-side: bottom; }
@@ -3382,7 +3377,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 90%;
-  color: #030303; }
+  color: #292e34; }
   pre code {
     padding: 0;
     font-size: inherit;
@@ -4109,7 +4104,7 @@ pre {
   margin-bottom: 1rem; }
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 0.7rem;
     vertical-align: top;
     border-top: 1px solid #d1d1d1; }
   .table thead th {
@@ -4122,7 +4117,7 @@ pre {
 
 .table-sm th,
 .table-sm td {
-  padding: 0.3rem; }
+  padding: 0.25rem; }
 
 .table-bordered {
   border: 1px solid #d1d1d1; }
@@ -4196,7 +4191,7 @@ pre {
 
 .thead-inverse th {
   color: #fff;
-  background-color: #030303; }
+  background-color: #292e34; }
 
 .thead-default th {
   color: #4d5258;
@@ -4204,7 +4199,7 @@ pre {
 
 .table-inverse {
   color: #d1d1d1;
-  background-color: #030303; }
+  background-color: #292e34; }
   .table-inverse th,
   .table-inverse td,
   .table-inverse thead th {
@@ -4264,20 +4259,14 @@ limitations under the License.
 */
 .table th,
 .table td {
-  padding: 0.375rem 0.75rem; }
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; }
 
 .table thead th {
   border-bottom-width: 1px;
   background-image: linear-gradient(to bottom, #fafafa 0%, #ededed 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFAFA', endColorstr='#FFEDEDED', GradientType=0); }
-
-.table tbody + tbody {
-  border-bottom-width: 1px; }
-
-.table-bordered thead th,
-.table-bordered thead td {
-  border-bottom-width: 1px; }
 
 .form-control {
   display: block;
@@ -4311,7 +4300,7 @@ limitations under the License.
     cursor: not-allowed; }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.66667rem - 2px); }
+  height: calc(2.6666rem - 2px); }
 
 select.form-control:focus::-ms-value {
   color: #4d5258;
@@ -4428,8 +4417,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .form-control-danger {
   padding-right: 2.25rem;
   background-repeat: no-repeat;
-  background-position: center right 0.66667rem;
-  background-size: 1.33333rem 1.33333rem; }
+  background-position: center right 0.66665rem;
+  background-size: 1.3333rem 1.3333rem; }
 
 .has-success .form-control-feedback,
 .has-success .form-control-label,
@@ -4532,7 +4521,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.7rem 1.25rem;
+  padding: 0.7rem 1.21rem;
   font-size: 1rem; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -4589,21 +4578,21 @@ fieldset[disabled] a.btn {
     border-color: #00659c; }
 
 .btn-secondary {
-  color: #030303;
+  color: #292e34;
   background-color: #fff;
   border-color: #bbb;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0.1em 0.2em rgba(3, 3, 3, 0.1); }
   .btn-secondary:hover {
-    color: #030303;
+    color: #292e34;
     background-color: #e6e6e6;
     border-color: #9c9c9c; }
   .btn-secondary:focus, .btn-secondary.focus {
-    color: #030303;
+    color: #292e34;
     background-color: #e6e6e6;
     border-color: #9c9c9c; }
   .btn-secondary:active, .btn-secondary.active,
   .open > .btn-secondary.dropdown-toggle {
-    color: #030303;
+    color: #292e34;
     background-color: #e6e6e6;
     border-color: #9c9c9c;
     background-image: none;
@@ -4612,7 +4601,7 @@ fieldset[disabled] a.btn {
     .open > .btn-secondary.dropdown-toggle:hover,
     .open > .btn-secondary.dropdown-toggle:focus,
     .open > .btn-secondary.dropdown-toggle.focus {
-      color: #030303;
+      color: #292e34;
       background-color: #d4d4d4;
       border-color: #7b7b7b; }
   .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary:disabled:focus, .btn-secondary:disabled.focus {
@@ -4958,11 +4947,11 @@ fieldset[disabled] a.btn {
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.7rem 1.25rem;
+  padding: 0.7rem 1.21rem;
   font-size: 1.14286rem; }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.7rem 1.25rem;
+  padding: 0.7rem 1.21rem;
   font-size: 0.85rem; }
 
 .btn-block {
@@ -5033,7 +5022,7 @@ limitations under the License.
       background-image: none; }
 
 .btn-secondary {
-  color: #030303;
+  color: #292e34;
   background-color: #fff;
   border-color: #bbb;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0.1em 0.2em rgba(3, 3, 3, 0.1);
@@ -5042,16 +5031,16 @@ limitations under the License.
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFAFA', endColorstr='#FFEDEDED', GradientType=0); }
   .btn-secondary:hover {
     background-image: none;
-    color: #030303;
+    color: #292e34;
     background-color: #f2f2f2;
     border-color: darkgray; }
   .btn-secondary:focus, .btn-secondary.focus {
-    color: #030303;
+    color: #292e34;
     background-color: #f2f2f2;
     border-color: darkgray; }
   .btn-secondary:active, .btn-secondary.active,
   .open > .btn-secondary.dropdown-toggle {
-    color: #030303;
+    color: #292e34;
     background-color: #f2f2f2;
     border-color: darkgray;
     background-image: none;
@@ -5060,7 +5049,7 @@ limitations under the License.
     .open > .btn-secondary.dropdown-toggle:hover,
     .open > .btn-secondary.dropdown-toggle:focus,
     .open > .btn-secondary.dropdown-toggle.focus {
-      color: #030303;
+      color: #292e34;
       background-color: #d4d4d4;
       border-color: #7b7b7b; }
   .btn-secondary.disabled, .btn-secondary:disabled {
@@ -5237,6 +5226,11 @@ limitations under the License.
       border-color: #8b0000;
       background-image: none; }
 
+.btn-link .fa, .btn-link .pf-icon {
+  color: #292e34; }
+  .btn-link .fa:focus, .btn-link .fa:active, .btn-link .fa:hover, .btn-link .pf-icon:focus, .btn-link .pf-icon:active, .btn-link .pf-icon:hover {
+    color: #0088ce; }
+
 .fade {
   opacity: 0;
   transition: opacity .15s linear; }
@@ -5295,7 +5289,7 @@ tbody.collapse.in {
   padding: 0.5rem 0;
   margin: 0rem 0 0;
   font-size: 1rem;
-  color: #030303;
+  color: #292e34;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -5315,13 +5309,13 @@ tbody.collapse.in {
   padding: 3px 1.5rem;
   clear: both;
   font-weight: normal;
-  color: #030303;
+  color: #292e34;
   text-align: inherit;
   white-space: nowrap;
   background: none;
   border: 0; }
   .dropdown-item:focus, .dropdown-item:hover {
-    color: #030303;
+    color: #292e34;
     text-decoration: none;
     background-color: #def3ff; }
   .dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover {
@@ -5436,18 +5430,18 @@ tbody.collapse.in {
   outline: 0; }
 
 .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 0.9075rem;
+  padding-left: 0.9075rem; }
   .btn + .dropdown-toggle-split::after {
     margin-left: 0; }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 0.9075rem;
+  padding-left: 0.9075rem; }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 0.9075rem;
+  padding-left: 0.9075rem; }
 
 .btn-group.open .dropdown-toggle {
   box-shadow: inset 0 0.3em 0.9em rgba(3, 3, 3, 0.2); }
@@ -5638,7 +5632,7 @@ tbody.collapse.in {
 .custom-select {
   display: inline-block;
   max-width: 100%;
-  height: calc(2.66667rem - 2px);
+  height: calc(2.6666rem - 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   padding-right: 0.75rem \9;
   color: #4d5258;
@@ -5820,12 +5814,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 .nav-link {
+  font-size: 1.14286rem;
   color: #4d5258; }
   .nav-link:focus, .nav-link:active, .nav-link:hover {
     color: #4d5258; }
 
 .nav-tabs .nav-link {
-  padding: 0.25rem 1rem; }
+  padding: 1.21rem 1.5rem;
+  line-height: 1; }
 
 .nav-tabs .nav-item + .nav-item {
   margin-left: 0; }
@@ -5838,7 +5834,8 @@ limitations under the License.
   border-width: 0 0 2px 0;
   border-color: transparent;
   margin: 0.7rem 1rem 0;
-  padding: 0; }
+  padding: 0 0 0.25rem 0;
+  font-size: 1rem; }
   .pf-nav-tabs .nav-link:focus, .pf-nav-tabs .nav-link:active, .pf-nav-tabs .nav-link:hover {
     border-color: #ddd; }
   .pf-nav-tabs .nav-link.active {
@@ -5850,7 +5847,7 @@ limitations under the License.
   margin-top: -1px; }
 
 .nav-tabs + .pf-nav-tabs .nav-link {
-  font-size: 0.875em; }
+  padding-bottom: 0.25rem; }
 
 .nav-tabs + .pf-nav-tabs .dropdown-menu {
   margin-left: 1rem; }
@@ -6367,7 +6364,8 @@ limitations under the License.
     padding: 1.5rem; }
   .pf-card .card-title {
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .pf-card .dropdown.pf-dropdown--kebab {
     margin: -0.5rem; }
   .pf-card::after {
@@ -6381,7 +6379,7 @@ limitations under the License.
     pointer-events: none; }
 
 .pf-card__top-element {
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.21rem; }
 
 .pf-card--accented {
   border-top: 2px solid #39a5dc; }
@@ -6403,7 +6401,7 @@ limitations under the License.
   width: 2rem;
   height: 3rem;
   text-align: center;
-  padding-top: 1.25rem;
+  padding-top: 1.21rem;
   position: absolute;
   top: 0;
   left: 0; }
@@ -6465,7 +6463,7 @@ limitations under the License.
 .page-link {
   position: relative;
   float: left;
-  padding: 0.5rem 0.7rem;
+  padding: 0.25rem 0.7rem;
   margin-left: -1px;
   color: #4d5258;
   text-decoration: none;
@@ -6498,54 +6496,18 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-.pagination {
-  display: inline-block;
-  padding-left: 0;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.page-item {
-  display: inline; }
-  .page-item:first-child .page-link {
-    margin-left: 0; }
-  .page-item.active .page-link {
-    box-shadow: inset 0 0.3em 0.9em rgba(3, 3, 3, 0.2); }
-    .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
-      z-index: 2;
-      color: #4d5258;
-      cursor: default;
-      background-color: #ededed;
-      border-color: #bbb; }
-  .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
-    color: #8b8d8f;
-    pointer-events: none;
-    cursor: not-allowed;
-    background-color: #fff;
-    border-color: #d1d1d1; }
-
 .page-link {
   background-image: linear-gradient(to bottom, #fafafa 0%, #ededed 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFAFA', endColorstr='#FFEDEDED', GradientType=0); }
   .page-link:focus, .page-link:hover {
-    background-image: none;
-    color: #4d5258;
-    background-color: #ededed;
-    border-color: #bbb; }
-
-.pagination-lg .page-link {
-  padding: 0.7rem 1.5rem;
-  font-size: 1.14286rem; }
-
-.pagination-sm .page-link {
-  padding: 0.25rem 0.7rem;
-  font-size: 0.85rem; }
+    background-image: none; }
 
 .tag {
   display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 1em;
-  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -6564,8 +6526,8 @@ a.tag:focus, a.tag:hover {
   cursor: pointer; }
 
 .tag-pill {
-  padding-right: 0.6em;
-  padding-left: 0.6em; }
+  padding-right: 0.25rem;
+  padding-left: 0.25rem; }
 
 .tag-default {
   background-color: #8b8d8f; }
@@ -6618,6 +6580,11 @@ h4 .tag,
 h5 .tag,
 h6 .tag {
   font-size: 0.75em; }
+
+.tag a {
+  color: #fff;
+  margin-left: 0.25rem;
+  vertical-align: text-bottom; }
 
 .jumbotron {
   padding: 2rem 1rem;
@@ -7102,15 +7069,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 .pf-view-selector__btn-link {
-  color: #292e34;
-  font-size: 1em;
-  padding: 0; }
+  padding-left: 0;
+  padding-right: 0; }
   .pf-view-selector__btn-link:focus, .pf-view-selector__btn-link:active, .pf-view-selector__btn-link:hover {
     color: #0088ce; }
-
-.pf-view-selector__btn-link.active {
-  color: #0088ce;
-  cursor: default; }
+  .pf-view-selector__btn-link.active .fa, .pf-view-selector__btn-link.active .pf-icon {
+    color: #0088ce;
+    cursor: default; }
 
 /*
 Copyright 2016 Red Hat, Inc
@@ -7188,7 +7153,7 @@ limitations under the License.
 
 .modal-title {
   margin: 0;
-  line-height: 1.66667; }
+  line-height: 1.6666; }
 
 .modal-body {
   position: relative;
@@ -7232,7 +7197,7 @@ limitations under the License.
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.66667;
+  line-height: 1.6666;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -7313,7 +7278,7 @@ limitations under the License.
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.66667;
+  line-height: 1.6666;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -7628,10 +7593,10 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-color: #990000 !important; }
 
 .bg-inverse {
-  background-color: #030303 !important; }
+  background-color: #292e34 !important; }
 
 a.bg-inverse:focus, a.bg-inverse:hover {
-  background-color: black !important; }
+  background-color: #131517 !important; }
 
 .rounded-circle {
   border-radius: 50%; }
@@ -8090,27 +8055,27 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   margin-bottom: 1rem !important; }
 
 .m-pf-md {
-  margin: 1.25rem 1.25rem !important; }
+  margin: 1.21rem 1.21rem !important; }
 
 .mt-pf-md {
-  margin-top: 1.25rem !important; }
+  margin-top: 1.21rem !important; }
 
 .mr-pf-md {
-  margin-right: 1.25rem !important; }
+  margin-right: 1.21rem !important; }
 
 .mb-pf-md {
-  margin-bottom: 1.25rem !important; }
+  margin-bottom: 1.21rem !important; }
 
 .ml-pf-md {
-  margin-left: 1.25rem !important; }
+  margin-left: 1.21rem !important; }
 
 .mx-pf-md {
-  margin-right: 1.25rem !important;
-  margin-left: 1.25rem !important; }
+  margin-right: 1.21rem !important;
+  margin-left: 1.21rem !important; }
 
 .my-pf-md {
-  margin-top: 1.25rem !important;
-  margin-bottom: 1.25rem !important; }
+  margin-top: 1.21rem !important;
+  margin-bottom: 1.21rem !important; }
 
 .m-pf-lg {
   margin: 1.5rem 1.5rem !important; }
@@ -8412,27 +8377,27 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   padding-bottom: 1rem !important; }
 
 .p-pf-md {
-  padding: 1.25rem 1.25rem !important; }
+  padding: 1.21rem 1.21rem !important; }
 
 .pt-pf-md {
-  padding-top: 1.25rem !important; }
+  padding-top: 1.21rem !important; }
 
 .pr-pf-md {
-  padding-right: 1.25rem !important; }
+  padding-right: 1.21rem !important; }
 
 .pb-pf-md {
-  padding-bottom: 1.25rem !important; }
+  padding-bottom: 1.21rem !important; }
 
 .pl-pf-md {
-  padding-left: 1.25rem !important; }
+  padding-left: 1.21rem !important; }
 
 .px-pf-md {
-  padding-right: 1.25rem !important;
-  padding-left: 1.25rem !important; }
+  padding-right: 1.21rem !important;
+  padding-left: 1.21rem !important; }
 
 .py-pf-md {
-  padding-top: 1.25rem !important;
-  padding-bottom: 1.25rem !important; }
+  padding-top: 1.21rem !important;
+  padding-bottom: 1.21rem !important; }
 
 .p-pf-lg {
   padding: 1.5rem 1.5rem !important; }
@@ -8666,10 +8631,10 @@ a.text-danger:focus, a.text-danger:hover {
   color: #990000 !important; }
 
 .text-gray-dark {
-  color: #030303 !important; }
+  color: #292e34 !important; }
 
 a.text-gray-dark:focus, a.text-gray-dark:hover {
-  color: black !important; }
+  color: #131517 !important; }
 
 .text-hide {
   font: 0/0 a;
