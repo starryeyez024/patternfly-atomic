@@ -140,7 +140,7 @@ $pf-icon-var-zone:                       "\e911";
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 $pf-color-black-1000;
+$gray-dark:                 $pf-color-black-900;
 $gray:                      $pf-color-black-700;
 $gray-light:                $pf-color-black-500;
 $gray-lighter:              $pf-color-black-300;
@@ -163,7 +163,7 @@ $pf-border-hover-color: $pf-color-blue-200;
 //
 // Style anchor elements.
 
-$link-color:            $brand-primary;
+$link-color:            $pf-color-blue-400;
 // $link-decoration:       none !default;
 // $link-hover-color:      darken($link-color, 15%) !default;
 // $link-hover-decoration: underline !default;
@@ -297,7 +297,7 @@ $font-size-h4: 1.142857rem !default; // ~16px
 $font-size-h5: 1rem !default; // ~14px
 $font-size-h6: 0.857142rem !default; // ~12px
 
-// $line-height-base: 1.5 !default;
+$line-height-base: 1.6666 !default;
 
 // Removes spaces from headers. Use utility classes when necessary.
 // $headings-margin-bottom: 0 !default;
