@@ -664,7 +664,7 @@ You can also use box shadow utilities to add or remove shadows to any element:
 <!-- ============================================================ -->
 
 ## Gradients
-PatternFly has one gradient slight gradient to define panel headers, table headers, secondary btns and other elements. Always use the PatternFly gradient mixing to define it.
+PatternFly has one slight gradient to define panel headers, table headers, secondary btns and other elements. Always use the PatternFly gradient mixing to define it.
 
 ```sass
 thead th {
