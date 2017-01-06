@@ -639,7 +639,7 @@ You can also use [Bootstrap spacing utilities](http://v4-alpha.getbootstrap.com/
 
 ## Shadows
 
-PatternFly has 4 levels of shadows, always variables to apply `box-shadow`:
+PatternFly has 6 types of shadows, always variables to apply `box-shadow`:
 
 ```sass
 $pf-box-shadow-sm
@@ -667,7 +667,7 @@ You can also use box shadow utilities to add or remove shadows to any element:
 <!-- ============================================================ -->
 
 ## Gradients
-PatternFly has one slight gradient to define panel headers, table headers, secondary btns and other elements. Always use the PatternFly gradient mixing to define it.
+PatternFly has one slight gradient to define panel headers, table headers, secondary btns and other elements. Always use the PatternFly gradient mixin to define it.
 
 ```sass
 thead th {
