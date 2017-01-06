@@ -23,7 +23,10 @@ This set of rules generate some constraints and conventions. If you ran into ins
   - [Comment and Organization](#comment-and-organization)
   - [Naming Selectors](#naming-selectors)
   - [Specificity](#specificity)
-  - [Sass](#sass)
+  - [Spacing](#spacing)
+  - [Shadows](#shadows)
+  - [Gradients](#gradients)
+    [Sass](#sass)
   - [Credits and references](#credits-and-references)
 
 <!-- ============================================================ -->
