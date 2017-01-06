@@ -5231,23 +5231,6 @@ limitations under the License.
   .btn-link .fa:focus, .btn-link .fa:active, .btn-link .fa:hover, .btn-link .pf-icon:focus, .btn-link .pf-icon:active, .btn-link .pf-icon:hover {
     color: #0088ce; }
 
-.test-shadow {
-  background: #f7bd7f;
-  padding: 2em;
-  width: 50vw; }
-  .test-shadow.sm {
-    box-shadow: 0 0.05rem 0.1rem 0 rgba(3, 3, 3, 0.3); }
-  .test-shadow.md {
-    box-shadow: 0 0.1rem 0.3rem 0 rgba(3, 3, 3, 0.3); }
-  .test-shadow.lg {
-    box-shadow: 0 0.2rem 0.4rem 0 rgba(3, 3, 3, 0.3); }
-  .test-shadow.inset {
-    box-shadow: inset 0 0.1rem 0.1rem 0 rgba(3, 3, 3, 0.3); }
-  .test-shadow.right {
-    box-shadow: 0.2rem 0 0.5rem -0.2rem rgba(3, 3, 3, 0.3); }
-  .test-shadow.left {
-    box-shadow: -0.2rem 0 0.5rem -0.2rem rgba(3, 3, 3, 0.3); }
-
 .fade {
   opacity: 0;
   transition: opacity .15s linear; }
@@ -7557,6 +7540,41 @@ limitations under the License.
     padding-bottom: 30px; }
   .carousel-indicators {
     bottom: 20px; } }
+
+/*
+Copyright 2016 Red Hat, Inc
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+.pf-box-shadow-none {
+  box-shadow: none; }
+
+.pf-box-shadow-sm {
+  box-shadow: 0 0.05rem 0.1rem 0 rgba(3, 3, 3, 0.3); }
+
+.pf-box-shadow-md {
+  box-shadow: 0 0.1rem 0.3rem 0 rgba(3, 3, 3, 0.3); }
+
+.pf-box-shadow-lg {
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(3, 3, 3, 0.3); }
+
+.pf-box-shadow-inset {
+  box-shadow: inset 0 0.1rem 0.1rem 0 rgba(3, 3, 3, 0.3); }
+
+.pf-box-shadow-right {
+  box-shadow: 0.2rem 0 0.5rem -0.2rem rgba(3, 3, 3, 0.3); }
+
+.pf-box-shadow-left {
+  box-shadow: -0.2rem 0 0.5rem -0.2rem rgba(3, 3, 3, 0.3); }
 
 .align-baseline {
   vertical-align: baseline !important; }
