@@ -39,17 +39,20 @@ limitations under the License.
 // Variable format should follow the `$component-modifier-state-property` order.
 
 // PatternFly box shadows
-// TODO: See what kind of shadows we need and define standards
-$pf-box-shadow: 0 .1em .2em rgba($pf-color-black-1000, 0.1);
-$pf-box-shadow-md: 0 .1em .3em rgba($pf-color-black-1000, 0.3);
+//
+// sm is for btns, md is for cards, lg is for toast or modals, inset is for inputs
 
-$pf-box-shadow-inset-sm: inset 0 .3em .3em rgba($pf-color-black-1000, 0.2);
-$pf-box-shadow-inset-md: inset 0 .3em .6em rgba($pf-color-black-1000, 0.2);
-$pf-box-shadow-inset-lg: inset 0 .3em .9em rgba($pf-color-black-1000, 0.2);
+$pf-box-shadow-sm: 0 .05rem .1rem  0 rgba($pf-color-black-1000, 0.3);
+$pf-box-shadow-md: 0 .1rem .3rem  0 rgba($pf-color-black-1000, 0.3);
+$pf-box-shadow-lg: 0 .2rem .4rem  0 rgba($pf-color-black-1000, 0.3);
+
+$pf-box-shadow-inset: inset 0 .1rem .1rem 0 rgba($pf-color-black-1000, 0.3);
+
+$pf-box-shadow-left: -.2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3);
+$pf-box-shadow-right: .2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3);
 
 
 // Patternfly Gradient
-// TODO: Define standard gradient for patternfly
 $pf-gradient-color-start: $pf-color-black-100;
 $pf-gradient-color-end: $pf-color-black-200;
 $pf-gradient-percent-start: 0%;
@@ -57,6 +60,7 @@ $pf-gradient-percent-end: 100%;
 
 
 // Patternfly font path
+//
 // Defines path to /font foldeer
 $fa-font-path: "../fonts";
 $pf-font-path: "../fonts";
@@ -340,9 +344,9 @@ $btn-padding-x:                  $pf-spacer-md !default;
 $btn-padding-y:                  $pf-spacer-xs !default;
 $btn-line-height:                1 !default;
 $btn-font-weight:                $pf-font-weight-regular !default;
-$btn-box-shadow:                 inset 0 1px 0 rgba($pf-color-white, .15), $pf-box-shadow;
+$btn-box-shadow:                 inset 0 1px 0 rgba($pf-color-white, .15), $pf-box-shadow-sm;
 
-$btn-active-box-shadow:          $pf-box-shadow-inset-lg;
+$btn-active-box-shadow:          $pf-box-shadow-inset;
 
 $btn-primary-start-bg:           $pf-color-blue-300;
 $btn-primary-end-bg:             $brand-primary;
@@ -392,7 +396,7 @@ $dropdown-bg:                    $pf-color-white;
 $dropdown-border-color:          $pf-color-black-300;
 $dropdown-border-width:          $border-width;
 $dropdown-divider-bg:            $pf-color-black-200;
-$dropdown-box-shadow:            $pf-box-shadow;
+$dropdown-box-shadow:            $pf-box-shadow-sm;
 
 $dropdown-link-color:            $gray-dark;
 $dropdown-link-hover-color:      $gray-dark;

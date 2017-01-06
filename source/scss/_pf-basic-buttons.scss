@@ -44,3 +44,16 @@ limitations under the License.
     @include hover-focus-active { color: $link-color; }
   }
 }
+
+
+.test-shadow {
+  background: $pf-color-orange-200;
+  padding: 2em;
+  width: 50vw;
+  &.sm { box-shadow: $pf-box-shadow-sm; }
+  &.md { box-shadow: $pf-box-shadow-md; }
+  &.lg { box-shadow: $pf-box-shadow-lg; }
+  &.inset { box-shadow: $pf-box-shadow-inset; }
+  &.right { box-shadow: $pf-box-shadow-right; }
+  &.left { box-shadow: $pf-box-shadow-left; }
+}
