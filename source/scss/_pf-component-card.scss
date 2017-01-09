@@ -20,7 +20,7 @@ limitations under the License.
 
 // Base styles
 .card {
-  @include box-shadow($pf-box-shadow);
+  @include box-shadow($pf-box-shadow-md);
 }
 // Although .pf-card is a modifier of bootstrap .card, I am treating it as a
 // block element. The nesting classes are to keep the code DRY and overwrite
@@ -52,7 +52,7 @@ limitations under the License.
   // }
   .dropdown.pf-dropdown--kebab { margin: -$pf-spacer-xxs; }
   &::after {
-    @include box-shadow($pf-box-shadow);
+    @include box-shadow($pf-box-shadow-sm);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -67,7 +67,7 @@ limitations under the License.
 .pf-card--select {
   border: 2px solid transparent;
   background-clip: content-box;
-  &:hover::after { @include box-shadow($pf-box-shadow-md); }
+  &:hover::after { @include box-shadow($pf-box-shadow-lg); }
   &.active { border-color: $pf-card-border-color-active; }
 }
 .pf-card--multiselect {

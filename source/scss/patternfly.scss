@@ -22,7 +22,7 @@ limitations under the License.
 @import "pf-colors";
 @import "pf-variables";
 @import "node_modules/bootstrap/scss/variables";
-@import "pf-basic-mixins";
+@import "pf-mixins";
 @import "node_modules/bootstrap/scss/mixins";
 
 // Core: Import Icon Fonts
@@ -83,4 +83,5 @@ limitations under the License.
 @import "node_modules/bootstrap/scss/carousel";
 
 // Utility classes
+@import "pf-utilities";
 @import "node_modules/bootstrap/scss/utilities";

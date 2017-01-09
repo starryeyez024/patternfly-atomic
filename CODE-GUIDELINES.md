@@ -23,7 +23,10 @@ This set of rules generate some constraints and conventions. If you ran into ins
   - [Comment and Organization](#comment-and-organization)
   - [Naming Selectors](#naming-selectors)
   - [Specificity](#specificity)
-  - [Sass](#sass)
+  - [Spacing](#spacing)
+  - [Shadows](#shadows)
+  - [Gradients](#gradients)
+    [Sass](#sass)
   - [Credits and references](#credits-and-references)
 
 <!-- ============================================================ -->
@@ -592,6 +595,83 @@ Never use `!important` to raise the specificity of a rule. In well architected C
 // Bad
 .some-form {
   color: #000 !important;
+}
+```
+
+
+
+<!-- ============================================================ -->
+
+## Spaces
+
+Always use PatternFly spacing variables to define `margin` and `padding`
+
+```sass
+$pf-spacer-xxxs   // ~3px
+$pf-spacer-xxs    // 7px
+$pf-spacer-xs     // ~10px
+$pf-spacer-sm     // 14px
+$pf-spacer-md     // ~17px
+$pf-spacer-lg     // 21px
+$pf-spacer-xl     // ~24px
+$pf-spacer-xxl    // 28 px
+$pf-spacer-xxxl   // 35 px
+$pf-spacer-xxxxl  // 42 px
+```
+
+```sass
+.nav-link {
+  padding-bottom: $pf-spacer-xxxs;
+}
+
+.dropdown-menu {
+  margin-left: $pf-spacer-sm;
+}
+```
+
+You can also use [Bootstrap spacing utilities](http://v4-alpha.getbootstrap.com/utilities/spacing/) with PatternFly sizes:
+
+```html
+<p class="mb-lg">This paragraph has a large bottom margin</p>
+```
+
+<!-- ============================================================ -->
+
+## Shadows
+
+PatternFly has 6 types of shadows, always variables to apply `box-shadow`:
+
+```sass
+$pf-box-shadow-sm
+$pf-box-shadow-md
+$pf-box-shadow-lg
+$pf-box-shadow-inset
+$pf-box-shadow-left
+$pf-box-shadow-right
+```
+
+```sass
+.btn {
+  box-shadow: $pf-box-shadow-sm;
+}
+```
+
+You can also use box shadow utilities to add or remove shadows to any element:
+
+```html
+<p class="pf-box-shadow-md">This paragraph has a medium box shadow</p>
+
+<button class="btn btn-primary pf-box-shadow-none">This button has no shadow</button>
+```
+
+<!-- ============================================================ -->
+
+## Gradients
+PatternFly has one slight gradient to define panel headers, table headers, secondary btns and other elements. Always use the PatternFly gradient mixin to define it.
+
+```sass
+thead th {
+  @include pf-gradient;
 }
 ```
 
