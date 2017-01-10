@@ -1,6 +1,6 @@
-# PatternFly 4 CSS
+# PatternFly 5 CSS
 
-**PatternFly 4** is the best open source modular design system you'll ever use to build enterprise web applications.
+**PatternFly 5** is the best open source modular design system you'll ever use to build enterprise web applications.
 
 Think of PatternFly as a "skinned" version of [Bootstrap v4](http://v4-alpha.getbootstrap.com/) with additional components and customizations.
 
@@ -8,7 +8,7 @@ This repository is javascript free: you'll only find CSS here.
 
 ## Are we there yet?
 
-No, we are not there yet. PatternFly 4 is in its very early stages.
+No, we are not there yet. PatternFly 5 is in its very early stages.
 
 If you as passionate about CSS as we are, you would love to participate in the community and become a contributor.
 
@@ -17,13 +17,13 @@ If you as passionate about CSS as we are, you would love to participate in the c
 You can contact the patternFly community on the [PatternFly mailing list](https://www.redhat.com/mailman/listinfo/patternfly) or chat with us on the [PatternFly slack channel](https://patternfly.slack.com/).
 
 
-## Contributing to PatternFly 4
+## Contributing to PatternFly 5
 
-PatternFly 4 is implemented using [Pattern Lab Node - Gulp Edition](https://github.com/pattern-lab/patternlab-node).
+PatternFly 5 is implemented using [Pattern Lab Node - Gulp Edition](https://github.com/pattern-lab/patternlab-node).
 
 ### Coding style guidelines
 
-Please read the coding style guidelines for PatternFly 4.
+Please read the coding style guidelines for PatternFly 5.
 
 The guidelines are a work in progress and a live document, if you have any suggestion please [contact the PatternFly community](#communication-channels) or send a PR.
 
