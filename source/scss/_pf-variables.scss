@@ -302,7 +302,8 @@ $font-size-h6: 0.857142rem !default; // ~12px
 $line-height-base: 1.6666 !default;
 
 // Removes spaces from headers. Use utility classes when necessary.
-// $headings-margin-bottom: 0 !default;
+$headings-margin-bottom: $pf-spacer-sm !default;
+$pf-headings-margin-top: $pf-spacer-xl !default;
 // $headings-line-height:   1 !default;
 $headings-font-weight: $pf-font-weight-light !default;
 
@@ -337,7 +338,7 @@ $table-border-color:            $pf-color-black-300;
 
 $input-padding-x:                $pf-spacer-xs !default;
 $input-padding-y:                $pf-spacer-xs !default;
-$input-line-height:              1 !default;
+$input-line-height:              1.25 !default;
 
 $input-bg:                       #fff !default;
 $input-bg-disabled:              $gray-lighter !default;
