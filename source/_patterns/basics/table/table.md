@@ -1,5 +1,5 @@
 ---
-title: Tables
+title: PatternFly table
 ---
 ## Overview
 
