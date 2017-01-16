@@ -8,3 +8,4 @@ Thumbs.db
 public
 source/css/patternfly.css
 npm-debug.log
+*.swp
