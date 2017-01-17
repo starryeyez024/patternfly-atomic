@@ -30,7 +30,7 @@ limitations under the License.
   // overrides bootstrap's spacing
   .nav-link {
     padding: $pf-spacer-md $pf-spacer-lg;
-    line-height: 1;
+    // line-height: 1;
   }
   // overrides bootstrap to make the tabs butt next to each other
   .nav-item {
@@ -65,9 +65,9 @@ limitations under the License.
       }
     }
   }
-  .dropdown-menu {
-    margin-top: -$nav-tabs-border-width;
-  }
+  // .dropdown-menu {
+  //   margin-top: -$nav-tabs-border-width;
+  // }
 
 // if Patternfly-style tabs are used as a secondary menu to another .nav-tabs
   .nav-tabs + & {

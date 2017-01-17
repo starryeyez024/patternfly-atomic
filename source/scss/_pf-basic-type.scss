@@ -19,10 +19,13 @@ limitations under the License.
 
 
 // Font weights
-body { font-weight:    $pf-font-weight-regular;}
-h4, .h4 { font-weight: $pf-font-weight-semi-bold; }
-strong{ font-weight:   $pf-font-weight-bold; }
+html {  font-size: $pf-font-size-root;}
 
+body {  font-weight: $pf-font-weight-regular;}
+
+h4, .h4 { font-weight: $pf-font-weight-semi-bold; }
+
+strong{ font-weight:   $pf-font-weight-bold; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: $pf-headings-margin-top;

@@ -26,7 +26,7 @@ This set of rules generate some constraints and conventions. If you ran into ins
   - [Spacing](#spacing)
   - [Shadows](#shadows)
   - [Gradients](#gradients)
-    [Sass](#sass)
+  - [Sass](#sass)
   - [Credits and references](#credits-and-references)
 
 <!-- ============================================================ -->
