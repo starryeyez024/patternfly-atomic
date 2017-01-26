@@ -75,31 +75,31 @@ $pf-font-size-root: 16 !default;
 //
 // -sm is for btns, -md is for cards, -lg is for toast or modals, -inset is for inputs
 
-$pf-box-shadow-sm: 0  ((2 / $pf-font-size-root) * 1rem)  ((3 / $pf-font-size-root) * 1rem) ((-2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.25);
-$pf-box-shadow-md: 0  ((2 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.2);
-$pf-box-shadow-lg: 0  ((3 / $pf-font-size-root) * 1rem)  ((5 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.3);
-$pf-box-shadow-inset: inset 0 .1rem .1rem 0 rgba($pf-color-black-1000, 0.2);
-$pf-box-shadow-inset: inset 0  ((1 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) 0 rgba($pf-color-black-1000, 0.1);
-$pf-box-shadow-left: -.2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3);
-$pf-box-shadow-right: .2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3);
+$pf-box-shadow-sm: 0  ((2 / $pf-font-size-root) * 1rem)  ((3 / $pf-font-size-root) * 1rem) ((-2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.25) !default;
+$pf-box-shadow-md: 0  ((2 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.2) !default;
+$pf-box-shadow-lg: 0  ((3 / $pf-font-size-root) * 1rem)  ((5 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.3) !default;
+$pf-box-shadow-inset: inset 0 .1rem .1rem 0 rgba($pf-color-black-1000, 0.2) !default;
+$pf-box-shadow-inset: inset 0  ((1 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) 0 rgba($pf-color-black-1000, 0.1) !default;
+$pf-box-shadow-left: -.2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3) !default;
+$pf-box-shadow-right: .2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3) !default;
 
 
 // Patternfly Gradient
 
-$pf-gradient-color-start: $pf-color-black-100;
-$pf-gradient-color-end: $pf-color-black-200;
-$pf-gradient-percent-start: 0%;
-$pf-gradient-percent-end: 100%;
+$pf-gradient-color-start: $pf-color-black-100 !default;
+$pf-gradient-color-end: $pf-color-black-200 !default;
+$pf-gradient-percent-start: 0% !default;
+$pf-gradient-percent-end: 100% !default;
 
 
 // Patternfly font path
 
 // Defines path to /font foldeer
-$fa-font-path: "../fonts";
-$pf-font-path: "../fonts";
+$fa-font-path: "../fonts" !default;
+$pf-font-path: "../fonts" !default;
 // $pf-icon-font-name-fa:  "FontAwesome" !default;
-$pf-icon-font-name:  "PatternFlyIcons-webfont";
-$pf-icon-prefix:  pf-icon;
+$pf-icon-font-name:  "PatternFlyIcons-webfont" !default;
+$pf-icon-prefix:  pf-icon !default;
 
 
 // Patternfly Icons
@@ -207,6 +207,7 @@ $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
 
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -214,20 +215,13 @@ $brand-inverse:             $gray-dark !default;
 $enable-rounded:            false !default;
 $enable-shadows:            true !default;
 $enable-gradients:          true !default;
-// $enable-transitions:        true !default;
-// $enable-hover-media-query:  false !default;
-// $enable-grid-classes:       true !default;
-// $enable-print-styles:       true !default;
 
 
 
-
-
-
-// Opacity MOVE
+// Opacity
 //
-$pf-opacity-dark:   0.85;
 
+$pf-opacity-dark:   0.85;
 
 
 
@@ -236,7 +230,6 @@ $pf-opacity-dark:   0.85;
 // Control the default styling of most Bootstrap elements by modifying these
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
-
 
 $spacer:   1rem;
 $pf-spacer-xxxs:   (3 / $pf-font-size-root) * 1rem !default;
