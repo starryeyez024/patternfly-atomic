@@ -65,14 +65,23 @@ limitations under the License.
 //
 // Variable format should follow the `$component-modifier-state-property` order.
 
+
+// We are using the default root font of the browser, we assume a 16px base
+// since most browser root size is 16. This variables is just to make the
+// transformation from px to rem.
+$pf-font-size-root: 16 !default;
+
 // PatternFly box shadows
 //
 // -sm is for btns, -md is for cards, -lg is for toast or modals, -inset is for inputs
 
-$pf-box-shadow-sm: 0 .05rem .1rem  0 rgba($pf-color-black-1000, 0.3);
-$pf-box-shadow-md: 0 .1rem .3rem  0 rgba($pf-color-black-1000, 0.3);
-$pf-box-shadow-lg: 0 .2rem .4rem  0 rgba($pf-color-black-1000, 0.3);
-$pf-box-shadow-inset: inset 0 .1rem .1rem 0 rgba($pf-color-black-1000, 0.3);
+$pf-box-shadow-sm: 0  ((2 / $pf-font-size-root) * 1rem)  ((3 / $pf-font-size-root) * 1rem) ((-2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.25);
+$pf-box-shadow-md: 0  ((5 / $pf-font-size-root) * 1rem)  ((4 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.3);
+$pf-box-shadow-lg: 0  ((3 / $pf-font-size-root) * 1rem)  ((5 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.3);
+// $pf-box-shadow-md: 0 .1rem .3rem rgba($pf-color-black-1000, 0.8);
+// $pf-box-shadow-lg: 0 .2rem .4rem rgba($pf-color-black-1000, 0.8);
+$pf-box-shadow-inset: inset 0 .1rem .1rem 0 rgba($pf-color-black-1000, 0.2);
+$pf-box-shadow-inset: inset 0  ((1 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) 0 rgba($pf-color-black-1000, 0.1);
 $pf-box-shadow-left: -.2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3);
 $pf-box-shadow-right: .2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3);
 
@@ -222,10 +231,6 @@ $enable-gradients:          true !default;
 $pf-opacity-dark:   0.85;
 
 
-// We are using the default root font of the browser, we assume a 16px base
-// since most browser root size is 16. This variables is just to make the
-// transformation from px to rem.
-$pf-font-size-root: 16 !default;
 
 
 // Spacing
@@ -358,7 +363,7 @@ $pf-font-weight-bold:       700;
 $font-weight-normal: $pf-font-weight-regular !default;
 $font-weight-bold: $pf-font-weight-bold !default;
 
-$line-height-base: 1.6666 !default;
+// $line-height-base: 1.6666 !default;
 
 $font-size-h1: (28 / $pf-font-size-root) * 1rem !default; // 28px
 $font-size-h2: (24 / $pf-font-size-root) * 1rem !default; // 24px
@@ -381,8 +386,8 @@ $list-inline-padding: $pf-spacer-xxxs !default;
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-lg:         (4 / 3) !default;
-$line-height-sm:         1.5 !default;
+// $line-height-lg:         (4 / 3) !default;
+// $line-height-sm:         1.5 !default;
 
 // $border-radius:          .25rem !default;
 // $border-radius-lg:       .3rem !default;
@@ -428,7 +433,7 @@ $table-border-color:            $pf-component-border-color !default;
 // For each of Bootstraps buttons, define text, background and border color.
 
 $btn-padding-x:                  $pf-spacer-md !default;
-$btn-padding-y:                  $pf-spacer-xs !default;
+$btn-padding-y:                  $pf-spacer-xxs !default;
 // $btn-line-height:                1.25 !default;
 $btn-font-weight:                $pf-font-weight-regular !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($pf-color-white, .15), $pf-box-shadow-sm !default;
@@ -472,8 +477,8 @@ $btn-toolbar-margin:             $pf-spacer-xxs !default;
 
 // Forms
 
-$input-padding-x:                $pf-spacer-xs !default;
-$input-padding-y:                $pf-spacer-xs !default;
+$input-padding-x:                $pf-spacer-xxs !default;
+$input-padding-y:                $pf-spacer-xxs !default;
 // $input-line-height:              1.25 !default;
 
 $input-bg:                       $pf-color-white !default;
@@ -632,7 +637,7 @@ $dropdown-item-padding-x:        $pf-spacer-lg !default;
 
 
 // Navbar
-// Add variables for navbar when we do the navbar
+// Add variables for navbar
 
 
 
@@ -649,7 +654,7 @@ $nav-tabs-justified-link-border-color:        $pf-component-border-color !defaul
 
 $nav-item-margin:               $pf-spacer-xxxs !default;
 $nav-item-inline-spacer:        $pf-spacer-sm !default;
-$nav-link-padding:              $pf-spacer-xxs $pf-spacer-sm !default;
+$nav-link-padding:              $pf-spacer-xs $pf-spacer-sm !default;
 
 
 // Pagination
@@ -718,10 +723,10 @@ $card-deck-margin:         .625rem !default;
 $card-columns-sm-up-column-gap: 1.25rem !default;
 
 // Tooltips
-// Add styles for tooltips when we get to work on them
+// Add variables for tooltips
 
 // Popovers
-// Add styles when we get to work on popovers
+// Add variable for popovers
 
 
 // Badges

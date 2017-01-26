@@ -17,3 +17,14 @@ limitations under the License.
 // Patternfly Shame
 // --------------------------------------------------
 // The nest fot all our shamefull code.
+
+
+// This is a bug on bootstrap alpha 6, it is fixed on master. Remote thjs lines
+// after update to beta.
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: inherit;
+}

@@ -27,11 +27,6 @@ limitations under the License.
 }
 
 .nav-tabs {
-  // overrides bootstrap's spacing
-  .nav-link {
-    padding: $pf-spacer-md $pf-spacer-lg;
-    // line-height: 1;
-  }
   // overrides bootstrap to make the tabs butt next to each other
   .nav-item {
     + .nav-item {
@@ -39,14 +34,18 @@ limitations under the License.
     }
   }
   // adjusts the top of the dropdown to visually connect with the tab
-  .dropdown-menu {
-    margin-top: 0;
-    border-top: 0;
-  }
+  // .dropdown-menu {
+    // margin-top: 0;
+    // border-top: 0;
+  // }
 }
 
 // Patternfly-style tabs
 .pf-nav-tabs {
+
+  // .nav-item {
+  //   margin-bottom: 0;
+  // }
   .nav-link {
     border-width: 0 0 ($nav-tabs-border-width * 2) 0;
     border-color: transparent;
@@ -65,17 +64,23 @@ limitations under the License.
       }
     }
   }
-  // .dropdown-menu {
-  //   margin-top: -$nav-tabs-border-width;
-  // }
+
+  .dropdown-menu {
+    margin-top: 0;
+    margin-left: $pf-spacer-sm;
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $nav-tabs-active-link-hover-color;
+    background-color:inherit;
+    border-color: inherit;
+  }
 
 // if Patternfly-style tabs are used as a secondary menu to another .nav-tabs
   .nav-tabs + & {
     .nav-link {
       padding-bottom: $pf-spacer-xxxs;
-    }
-    .dropdown-menu {
-      margin-left: $pf-spacer-sm;
     }
   }
 }
