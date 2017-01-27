@@ -17,7 +17,7 @@ limitations under the License.
 // PatternFly Tags
 // --------------------------------------------------
 
-.tag {
+.badge {
   h1 &,
   h2 &,
   h3 &,
@@ -25,7 +25,7 @@ limitations under the License.
   h5 &,
   h6 & {
     // Size of the tag is relative to the font size of the title
-    font-size: $font-size-relative-xs;
+    font-size: $pf-font-size-relative-xs;
   }
 
   // This anchor targets the close icon in dismissable tags
