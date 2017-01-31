@@ -78,8 +78,7 @@ $pf-font-size-root: 16 !default;
 $pf-box-shadow-sm: 0  ((2 / $pf-font-size-root) * 1rem)  ((3 / $pf-font-size-root) * 1rem) ((-2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.25) !default;
 $pf-box-shadow-md: 0  ((2 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.2) !default;
 $pf-box-shadow-lg: 0  ((3 / $pf-font-size-root) * 1rem)  ((5 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.3) !default;
-$pf-box-shadow-inset: inset 0 .1rem .1rem 0 rgba($pf-color-black-1000, 0.2) !default;
-$pf-box-shadow-inset: inset 0  ((1 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) 0 rgba($pf-color-black-1000, 0.1) !default;
+$pf-box-shadow-inset: inset 0  ((1 / $pf-font-size-root) * 1rem)  ((2 / $pf-font-size-root) * 1rem) rgba($pf-color-black-1000, 0.1) !default;
 $pf-box-shadow-left: -.2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3) !default;
 $pf-box-shadow-right: .2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3) !default;
 
@@ -371,7 +370,7 @@ $lead-font-weight: $pf-font-weight-light !default;
 
 $list-inline-padding: $pf-spacer-xxxs !default;
 
-
+$small-font-size: $font-size-sm !default;
 
 // Components
 //
@@ -393,6 +392,7 @@ $pf-component-hover-border-color: $pf-color-blue-200;
 
 // Color for all borders, tables, tabs, inputs etc
 $pf-component-border-color: $pf-color-black-300;
+$pf-component-border-color-dark: $pf-color-black-400;
 
 // $caret-width:            .3em !default;
 
@@ -416,7 +416,7 @@ $table-bg-hover:                $pf-component-hover-bg;
 $table-bg-active:               $table-bg-hover;
 
 // $table-border-width:            $border-width !default;
-$table-border-color:            $pf-component-border-color !default;
+$table-border-color:            $pf-component-border-color-dark !default;
 
 
 // Buttons
@@ -468,15 +468,15 @@ $btn-toolbar-margin:             $pf-spacer-xxs !default;
 
 // Forms
 
-$input-padding-x:                $pf-spacer-xxs !default;
+$input-padding-x:                $pf-spacer-xs !default;
 $input-padding-y:                $pf-spacer-xxs !default;
 // $input-line-height:              1.25 !default;
 
 $input-bg:                       $pf-color-white !default;
-// $input-bg-disabled:              $gray-lighter !default;
+$input-bg-disabled:              $pf-color-black-200 !default;
 
 $input-color:                    $body-color !default;
-$input-border-color:             $pf-component-border-color !default;
+$input-border-color:             $pf-component-border-color-dark !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               $pf-box-shadow-inset !default;
 
@@ -607,7 +607,7 @@ $dropdown-min-width:             3em !default;
 $dropdown-padding-y:             $pf-spacer-xs !default;
 // $dropdown-margin-top:            0rem !default;
 $dropdown-bg:                    $pf-color-white !default;
-$dropdown-border-color:          $pf-component-border-color !default;
+$dropdown-border-color:          $pf-component-border-color-dark !default;
 $dropdown-border-width:          $border-width !default;
 $dropdown-divider-bg:            $pf-color-black-200 !default;
 $dropdown-box-shadow:            $pf-box-shadow-sm !default;

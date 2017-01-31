@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <!-- Don't duplicate the container class, you probably already have a
+  container wrapper  -->
+  <form>
+
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">email@example.com</p>
+      </div>
+    </div>
+
+    {{> basics-form-group formRightAligned=true formLabel="Password" formInputType="password" formInputValue="" }}
+
+  </form>
+
+</div>
