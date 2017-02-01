@@ -3,32 +3,16 @@ formRightAligned - when set to true it'll display the label on the right of the 
 formHelp - when set to true it'll display a help text line
 --}}
 
-{{#if formRightAligned}}
-  <div class="form-group row {{ formGroupModifierClass }}">
-    <label class="form-control-label col-sm-2 col-form-label" for="{{formInputId}}">{{ formLabel }}</label>
+<div class="form-group {{#if formRightAligned}}row{{/if}} {{ formGroupModifierClass }}">
 
-    <div class="col-sm-10">
-      {{#if formTextarea}}
-        <textarea class="form-control" id="{{ formInputId }}" rows="3"></textarea>
-      {{else if formSelect }}
-        {{> basics-select }}
-      {{else}}
-        {{> basics-input }}
-      {{/if}}
+  <label class="form-control-label {{#if formRightAligned}}col-sm-2 col-form-label{{/if}}" for="{{formInputId}}">{{ formLabel }}</label>
 
-      {{#if formHelp }}
-        <small class="form-text text-muted" id="{{formHelpId}}">{{ formHelpText }}</small>
-      {{/if}}
-    </div>
-  </div>
-
-{{else}}
-
-  <div class="form-group {{ formGroupModifierClass }}">
-    <label class="form-control-label" for="{{formInputId}}">{{ formLabel }}</label>
+  {{#if formRightAligned}}<div class="col-sm-10">{{/if}}
 
     {{#if formTextarea}}
       <textarea class="form-control" id="{{ formInputId }}" rows="3"></textarea>
+    {{else formStaticControl}}
+      <p class="form-control-static">{{ formStaticControlText }}</p>
     {{else if formSelect }}
       {{> basics-select }}
     {{else}}
@@ -43,5 +27,6 @@ formHelp - when set to true it'll display a help text line
       <small class="form-text text-muted" id="{{formHelpId}}">{{ formHelpText }}</small>
     {{/if}}
 
-  </div>
-{{/if}}
+    {{#if formRightAligned}}</div>{{/if}}
+
+</div>
