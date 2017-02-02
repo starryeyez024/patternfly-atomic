@@ -3140,8 +3140,8 @@ table {
   background-color: transparent; }
 
 caption {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.3125rem;
   color: #8b8d8f;
   text-align: left;
   caption-side: bottom; }
@@ -4179,7 +4179,7 @@ pre {
   margin-bottom: 1rem; }
   .table th,
   .table td {
-    padding: 0.625rem;
+    padding: 1.3125rem;
     vertical-align: top;
     border-top: 1px solid #bbb; }
   .table thead th {
@@ -4306,13 +4306,15 @@ limitations under the License.
 */
 .table th,
 .table td {
-  padding-top: 0.1875rem;
-  padding-bottom: 0.1875rem; }
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem; }
 
 .table thead th {
   border-bottom-width: 1px;
   background-image: linear-gradient(to bottom, #fafafa 0%, #ededed 100%);
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem; }
 
 .form-control {
   display: block;
@@ -4593,6 +4595,14 @@ limitations under the License.
 input[type="color"] {
   padding: 0;
   height: 2.25rem; }
+
+.has-success .form-control-label,
+.has-success .form-check-label,
+.has-warning .form-control-label,
+.has-warning .form-check-label,
+.has-danger .form-control-label,
+.has-danger .form-check-label {
+  color: #292e34; }
 
 .btn {
   display: inline-block;
