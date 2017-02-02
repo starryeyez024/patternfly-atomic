@@ -27,10 +27,10 @@
       </label>
     {{/if}}
     {{#if cardKebab}}
-      {{> basics-dropdown isKebab=true pullright=true }}
+      {{> components-dropdown isKebab=true pullright=true }}
     {{/if}}
     {{#if cardHeaderDropdown}}
-      {{> basics-dropdown dropdownText="Dropdown" pullright=true }}
+      {{> components-dropdown dropdownText="Dropdown" pullright=true }}
     {{/if}}
     <{{cardTitleSize}} class="card-title">{{{cardTitle}}}</{{cardTitleSize}}>
   </div>
@@ -49,7 +49,7 @@
         <div class="pf-card__top-element">{{> basics-icon iconFamily="pf-icon" iconName="pf-icon-middleware" iconModifier="pf-icon--circle pf-icon--md" }}</div>
     {{/if}}
     {{#if cardKebab}}
-      {{> basics-dropdown isKebab=true pullright=true }}
+      {{> components-dropdown isKebab=true pullright=true }}
     {{/if}}
     {{#if noTitle}}
     {{else}}
@@ -65,7 +65,7 @@
 {{#if cardFooter}}
   <div class="card-footer text-muted">
     {{#if cardFooterDropdown}}
-      {{> basics-dropdown dropdownText="Dropdown" pullright=true }}
+      {{> components-dropdown dropdownText="Dropdown" pullright=true }}
     {{/if}}
     {{{cardFooterContents}}}
   </div>
