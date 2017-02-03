@@ -405,7 +405,9 @@ $pf-component-border-color-dark: $pf-color-black-400;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:            $pf-spacer-xs !default;
+// This space is applyed to the left and right of the cell, the top and bottom
+// are defined on _b-tables.scss
+$table-cell-padding:            $pf-spacer-lg !default;
 $table-sm-cell-padding:         $pf-spacer-xxxs !default;
 
 

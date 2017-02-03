@@ -23,13 +23,15 @@ limitations under the License.
   th,
   td {
     // Changes default padding to pf specs
-    padding-top: $pf-spacer-xxxs;
-    padding-bottom: $pf-spacer-xxxs;
+    padding-top: $pf-spacer-xs;
+    padding-bottom: $pf-spacer-xs;
   }
 
   thead th {
     //removes doble border on table header
     border-bottom-width: $table-border-width;
     @include pf-gradient;
+    padding-top: $pf-spacer-sm;
+    padding-bottom: $pf-spacer-sm;
   }
 }
