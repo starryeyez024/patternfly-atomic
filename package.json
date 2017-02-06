@@ -29,7 +29,7 @@
     "postinstall": "node scripts/postinstall.js",
     "gulp": "gulp -- ",
     "publish": "ghpages",
-    "publish-travis": "ghpages -t -f public"
+    "publish-travis": "ghpages -t -r origin -b gh-pages -f public"
   },
   "license": "MIT",
   "engines": {
