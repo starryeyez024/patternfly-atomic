@@ -3,7 +3,7 @@ title: View Control
 ---
 ## Overview
 
-This element does not have its own design but can be seen in [toolbar pattern](http://www.patternfly.org/pattern-library/forms-and-controls/toolbar/#_design).
+This element does not have its own design but can be seen in the [toolbar pattern](http://www.patternfly.org/pattern-library/forms-and-controls/toolbar/#_design).
 
 Uses Bootstrap `.btn` and `.btn-link` classes to style buttons contained in the View Selector.
 
