@@ -1,39 +1,43 @@
-<header class="pf-masthead">
-
-  <div class="pf-masthead__section">
-    <div class="pf-masthead__navicon hidden-md-up">
-      {{!--{{> basics-icon iconFamily="fa" iconName="fa-bars" }}--}}
-      {{!--{{> basics-button-icon btnText="" btnClass="btn-link" iconFamily="fa" iconName="fa-bars" iconModifier="pf-icon--sm" ariaLabeledBy="Navicon"}}--}}
+<div class="container-fluid">
   
-     <button class="btn btn-link" aria-labelledby="Button">
-       <span class="fa fa-bars"></span>
-      </button>
+  <header class="row pf-masthead justify-content-between align-items-stretch">
+  
+    <div class="col-auto d-flex pf-masthead__section align-items-stretch">
+      <div class="pf-masthead__navicon align-self-center hidden-md-up">
+        {{!--{{> basics-icon iconFamily="fa" iconName="fa-bars" }}--}}
+        {{!--{{> basics-button-icon btnText="" btnClass="btn-link" iconFamily="fa" iconName="fa-bars" iconModifier="pf-icon--sm" ariaLabeledBy="Navicon"}}--}}
+    
+       <button class="btn btn-link" aria-labelledby="Button">
+         <span class="fa fa-bars"></span>
+        </button>
+      </div>
+      <a class="pf-masthead__brand align-self-center" href="">
+        <img src="https://rawgit.com/patternfly/patternfly/master-dist/dist/img/logo-alt.svg">
+        <img src="http://www.patternfly.org/assets/img/brand.svg" />
+      </a>
     </div>
-    <a class="pf-masthead__brand" href="">
-      <!--img src="https://rawgit.com/patternfly/patternfly/master-dist/dist/img/logo-alt.svg"/-->
-      <img src="http://www.patternfly.org/assets/img/brand.svg" />
-    </a>
-  </div>
+  
+    <div class="col-auto d-flex align-items-stretch pf-masthead__section hidden-sm-down">
+      <ul class="nav pf-utilities align-items-stretch">
+        <li class="nav-item d-flex align-items-stretch">
+          <a class="nav-link d-flex align-items-center" href="#">Status</a>
+        </li>
+        <li class="nav-item d-flex align-items-stretch">
+          <a class="nav-link d-flex align-items-center" href="#">Link</a>
+        </li>
+        <li class="nav-item d-flex dropdown align-items-stretch show">
+          <a class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{> basics-icon iconFamily="pf-icon" iconName="pf-icon-user" }}Brian Johnson</a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+  </header>
 
-  <div class="pf-masthead__section hidden-sm-down">
-    <ul class="nav pf-utilities">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Status</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown open">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{> basics-icon iconFamily="pf-icon" iconName="pf-icon-user" }}Brian Johnson</a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-</header>
+</div>
