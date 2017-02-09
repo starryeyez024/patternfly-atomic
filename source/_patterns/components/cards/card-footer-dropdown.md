@@ -1,5 +1,5 @@
 ---
-title: Card
+title: Card with Dropdown in Footer
 ---
 ## Overview
 

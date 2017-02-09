@@ -1,5 +1,5 @@
 ---
-title: PatternFly Icon with Circle Decorator
+title: PatternFly Icon Sizes
 ---
 
 ## Overview
