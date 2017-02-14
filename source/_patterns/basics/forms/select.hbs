@@ -1,4 +1,7 @@
-<select class="{{ formInputClass }} {{ formInputModifierClass }}" id="{{ formInputId }}" {{#if formDisabled}}disabled{{/if}} >
+<select class="{{ formInputClass }} {{ formInputModifierClass }}" id="{{ formInputId }}" {{#if formDisabled}}disabled{{/if}}
+{{#if formHelp}} aria-describedby="{{formHelpId}}"{{/if}}
+{{#if hasError}} aria-errormessage="{{formMessageId}}" aria-invalid="true"
+{{else formFeedbackMessage }} aria-describedby="{{formMessageId}}"{{/if}}>
   <option>Default select</option>
   <option>Option 1</option>
   <option>Option 2</option>

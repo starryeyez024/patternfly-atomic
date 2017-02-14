@@ -1,4 +1,6 @@
 <input class="{{ formInputClass }} {{ formInputModifierClass }}"
 id="{{formInputId}}" type="{{ formInputType}}" value="{{ formInputValue }}"
 placeholder="{{ formInputPlaceholder }}" {{#if formDisabled}}disabled{{/if}}
-{{#if formHelp}} aria-describedby="{{formHelpText}}"{{/if}} >
+{{#if formHelp}} aria-describedby="{{formHelpId}}"{{/if}}
+{{#if hasError}} aria-errormessage="{{formMessageId}}" aria-invalid="true"
+{{else formFeedbackMessage }} aria-describedby="{{formMessageId}}"{{/if}}>
