@@ -7,7 +7,7 @@ env:
     - CXX=g++-4.8
     - ENCRYPTION_LABEL: "02f48b5e2393"
     - COMMIT_AUTHOR_EMAIL: "patternfly-build@redhat.com"
-    - TRIGGER_REPO_SLUG: "patternfly/patternfly-atomic"
+    - TRIGGER_REPO_SLUG: "patternfly/patternfly-css"
     - TRIGGER_REPO_BRANCH: "master"
 
 
