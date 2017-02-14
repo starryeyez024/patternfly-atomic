@@ -12,8 +12,8 @@ formHelp - when set to true it'll display a help text line
     {{#if formTextarea}}
       <textarea class="form-control" id="{{ formInputId }}" rows="3"
       {{#if formHelp}} aria-describedby="{{formHelpId}}"{{/if}}
-      {{#if hasError}} aria-errormessage="{{formMessageId}}" aria-invalid="true"
-      {{else formFeedbackMessage }} aria-describedby="{{formMessageId}}"{{/if}}>
+      {{#if formFeedbackMessage }} aria-describedby="{{formMessageId}}"{{/if}}
+      {{#if hasError}} aria-invalid="true"{{/if}}>
       </textarea>
     {{else formStaticControl}}
       <p class="form-control-static" aria-labelledby="{{labelID}}">{{ formStaticControlText }}</p>
