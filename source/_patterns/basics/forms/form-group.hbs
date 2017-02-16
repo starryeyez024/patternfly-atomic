@@ -5,14 +5,18 @@ formHelp - when set to true it'll display a help text line
 
 <div class="form-group {{#if formRightAligned}}row{{/if}} {{ formGroupModifierClass }}">
 
-  <label class="form-control-label {{#if formRightAligned}}col-sm-2 col-form-label{{/if}}" for="{{formInputId}}">{{ formLabel }}</label>
+  <label class="form-control-label {{#if formRightAligned}}col-sm-2 col-form-label{{/if}}" for="{{formInputId}}" {{#if formStaticControl}}id="{{labelID}}""{{/if}}>{{ formLabel }}</label>
 
   {{#if formRightAligned}}<div class="col-sm-10">{{/if}}
 
     {{#if formTextarea}}
-      <textarea class="form-control" id="{{ formInputId }}" rows="3"></textarea>
+      <textarea class="form-control" id="{{ formInputId }}" rows="3"
+      {{#if formHelp}} aria-describedby="{{formHelpId}}"{{/if}}
+      {{#if formFeedbackMessage }} aria-describedby="{{formMessageId}}"{{/if}}
+      {{#if hasError}} aria-invalid="true"{{/if}}>
+      </textarea>
     {{else formStaticControl}}
-      <p class="form-control-static">{{ formStaticControlText }}</p>
+      <p class="form-control-static" aria-labelledby="{{labelID}}">{{ formStaticControlText }}</p>
     {{else if formSelect }}
       {{> basics-select }}
     {{else}}
@@ -20,7 +24,7 @@ formHelp - when set to true it'll display a help text line
     {{/if}}
 
     {{#if formFeedbackMessage }}
-      <div class="form-control-feedback">Feedback message</div>
+      <div class="form-control-feedback" id="{{formMessageId}}">Feedback message</div>
     {{/if}}
 
     {{#if formHelp }}
