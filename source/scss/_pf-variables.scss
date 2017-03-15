@@ -326,6 +326,21 @@ $link-color:            $pf-color-blue-400;
 // $link-hover-decoration: underline !default;
 
 
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:               12 !default;
+$grid-gutter-width-base:     $pf-spacer-xxxl !default; //Bootstrap default is 30px
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+) !default;
+
+
 // Fonts
 //
 // Change default font to Overpass http://overpassfont.org/
@@ -630,7 +645,32 @@ $dropdown-item-padding-x:        $pf-spacer-lg !default;
 
 
 // Navbar
-// Add variables for navbar
+
+// $navbar-border-radius:              $border-radius !default;
+$navbar-padding-x:                  ($grid-gutter-width-base / 2) !default;
+$navbar-padding-y:                  0 !default;
+
+$navbar-brand-padding-y:            .25rem !default;
+
+$navbar-toggler-padding-x:           .75rem !default;
+$navbar-toggler-padding-y:           .25rem !default;
+$navbar-toggler-font-size:           $font-size-lg !default;
+// $navbar-toggler-border-radius:       $btn-border-radius !default;
+
+$navbar-inverse-color:                 $pf-color-black-200 !default;
+$navbar-inverse-hover-color:           $pf-color-white !default;
+$navbar-inverse-active-color:          $pf-color-white !default;
+$navbar-inverse-disabled-color:        $pf-color-black-600 !default;
+$navbar-inverse-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-inverse-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-inverse-toggler-border:        rgba($white,.1) !default;
+
+// $navbar-light-color:                rgba($black,.5) !default;
+// $navbar-light-hover-color:          rgba($black,.7) !default;
+// $navbar-light-active-color:         rgba($black,.9) !default;
+// $navbar-light-disabled-color:       rgba($black,.3) !default;
+// $navbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-light-toggler-border:       rgba($black,.1) !default;
+
 
 
 

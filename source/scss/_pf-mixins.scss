@@ -93,6 +93,18 @@ limitations under the License.
     $end-percent: $pf-gradient-percent-end);
 }
 
+// Patternfly gradient four colors to use on the horizontal nav, the default is the horizontal nav background color
+@mixin pf-gradient-y-four-colors(
+  $start-color: $pf-color-black-800,
+  $second-quarter-color: $pf-color-black-800,
+  $second-quarter-stop: 1px,
+  $third-quarter-color: #1d1d1d,
+  $third-quarter-stop: 1px,
+  $end-color: $pf-color-black-1000
+  ) {
+  background-image: linear-gradient($start-color, $second-quarter-color $second-quarter-stop, $third-quarter-color $third-quarter-stop, $end-color);
+  background-repeat: no-repeat;
+}
 
 // Box shadow mixin
 @mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
