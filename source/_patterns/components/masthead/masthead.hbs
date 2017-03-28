@@ -12,7 +12,11 @@
       </a>
     </div>
     <nav class="pf-masthead__section pf-utilities" role="navigation" aria-label="Utilities navigation">
-      {{>components-utilities}}
+      {{#>components-nav}}
+        {{>components-navlink linkText="Status"}}
+        {{>components-navlink linkText="Link"}}
+        {{>components-navlink linkText="Brian Johnson" linkIcon=true iconFamily="pf-icon" iconName="pf-icon-user" dropdown=true}}
+      {{/components-nav}}
     </nav>
   </header>
 </div>
