@@ -1,5 +1,5 @@
-<li class="nav-item {{liClass}} {{#if dropdown}}dropdown show{{/if}}">
-    <a class="nav-link {{#if active}}active{{/if}} {{aClass}} {{#if dropdown}}dropdown-toggle{{/if}}" href="#" {{#if dropdown}}data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"{{/if}}>
+<li class="nav-item {{#if dropdown}}dropdown show{{/if}}">
+    <a class="nav-link {{#if active}}active{{/if}} {{#if dropdown}}dropdown-toggle{{/if}}" href="#" {{#if dropdown}}data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"{{/if}}>
       {{#if linkIcon}}<span class="{{ iconFamily }} {{ iconName }}" aria-hidden="true"></span>{{/if}}{{{linkText}}}
     </a>
     {{#if dropdown}}

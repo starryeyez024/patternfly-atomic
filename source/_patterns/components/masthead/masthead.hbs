@@ -1,17 +1,17 @@
-<div class="container-fluid">
-  <header class="row pf-masthead justify-content-between align-items-stretch" role="banner">
-    <div class="col-auto d-flex pf-masthead__section align-items-stretch">
-      <a class="pf-masthead__skip align-items-center d-flex" href="#main">Skip to main content</a>
-      <div class="pf-masthead__navicon align-self-center hidden-md-up">
+<div>
+  <header class="pf-masthead" role="banner">
+    <div class="pf-masthead__section">
+      <a class="pf-masthead__skip" href="#main">Skip to main content</a>
+      <div class="pf-masthead__navicon">
         <button class="btn btn-link" aria-label="Site navigation">
           <span class="fa fa-bars"></span>
         </button>
       </div>
-      <a class="pf-masthead__brand align-self-center" href="">
-        <img src="/images/logo-alt.svg" alt="" /><img src="/images/brand.svg" alt="PatternFly Enterprise Application" />
+      <a class="pf-masthead__brand" href="">
+        <img class="pf-masthead__brand__icon" src="/images/logo-alt.svg" alt="" /><img src="/images/brand.svg" alt="PatternFly Enterprise Application" />
       </a>
     </div>
-    <nav class="col-auto d-flex align-items-stretch pf-masthead__section hidden-sm-down" role="navigation" aria-label="Utilities navigation">
+    <nav class="pf-masthead__section pf-masthead__utilities" role="navigation" aria-label="Utilities navigation">
       {{>components-utilities}}
     </nav>
   </header>
