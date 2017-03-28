@@ -41,6 +41,8 @@ limitations under the License.
 .btn-link {
   .fa, .pf-icon {
     color: $pf-color-black-900;
-    @include hover-focus-active { color: $link-color; }
+  }
+  @include hover-focus-active {
+    .fa, .pf-icon { color: $link-color; }
   }
 }
