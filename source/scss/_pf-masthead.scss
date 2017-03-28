@@ -80,13 +80,10 @@ limitations under the License.
   margin: $pf-spacer-xxxs 0 ;
 }
 
-.pf-masthead__utilities {
+.pf-utilities {
   @include media-breakpoint-down(sm) {
     display: none;
   }
-}
-
-.pf-utilities {
   .nav-item {
     display: flex;
     border-left: 1px solid $pf-color-black-700;
