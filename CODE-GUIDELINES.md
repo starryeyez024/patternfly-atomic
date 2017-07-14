@@ -6,11 +6,11 @@ Please enforce these guidelines at all times. Small or large, call out what's in
 
 This set of rules generate some constraints and conventions. If you ran into instances where a convention isn’t obvious or a solution could be handled in a few different ways, contact the PatternFly community, have a conversation about how to handle it and update this guidelines when needed.
 
-
+<!--  
 // TODO
 // Rules to write handlbars on patternlab
 // Create table of browsers we support
-
+-->
 
 ## Table of content
 
@@ -236,7 +236,7 @@ Selectors fall into 3 categories:
 
 Layout are containers concern about it's children vertical and horizontal alignment and spacing.
 
-// Layouts are prefixed with `-l` for example `.pf-l-grid_item`.
+<!-- // Layouts are prefixed with `-l` for example `.pf-l-grid_item`. -->
 
 
 #### Components
@@ -247,14 +247,14 @@ Components are modular and independent structures concern about how a thing look
 - The component itself never has widths or floats.
 - Elements inside a component never use top margins. The first element touches the top of its component.
 
-// Components are prefixed with `-c` for example `.pf-c-mast-head`.
+<!-- // Components are prefixed with `-c` for example `.pf-c-mast-head`. -->
 
 
 #### Utilities
 
 Utility classes have the single purpose to reduce the frequency of highly repetitive declarations.
 
-// Utility are prefixed with `-u for example `.pf-c-mast-head`.
+<!-- // Utility are prefixed with `-u for example `.pf-c-mast-head`. -->
 
 
 <!-- ============================================================ -->
