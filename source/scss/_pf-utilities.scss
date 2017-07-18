@@ -19,10 +19,10 @@ limitations under the License.
 
 // PatternFly Shadows
 
-.pf-box-shadow-none {   box-shadow: none; }
-.pf-box-shadow-sm {     box-shadow: $pf-box-shadow-sm }
-.pf-box-shadow-md {     box-shadow: $pf-box-shadow-md }
-.pf-box-shadow-lg {     box-shadow: $pf-box-shadow-lg }
-.pf-box-shadow-inset {  box-shadow: $pf-box-shadow-inset }
-.pf-box-shadow-right {  box-shadow: $pf-box-shadow-right }
-.pf-box-shadow-left {   box-shadow: $pf-box-shadow-left }
+.pf-box-shadow-none {   box-shadow: none !important; }
+.pf-box-shadow-sm {     box-shadow: $pf-box-shadow-sm !important }
+.pf-box-shadow-md {     box-shadow: $pf-box-shadow-md !important }
+.pf-box-shadow-lg {     box-shadow: $pf-box-shadow-lg !important }
+.pf-box-shadow-inset {  box-shadow: $pf-box-shadow-inset !important }
+.pf-box-shadow-right {  box-shadow: $pf-box-shadow-right !important }
+.pf-box-shadow-left {   box-shadow: $pf-box-shadow-left !important }
