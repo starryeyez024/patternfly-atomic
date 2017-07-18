@@ -23,7 +23,6 @@ limitations under the License.
 @mixin pf-button-variant($color, $background, $background-start, $background-end, $border) {
   $active-background: darken($background, 5%);
   $active-border: darken($border, 7%);
-
   color: $color;
   background-color: $background;
   border-color: $border;
@@ -83,6 +82,7 @@ limitations under the License.
     }
   }
 }
+
 
 // Patternfly gradient
 @mixin pf-gradient() {
