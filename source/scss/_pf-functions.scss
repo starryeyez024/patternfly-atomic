@@ -19,11 +19,8 @@ limitations under the License.
 
 // Transform px to rems
 
-
-
-
 /*
-pem
+prem
 // __$pxval:__ pixel value to return as em/
 // __$base:__ defaults to 18px, but optional context can be passed in
 
@@ -39,6 +36,6 @@ pem
     @return $num / ($num * 0 + 1);
 }
 
-@function pf-pem($pxval, $base: $pf-font-size-root) {
+@function pf-prem($pxval, $base: $pf-font-size-root) {
     @return pf-strip-unit($pxval) / $base * 1rem;
 }

@@ -75,10 +75,10 @@ $pf-font-size-root: 16 !default;
 //
 // -sm is for btns, -md is for cards, -lg is for toast or modals, -inset is for inputs
 
-$pf-box-shadow-sm: 0  pf-pem(2)  pf-pem(3) pf-pem(-2) rgba($pf-color-black-1000, 0.25) !default;
-$pf-box-shadow-md: 0  pf-pem(2)  pf-pem(2) rgba($pf-color-black-1000, 0.2) !default;
-$pf-box-shadow-lg: 0  pf-pem(3)  pf-pem(5) rgba($pf-color-black-1000, 0.3) !default;
-$pf-box-shadow-inset: inset 0  pf-pem(1)  pf-pem(2) rgba($pf-color-black-1000, 0.1) !default;
+$pf-box-shadow-sm: 0  pf-prem(2)  pf-prem(3) pf-prem(-2) rgba($pf-color-black-1000, 0.25) !default;
+$pf-box-shadow-md: 0  pf-prem(2)  pf-prem(2) rgba($pf-color-black-1000, 0.2) !default;
+$pf-box-shadow-lg: 0  pf-prem(3)  pf-prem(5) rgba($pf-color-black-1000, 0.3) !default;
+$pf-box-shadow-inset: inset 0  pf-prem(1)  pf-prem(2) rgba($pf-color-black-1000, 0.1) !default;
 $pf-box-shadow-left: -.2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3) !default;
 $pf-box-shadow-right: .2rem 0 .5rem -.2rem rgba($pf-color-black-1000, 0.3) !default;
 
@@ -231,16 +231,16 @@ $pf-opacity-dark:   0.85;
 // You can add more entries to the $spacers map, should you need more variation.
 
 $spacer:   1rem;
-$pf-spacer-xxxs:   pf-pem(3) !default;
-$pf-spacer-xxs:    pf-pem(7) !default;
-$pf-spacer-xs:     pf-pem(10) !default;
-$pf-spacer-sm:     pf-pem(14)!default;
-$pf-spacer-md:     pf-pem(16) !default;
-$pf-spacer-lg:     pf-pem(21) !default;
-$pf-spacer-xl:     pf-pem(24) !default;
-$pf-spacer-xxl:    pf-pem(28) !default;
-$pf-spacer-xxxl:   pf-pem(35) !default;
-$pf-spacer-xxxxl:  pf-pem(42) !default;
+$pf-spacer-xxxs:   pf-prem(3) !default;
+$pf-spacer-xxs:    pf-prem(7) !default;
+$pf-spacer-xs:     pf-prem(10) !default;
+$pf-spacer-sm:     pf-prem(14)!default;
+$pf-spacer-md:     pf-prem(16) !default;
+$pf-spacer-lg:     pf-prem(21) !default;
+$pf-spacer-xl:     pf-prem(24) !default;
+$pf-spacer-xxl:    pf-prem(28) !default;
+$pf-spacer-xxxl:   pf-prem(35) !default;
+$pf-spacer-xxxxl:  pf-prem(42) !default;
 
 $spacer-x: $spacer;
 $spacer-y: $spacer;
@@ -333,10 +333,10 @@ $font-family-sans-serif: “overpass”, Overpass, “Open Sans”, Helvetica, s
 $font-family-monospace:  “overpass-mono”, Overpass-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 
-$font-size-base: pf-pem(14) !default; // 14px
-$font-size-lg:   pf-pem(16) !default; // 16px
-$font-size-sm:   pf-pem(12) !default; // 12px
-$font-size-xs:   pf-pem(10) !default; // 10px
+$font-size-base: pf-prem(14) !default; // 14px
+$font-size-lg:   pf-prem(16) !default; // 16px
+$font-size-sm:   pf-prem(12) !default; // 12px
+$font-size-xs:   pf-prem(10) !default; // 10px
 
 // Use relative font sizes when font size should vary with the parent
 $pf-font-size-relative-base: 1em !default;
@@ -355,12 +355,12 @@ $font-weight-bold: $pf-font-weight-bold !default;
 
 // $line-height-base: 1.6666 !default;
 
-$font-size-h1: pf-pem(28) !default; // 28px
-$font-size-h2: pf-pem(24) !default; // 24px
-$font-size-h3: pf-pem(20) !default; // 20px
-$font-size-h4: pf-pem(18) !default; // 16px
-$font-size-h5: pf-pem(14) !default; // 14px
-$font-size-h6: pf-pem(12) !default; // 12px
+$font-size-h1: pf-prem(28) !default; // 28px
+$font-size-h2: pf-prem(24) !default; // 24px
+$font-size-h3: pf-prem(20) !default; // 20px
+$font-size-h4: pf-prem(18) !default; // 16px
+$font-size-h5: pf-prem(14) !default; // 14px
+$font-size-h6: pf-prem(12) !default; // 12px
 
 $headings-margin-bottom: $pf-spacer-sm !default;
 $pf-headings-margin-top: $pf-spacer-xl !default;
