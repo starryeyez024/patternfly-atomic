@@ -21,7 +21,9 @@
 // PatternFly uses Overpass and Overpass mono http://overpassfont.org/
 //
 
-
+@if $pf-enable-font-overpass-cdn {
+  @import url('https://fonts.googleapis.com/css?family=Overpass|Overpass+Mono');
+} @else {
 // Overpass
 @font-face {
   font-family: 'overpass';
@@ -243,4 +245,5 @@
        url('#{$pf-font-path}/overpass-mono-bold.ttf')  format('truetype');
        font-weight: 600;
        font-style: normal;
+}
 }
