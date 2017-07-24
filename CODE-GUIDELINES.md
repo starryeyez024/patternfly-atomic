@@ -184,7 +184,6 @@ For example:
 - Every element has a single, unique, component-scoped source of truth.
 - Only bind CSS onto CSS-based classes.
 - Don't write DOM-like selector.
-- Don't bind CSS onto data- attributes.
 
 ```sass
 // Bad
@@ -225,7 +224,7 @@ Each selector has a single responsability. They are be granular, modular, flexib
   color: white;
 }
 ```
-
+<!--
 Selectors fall into 3 categories:
 
 - Components
@@ -236,8 +235,6 @@ Selectors fall into 3 categories:
 
 Layout are containers concern about it's children vertical and horizontal alignment and spacing.
 
-<!-- // Layouts are prefixed with `-l` for example `.pf-l-grid_item`. -->
-
 
 #### Components
 
@@ -247,15 +244,12 @@ Components are modular and independent structures concern about how a thing look
 - The component itself never has widths or floats.
 - Elements inside a component never use top margins. The first element touches the top of its component.
 
-<!-- // Components are prefixed with `-c` for example `.pf-c-mast-head`. -->
-
 
 #### Utilities
 
 Utility classes have the single purpose to reduce the frequency of highly repetitive declarations.
 
-<!-- // Utility are prefixed with `-u for example `.pf-c-mast-head`. -->
-
+-->
 
 <!-- ============================================================ -->
 
