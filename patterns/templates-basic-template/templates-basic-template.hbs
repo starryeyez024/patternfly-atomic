@@ -2,10 +2,11 @@
   <h1>Basic Page Title</h1>
   <p>This is a basic template with some of the elements that are avaliable on PatternFly 5 CSS</p>
 
-  {{> components-tabs tabsSecondaryLevel="true" tabsSecondaryDropdown="true" }}
+  <nav role="navigation">
+    {{> components-tabs }} {{> components-secondary-nav }}
+  </nav>
 
-
-  <div class="row">
+  <div class="row" role="tabpanel">
 
     <div class="col-md-4">
 
