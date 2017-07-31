@@ -83,7 +83,7 @@ p,ul,ol,dl,blockquote,pre,td,th,textarea {
   .pf-vertical-rhythm & {
     margin-bottom: $pf-typography-margin-bottom;
     &:last-child {
-      margin-bottom:0; // last item in verticalRhythm parent has no margin-bottom
+      margin-bottom:0; // last item in vertical-rhythm parent has no margin-bottom
     }
   }
 
