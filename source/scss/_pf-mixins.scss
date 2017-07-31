@@ -107,13 +107,12 @@ limitations under the License.
 //
 // Used in conjunction with .vertical-rhythm to apply size, weight, and margins to type.
 
-@mixin pf-typography-styles(
-  $weight: $pf-font-weight-regular,
-  $size: $font-size-base,
+@mixin pf-heading-styles (
+  $weight: null,
+  $size: null,
   $margin-top: null,
   $margin-bottom: null
-  )
-  {
+  ) {
   font-size:$size;
   font-weight: $weight;
   margin-top: $margin-top;
