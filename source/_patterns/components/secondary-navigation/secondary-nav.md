@@ -3,7 +3,7 @@ title: PatternFly Secondary Navigation
 ---
 ## Overview
 
-The secondary navigation can be used on it's own but it's usually used with primary horizontal nav or tabs.
+The secondary navigation can be used on it is own but it's usually used with primary horizontal nav or tabs.
 
 ## Accessibility
 `role="tabpanel"` should be used for the div that wraps the tab contents.
