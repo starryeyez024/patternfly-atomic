@@ -20,7 +20,7 @@ limitations under the License.
 .pf-secondary-nav {
   @include list-unstyled;
   display: flex;
-  // The background creates a the border under the menu
+  // The background creates a border under the menu
   background-image:
     linear-gradient(
       to top,
@@ -39,8 +39,6 @@ limitations under the License.
   }
 }
 
-
-
 .pf-secondary-nav__link {
   @include hover-focus-active {
     color: inherit;
@@ -53,7 +51,6 @@ limitations under the License.
     );
     text-decoration: inherit;
   }
-
   display: inline-flex;
   align-items: center;
   padding-top: $pf-secondary-nav-link-padding;
@@ -82,14 +79,13 @@ limitations under the License.
     );
   }
 
-
   // .pf-secondary-nav__link[aria-disabled="true"]
   &[aria-disabled="true"] {
-    color: $pf-secondary-nav-link-disabled-color;
-    cursor: not-allowed;
     @include hover-focus-active {
       // The background removes the border when hover on disabled state
       background-image: none;
     }
+    color: $pf-secondary-nav-link-disabled-color;
+    cursor: not-allowed;
   }
 }
