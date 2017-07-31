@@ -102,3 +102,20 @@ limitations under the License.
     box-shadow: $top $left $blur $size $color;
   }
 }
+
+// Vertical Rhythm
+//
+// Used in conjunction with .verticalRhythm to apply size, weight, and margins to type.
+
+@mixin pf-typography-styles(
+  $weight: $pf-font-weight-regular,
+  $size: $font-size-base,
+  $margin-top: null,
+  $margin-bottom: null
+  )
+  {
+  font-size:$size;
+  font-weight: $weight;
+  margin-top: $margin-top;
+  margin-bottom:$margin-bottom;
+  }

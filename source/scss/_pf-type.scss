@@ -19,31 +19,31 @@ limitations under the License.
 
 
 // Font weights
-html {  font-size: $pf-font-size-root;}
+html { font-size: $pf-font-size-root;}
 
-body {  font-weight: $pf-font-weight-regular;}
+body { font-weight: $pf-font-weight-regular;}
 
-strong { font-weight: $pf-font-weight-bold; }
+strong {font-weight: $pf-font-weight-bold; }
 
 p { margin-bottom: $pf-typography-margin-bottom; }
 
-h1{
+h1 {
   @include pf-typography-styles();
 }
 
-h2{
+h2 {
   @include pf-typography-styles();
 }
 
-h3{
+h3 {
   @include pf-typography-styles();
 }
 
-h4{
+h4 {
   @include pf-typography-styles($pf-font-weight-semi-bold);
 }
 
-.h1, .pf-verticalRhythm h1{
+.h1, .pf-vertical-rhythm h1 {
       @include pf-typography-styles(
       $pf-font-weight-light,
       $font-size-h1,
@@ -52,7 +52,7 @@ h4{
       )
 }
 
-.h2, .pf-verticalRhythm h2{
+.h2, .pf-verticalrhythm h2 {
       @include pf-typography-styles(
       $pf-font-weight-light,
       $font-size-h2,
@@ -61,7 +61,7 @@ h4{
       )
 }
 
-.h3, .pf-verticalRhythm h3{
+.h3, .pf-vertical-rhythm h3 {
       @include pf-typography-styles(
       $pf-font-weight-light,
       $font-size-h3,
@@ -70,7 +70,7 @@ h4{
       )
 }
 
-.h4, .pf-verticalRhythm h4{
+.h4, .pf-vertical-rhythm h4 {
       @include pf-typography-styles(
       $pf-font-weight-semi-bold,
       $font-size-h4,
@@ -79,10 +79,10 @@ h4{
       )
 }
 
-p,ul,ol,dl,blockquote,pre,td,th,textarea{
-  .pf-verticalRhythm &{
+p,ul,ol,dl,blockquote,pre,td,th,textarea {
+  .pf-vertical-rhythm & {
     margin-bottom: $pf-typography-margin-bottom;
-    &:last-child{
+    &:last-child {
       margin-bottom:0; // last item in verticalRhythm parent has no margin-bottom
     }
   }
