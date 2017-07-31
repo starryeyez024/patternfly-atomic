@@ -111,10 +111,9 @@ limitations under the License.
   $weight: null,
   $size: null,
   $margin-top: null,
-  $margin-bottom: null
-  ) {
+  $margin-bottom: null) {
   font-size:$size;
   font-weight: $weight;
   margin-top: $margin-top;
   margin-bottom:$margin-bottom;
-  }
+}
