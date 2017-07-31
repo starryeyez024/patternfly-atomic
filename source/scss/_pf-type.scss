@@ -52,7 +52,7 @@ h4 {
       )
 }
 
-.h2, .pf-verticalrhythm h2 {
+.h2, .pf-vertical-rhythm h2 {
       @include pf-typography-styles(
       $pf-font-weight-light,
       $font-size-h2,
