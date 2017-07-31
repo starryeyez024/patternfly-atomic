@@ -23,11 +23,68 @@ html {  font-size: $pf-font-size-root;}
 
 body {  font-weight: $pf-font-weight-regular;}
 
-h4, .h4 { font-weight: $pf-font-weight-semi-bold; }
+strong { font-weight: $pf-font-weight-bold; }
 
-strong{ font-weight:   $pf-font-weight-bold; }
+p { margin-bottom: $pf-typography-margin-bottom; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: $pf-headings-margin-top;
+h1{
+  @include pf-typography-styles();
 }
 
+h2{
+  @include pf-typography-styles();
+}
+
+h3{
+  @include pf-typography-styles();
+}
+
+h4{
+  @include pf-typography-styles($pf-font-weight-semi-bold);
+}
+
+.h1, .pf-verticalRhythm h1{
+      @include pf-typography-styles(
+      $pf-font-weight-light,
+      $font-size-h1,
+      $pf-headings-margin-top,
+      $pf-typography-margin-bottom
+      )
+}
+
+.h2, .pf-verticalRhythm h2{
+      @include pf-typography-styles(
+      $pf-font-weight-light,
+      $font-size-h2,
+      $pf-headings-margin-top,
+      $pf-typography-margin-bottom
+      )
+}
+
+.h3, .pf-verticalRhythm h3{
+      @include pf-typography-styles(
+      $pf-font-weight-light,
+      $font-size-h3,
+      $pf-headings-margin-top,
+      $pf-typography-margin-bottom
+      )
+}
+
+.h4, .pf-verticalRhythm h4{
+      @include pf-typography-styles(
+      $pf-font-weight-semi-bold,
+      $font-size-h4,
+      $pf-headings-margin-top,
+      $pf-typography-margin-bottom
+      )
+}
+
+p,ul,ol,dl,blockquote,pre,td,th,textarea{
+  .pf-verticalRhythm &{
+    margin-bottom: $pf-typography-margin-bottom;
+    &:last-child{
+      margin-bottom:0; // last item in verticalRhythm parent has no margin-bottom
+    }
+  }
+
+}
