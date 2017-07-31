@@ -303,6 +303,7 @@ $spacers: (
     y: $pf-spacer-xxxxl
   )
 );
+
 $border-width: 1px !default;
 
 
@@ -627,6 +628,23 @@ $dropdown-link-hover-bg:         $pf-component-hover-bg !default;
 $dropdown-item-padding-x:        $pf-spacer-lg !default;
 
 // $dropdown-header-color:          $gray-light !default;
+
+
+
+// Patternfly Secondary Navigation
+
+
+$pf-secondary-nav-color:                     $gray !default;
+
+$pf-secondary-nav-border-color:              $pf-component-border-color !default;
+$pf-secondary-nav-border-width:              $border-width !default;
+
+$pf-secondary-nav-item-margin:               $pf-spacer-sm !default;
+
+$pf-secondary-nav-link-padding:              $pf-spacer-xxs !default;
+$pf-secondary-nav-link-active-border-color:  $link-color !default;
+$pf-secondary-nav-link-active-color:         $link-color !default;
+$pf-secondary-nav-link-disabled-color:       $gray-light !default;
 
 
 

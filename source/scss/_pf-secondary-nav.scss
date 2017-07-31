@@ -1,0 +1,91 @@
+/*
+Copyright 2016 Red Hat, Inc
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+//
+// PatternFly Seconary Tabs
+// --------------------------------------------------
+
+.pf-secondary-nav {
+  @include list-unstyled;
+  display: flex;
+  // The background creates a border under the menu
+  background-image:
+    linear-gradient(
+      to top,
+      $pf-secondary-nav-border-color $pf-secondary-nav-border-width,
+      transparent $pf-secondary-nav-border-width
+  );
+
+  // Selects every direct child of pf-secondary-nav, for example .pf-secondary-nav__item
+  > * {
+    display: flex;
+    margin-left: $pf-secondary-nav-item-margin;
+    margin-right: $pf-secondary-nav-item-margin;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.pf-secondary-nav__link {
+  @include hover-focus-active {
+    color: inherit;
+    // The background creates a thicker border under the link
+    background-image:
+    linear-gradient(
+    to top,
+    $nav-tabs-active-link-hover-border-color ($pf-secondary-nav-border-width * 2),
+    transparent ($pf-secondary-nav-border-width * 2)
+    );
+    text-decoration: inherit;
+  }
+  display: inline-flex;
+  align-items: center;
+  padding-top: $pf-secondary-nav-link-padding;
+  padding-bottom: $pf-secondary-nav-link-padding;
+  color: $pf-secondary-nav-color;
+
+  // When https://patternfly.atlassian.net/browse/PTNFLY-2471 is DONE update this to `&[aria-current="true" i]` We need the i flag because aria selector is case sensitive.
+  // .pf-secondary-nav__link[aria-selected="true"]
+  &[aria-selected="true"] {
+    @include hover-focus-active {
+      // The background creates a thicker blue border under the active link
+      background-image:
+      linear-gradient(
+      to top,
+      $pf-secondary-nav-link-active-color ($pf-secondary-nav-border-width * 2),
+      transparent ($pf-secondary-nav-border-width * 2)
+      );
+    }
+    color: $pf-secondary-nav-link-active-color;
+    // The background creates a thicker blue border under the active link
+    background-image:
+    linear-gradient(
+    to top,
+    $pf-secondary-nav-link-active-border-color ($pf-secondary-nav-border-width * 2),
+    transparent ($pf-secondary-nav-border-width * 2)
+    );
+  }
+
+  // .pf-secondary-nav__link[aria-disabled="true"]
+  &[aria-disabled="true"] {
+    @include hover-focus-active {
+      // The background removes the border when hover on disabled state
+      background-image: none;
+    }
+    color: $pf-secondary-nav-link-disabled-color;
+    cursor: not-allowed;
+  }
+}
