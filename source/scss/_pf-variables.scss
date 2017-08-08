@@ -328,21 +328,6 @@ $link-color:            $pf-color-blue-400;
 // $link-hover-decoration: underline !default;
 
 
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 36em, // 576px
-  md: 48em, // 768px
-  lg: 62em, // 992px
-  xl: 75em // 1200px
-) !default;
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints);
-
 // Fonts
 //
 // Change default font to Overpass http://overpassfont.org/
