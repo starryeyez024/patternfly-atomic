@@ -328,10 +328,11 @@ $link-color:            $pf-color-blue-400;
 // $link-hover-decoration: underline !default;
 
 
+
 // Fonts
 //
 // Change default font to Overpass http://overpassfont.org/
-$font-family-sans-serif: “overpass”, Overpass, “Open Sans”, Helvetica, sans-serif;
+$font-family-sans-serif: “overpass”, Overpass, “Open Sans”, Helvetica, sans-serif !default;
 $font-family-monospace:  “overpass-mono”, Overpass-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 
@@ -367,8 +368,9 @@ $font-size-h6: pf-prem(12) !default; // 12px
 $headings-margin-bottom: $pf-spacer-sm !default;
 $pf-headings-margin-top: $pf-spacer-xl !default;
 
-$pf-typography-margin-bottom: $pf-spacer-md !default;
 $headings-font-weight: $pf-font-weight-light !default;
+
+$pf-typography-margin-bottom: $pf-spacer-md !default;
 
 $lead-font-weight: $pf-font-weight-light !default;
 
@@ -749,6 +751,8 @@ $badge-font-size:             $font-size-sm!default;
 $badge-padding-x:             $pf-spacer-xxs !default;
 $badge-padding-y:             $pf-spacer-xxxs !default;
 $badge-pill-padding-x:        $pf-spacer-xxxs !default;
+
+
 
 // Modals
 // Add modals variables
