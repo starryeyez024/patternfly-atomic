@@ -1,0 +1,105 @@
+/*
+Copyright 2016 Red Hat, Inc
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+//
+// PatternFly Vertical Tabs
+// --------------------------------------------------
+
+.pf-l-demo-layout {
+  width: 20em;
+  background: yellow;
+}
+
+.pf-vertical-nav {
+  position: relative;
+  background: $pf-color-black-800;
+}
+
+.pf-vertical-nav__content {
+  @include list-unstyled;
+}
+
+.pf-vertical-nav__item {
+}
+
+.pf-vertical-nav__link {
+  color: $pf-color-black-200;
+  display: block;
+  border-bottom: 1px solid $pf-color-black-900;
+  padding-top: .5em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+
+  &.pf-is-active {
+    background: $pf-color-black-700;
+    background-image: linear-gradient(to right, $pf-color-blue-400 4px, transparent 4px);
+  }
+
+  &.pf-is-disabled {
+  }
+}
+
+
+// Sub menu
+$pf-vertical-sub-nav-width: pf-prem(200);
+
+.pf-vertical-sub-nav {
+  position: absolute;
+  right: -($pf-vertical-sub-nav-width);
+  width: ($pf-vertical-sub-nav-width);
+  top: 0;
+  padding: 1em;
+
+  &--first {
+    background: $pf-color-black-700;
+  }
+
+  &--second {
+    background: $pf-color-black-600;
+  }
+
+  &--thrid {
+    background: $pf-color-black-500;
+  }
+}
+
+.pf-vertical-sub-nav__content {
+  @include list-unstyled;
+}
+
+.pf-vertical-sub-nav__item {
+}
+
+.pf-vertical-sub-nav__link {
+  @include hover-focus {
+    background: rgba(0, 0, 0, .2);
+  }
+  color: white;
+  display: block;
+  padding-top: .5em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  margin-right: -1em; // To compensate for the padding on the __content wrapper
+
+  &.pf-is-active {
+    background: $pf-color-black-600;
+
+    .pf-vertical-sub-nav--second & {
+      background: $pf-color-black-700;
+    }
+  }
+}
