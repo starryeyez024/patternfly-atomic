@@ -51,6 +51,14 @@ h4 {
   @include pf-heading-styles($weight: $pf-font-weight-semi-bold);
 }
 
+h5{
+  @include pf-heading-styles();
+}
+
+h6{
+  @include pf-heading-styles();
+}
+
 .h1 {
   @include pf-heading-styles($weight: $pf-font-weight-light, $size: $font-size-h1);
 }
