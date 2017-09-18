@@ -52,7 +52,7 @@ This set of rules generate some constraints and conventions. If you ran into ins
 - Nested elements should be indented once (two spaces).
 - Always use double quotes, never single quotes, on attributes.
 - Don’t include a trailing slash in self-closing elements.
-- Don’t omit optional closing tags (e.g. </li> or </body>).
+- Don’t omit optional closing tags (e.g. `</li>` or `</body>`).
 - Don't add a value to a boolean attribute e.g., `<input type="text" disabled>`.
 - Lowercase tag name.
 - Lowercase attribute name.
@@ -65,9 +65,12 @@ This set of rules generate some constraints and conventions. If you ran into ins
     <title>Page title</title>
   </head>
   <body>
-    <img src="images/company-logo.png" alt="Company">
-    <h1 class="hello-world">Hello, world!</h1>
-    <input type="text" disabled>
+    <div class="pf-image--component">
+      <img src="images/company-logo.png" alt="Company">
+    </div>
+    <div class="pf-header--component">
+      <h1 class="pf-header--headline">Hello, world!</h1>
+    </div>	
   </body>
 </html>
 ```
@@ -112,18 +115,20 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Take the
 <img class="avatar" src="...">
 ```
 
+I disagree... it's better to have consistent wrappers on things, especially images. We have a bleed placeholder that allows us to tell the image to overcompensate for the padding on a card, for example.
+
 <!-- ============================================================ -->
 
 # CSS
 
-Before we discuss how we write out our rulesets, let’s first familiarise ourselves with relevant terminology:
+Before we discuss how we write out our rulesets, let’s first familiarize ourselves with relevant terminology:
 
 ```
-[selector] {
-  [property]: [value];
-  [<--declaration--->]
+/* CSS rule */
+.selector {
+  property: value; /* declaration */
 }
-[<------rule-------->]
+
 ```
 
 For example:
@@ -137,6 +142,7 @@ For example:
 <!-- ============================================================ -->
 
 ## Syntax
+You could just use scss-lint instead of having to spell all these out, just say, lint early and often!
 
 - Use soft tabs with two spaces.
 - When grouping selectors, keep individual selectors to a single line.
@@ -207,8 +213,8 @@ Each selector has a single responsability. They are be granular, modular, flexib
 .component-login {
   display: inline-block; // base
   padding: 2em; // structural
-  background-color: green; //cosmentic
-  color: white; //cosmentic
+  background-color: green; //cosmetic
+  color: white; //cosmetic
 }
 
 // Good
@@ -234,32 +240,32 @@ Selectors fall into 3 categories:
 
 #### Layout
 
-Layout are containers concern about it's children vertical and horizontal alignment and spacing.
+Layout are containers concerned with the vertical and horizontal alignment and spacing of their children. The classes are prefixed with `-layout--` (after the patterfly prefix `pf-`), for example: `.pf-layout--grid` or `.pf-layout--card`.
 
-<!-- // Layouts are prefixed with `-l` for example `.pf-l-grid_item`. -->
+<!-- I think the extra letters `ayout` are worth it, to provide maximum clarity to newbies.-->
 
 
 #### Components
 
-Components are modular and independent structures concern about how a thing looks.
+Components are modular and independent structures concerned about how a thing looks.
 
 - A component always touches all four sides of its parent container. No element will have top or left margins and all last children (right or bottom) will have their margins cleared.
 - The component itself never has widths or floats.
 - Elements inside a component never use top margins. The first element touches the top of its component.
-
-<!-- // Components are prefixed with `-c` for example `.pf-c-mast-head`. -->
+- The parent container of a component is prefixed with `-component--` (after the patterfly prefix `pf-`), for example: `.pf-component--mast-head`.
 
 
 #### Utilities
 
-Utility classes have the single purpose to reduce the frequency of highly repetitive declarations.
+Utility classes have the single purpose to reduce the frequency of highly repetitive declarations. 
+<!-- more info needed, also, why not data attributes? -->
 
-<!-- // Utility are prefixed with `-u for example `.pf-c-mast-head`. -->
+- Utility classes are prefixed with `-utility--` for example `.pf-utility--example-needed-here`.
 
 
 <!-- ============================================================ -->
 
-## Modifications and extension
+## Modifications and extensions
 
 Keep maintainability in mind, it's better to create a new single purpose components than extending an existing one.
 
